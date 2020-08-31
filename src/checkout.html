@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  @@include("partials/head.html", {
+  "pageTitle": "Cursos"
+  })
+</head>
+
+
+<body>
+
+  <!-- MODALS
+  ================================================== -->
+  @@include("partials/modals.html")
+
+  <!--  Top navbar ======================= -->
+  @@include("partials/top-navbar.html", {
+  "container": "container-fluid"
+  })
+
+  <!--  Main navbar ======================= -->
+
+  @@include("partials/navbar.html", {
+  "classList": "navbar-light bg-white",
+  "container": "container-fluid"
+  })
+
+  <main class="bg-cover bg-primary-desat">
+    <!--  Welcome Heading ======================= -->
+    <section class="py-6 py-md-8">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12 col-md-6 col-lg-5 offset-0 offset-lg-1 order-2 order-md-1 mt-5 mt-md-0">
+
+            <!-- Heading -->
+            <h2 class="text-light font-second">
+              Checkout
+            </h2>
+            <!-- Text -->
+
+            <p class="text-light">
+              All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this
+              the first true generator on the Internet
+            </p>
+
+          </div>
+          <div class="col-12 col-md-6 text-center order-1 order-md-2">
+            <!-- Vector image -->
+            <img src="assets/img/svg-link-photos/signin.svg" class="img-fluid" alt="pencil-note">
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+  </main>
+
+  <!-- Main
+  ================================================== -->
+  <section class="py-5 py-md-8">
+    <div class="container">
+      <form>
+        <!--Row-->
+        <div class="form-row align-items-start">
+          <div class="col-lg-6 offset-0 offset-lg-1">
+            <div class="form-group w-lg-75">
+              <!-- Select option -->
+              <div class="d-flex justify-content-between">
+                <label for="inputState">Billing Address</label>
+                <label for="inputState">Country</label>
+              </div>
+              <select id="inputState" class="form-control">
+                <option selected>United States</option>
+                <option>France</option>
+                <option>Germany</option>
+                <option>Canada</option>
+                <option>Australia</option>
+                <option>United Kingdom</option>
+                <option>China</option>
+                <option>South Korea</option>
+                <option>Japan</option>
+                <option>Brazilia</option>
+                <option>India</option>
+              </select>
+            </div>
+            <div class="form-group w-lg-50 mt-6">
+              <!-- Card visa -->
+              <div class="form-check mb-4">
+                <div class="d-flex align-items-center justify-content-between">
+                  <input class="form-check-input mb-1" type="radio" name="gridRadios" id="gridRadios1" value="oldcard"
+                    checked>
+                  <label class="form-check-label" for="gridRadios1">
+                    Visa ending in <span class="text-primary-desat">3063</span>
+                  </label>
+                  <img src="assets/img/icons/payment/card-visa.png" class="img-fluid" alt="visa-icon">
+                </div>
+              </div>
+              <!-- Paypel -->
+              <div class="form-check mb-4">
+                <div class="d-flex align-items-center justify-content-between">
+                  <input class="form-check-input mb-1" type="radio" name="gridRadios" id="gridRadios2" value="paypal">
+                  <label class="form-check-label" for="gridRadios2">
+                    Paypal
+                  </label>
+                  <img src="assets/img/icons/payment/paypel.png" class="img-fluid" alt="visa-icon">
+                </div>
+              </div>
+              <!-- New Card -->
+              <div class="form-check">
+                <div class="d-flex align-items-center justify-content-between">
+                  <input class="form-check-input mb-1" type="radio" name="gridRadios" id="gridRadios3" value="newCard">
+                  <label class="form-check-label" for="gridRadios3">
+                    New Payment Card
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- New card inputs -->
+            <div class="card-form-group">
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body card-border border-primary-desat shadow-small-simple">
+
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="card-name" placeholder="Name on Card"
+                      pattern="[A-Za-z, ]{2,}" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="card-number" placeholder="Card Number"
+                      pattern="[0-9]{16}" required>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <input type="text" maxlength="2" pattern="[0-9]{2}" class="form-control" id="month-card"
+                        placeholder="MM">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <input type="text" maxlength="2" pattern="[0-9]{2}" class="form-control" id="year-card"
+                        placeholder="YY">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" maxlength="3" pattern="[0-9]{3}" class="form-control" id="card-sec"
+                      placeholder="CVC">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="card-number1" placeholder="Zipcode">
+                  </div>
+                  <button type="button" class="btn btn-primary-desat btn-sm">Submit</button>
+
+                </div>
+              </div>
+            </div>
+            <!-- Order Course -->
+            <div class="form-group mt-6">
+              <h4 class="main-heading mb-4">Order Course</h4>
+              <div
+                class="d-flex align-items-center justify-content-around bg-saaral py-4 px-3 border-left border-success">
+                <img src="assets/img/card-photos/cash-desktop.png" class="img-fluid" alt="">
+                <h4 class="ml-5">The Complete SQL Bootcamp 2020: Go from Zero to Hero</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Order Price Section -->
+          <div class="col-lg-4">
+            <div class="card card-border border-danger shadow-small-simple">
+              <div class="card-body">
+                <h3 class="main-heading mb-4">Summary</h3>
+                <div class="d-flex justify-content-between mb-3">
+                  <span class="h4">Orginal price:</span>
+                  <span class="h4">$119.99</span>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                  <span class="h4">Coupon discounts</span>
+                  <span class="h4">$109.99</span>
+                </div>
+
+              </div>
+              <div class="card-footer mt-8">
+                <div class="d-flex justify-content-between">
+                  <span class="h4">Total</span>
+                  <span class="h4">$10</span>
+                </div>
+                <p class="text-muted mb-0">
+                  Vimcourse is required by law to collect applicable transaction taxes for purchases made in certain tax
+                  jurisdictions.
+                </p>
+                <br>
+                <p class="text-muted mb-0">
+                  By completing your purchase you agree to these Terms of Service
+                </p>
+                <a href="@@webRoot/thankyou.html" role="button"
+                  class="btn btn-danger btn-block mt-6 move shadow-small-simple">
+                  Complete payment
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--Row end-->
+
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+
+  <!-- FOOTER
+    ================================================== -->
+  @@include("partials/footer.html", {
+  "classList": "bg-gray-100"
+  })
+
+
+  <!-- JAVASCRIPT
+    ================================================== -->
+  @@include("partials/scripts.html")
+</body>
+
+</html>

@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  @@include("partials/head.html", {
+  "pageTitle": "Cursos"
+  })
+</head>
+
+<body>
+
+  <!-- MODALS
+  ================================================== -->
+  @@include("partials/modals.html")
+
+  <!-- TOP NAVBAR
+  ================================================== -->
+  @@include("partials/top-navbar.html", {
+  "container": "container-fluid"
+  })
+
+  <main class="bg-cover position-relative bg-teacher-detail">
+
+    <!-- MAIN NAVBAR
+    ================================================== -->
+    @@include("partials/navbar.html", {
+    "classList": "navbar-dark bg-transparent",
+    "container": "container-fluid"
+    })
+
+    <!-- Line shape -->
+    <div class="bg-overlay"></div>
+    <div class="position-absolute left-3 top-35 d-none d-lg-block">
+      <img src="assets/img/svg-shapes/big-lines.svg" class="img-fluid" alt="circle-and-circle">
+    </div>
+
+    <!-- Square shape -->
+    <div class="position-absolute right-3 top-35 d-none d-lg-block">
+      <img src="assets/img/svg-shapes/square-three.svg" class="img-fluid" alt="square-three">
+    </div>
+
+    <!-- WELCOME HEADING
+    ================================================== -->
+    <section class="py-6 py-md-12 py-xxl-16">
+      <div class="container-fluid">
+        <div class="row align-items-center justify-content-center mx-xl-9 mx-xxl-13">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+
+            <!-- Heading -->
+            <h1 class="display-3 text-center text-light" data-aos="fade-up" data-aos-delay="100">
+              Good advice and new information
+            </h1>
+            <!-- Text -->
+
+            <p class="lead text-center text-light mb-7 mw-lg-75 mx-auto" data-aos="fade-up" data-aos-delay="100">
+              Anywhere, Anytime, Lifetime access, Enjoy risk-free with our 30-day money-back guarentee.
+            </p>
+
+            <!-- Buttons -->
+            <div class="text-center" data-aos="fade-down" data-aos-delay="100">
+              <a href="#!" class="btn btn-outline-light btn-pill shadow move text-uppercase">
+                Learn More
+              </a>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+  </main>
+
+  <!-- BRANDS
+    ================================================== -->
+  <figure class="pt-6 pt-md-8">
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-center mx-xl-9 mx-xxl-13 text-center">
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/Lenovo-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/verizon-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/dribbble-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/behance-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/laravel-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/jquery-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </figure>
+
+  <!-- Teacher detail content
+    ================================================== -->
+  <section class="py-6 py-md-10">
+    <div class="container">
+
+      <div class="row justify-content-between align-items-center">
+        <div class="col-12 col-md-12 col-xl-6">
+          <div class="d-flex flex-column">
+            <!-- Author -->
+            <h1 class="display-4">Jane Casey</h1>
+            <!-- Tags -->
+            <a href="#!" class="text-decoration-none"><small class="text-primary-desat">Lifestyle & Cook</small></a>
+            <!-- Star -->
+            <div class="d-flex flex-wrap align-items-center justify-content-between my-3">
+              <div class="mb-1 mr-3">
+                <i>
+                  @@include("assets/img/svg-icons/star.svg")
+                </i>
+                <i>
+                  @@include("assets/img/svg-icons/star.svg")
+                </i>
+                <i>
+                  @@include("assets/img/svg-icons/star.svg")
+                </i>
+                <i>
+                  @@include("assets/img/svg-icons/star.svg")
+                </i>
+                <i>
+                  @@include("assets/img/svg-icons/star.svg")
+                </i>
+              </div>
+              <span class="text-primary-desat text-capitalize text-nowrap mt-3 mt-md-0">Enrolled Students (18756)</span>
+            </div>
+            <!-- Author email -->
+            <span class="h4 main-heading">Jaseandtest@gmail.com</span>
+            <!-- Heading -->
+            <span class="h4 text-muted mt-3 text-capitalize">My Cover History</span>
+            <!-- Text -->
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor rutrum erat. Lorem ipsum
+              dolor sit amet, consectetur adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              porttitor rutrum erat. Lorem ipsum dolor sit amet, consectetur adipiscing.
+            </p>
+            <!-- Heading -->
+            <span class="h4 text-muted mt-3 text-capitalize">My Comment</span>
+            <!-- TExt -->
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor rutrum erat. Lorem ipsum
+              dolor sit amet, consectetur adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              porttitor rutrum erat. Lorem ipsum dolor sit amet, consectetur adipiscing.
+            </p>
+          </div>
+        </div>
+        <!-- Teacher photo area -->
+        <div class="col-12 col-md-7 col-lg-6 col-xl-4 mb-5 mb-lg-0 mt-5 mt-xl-0 mx-auto">
+          <!-- Primary overlay -->
+          <div class="rounded overlay overlay-primary-desat overlay-30 shadow-small-soft">
+            <!-- Photo -->
+            <img src="assets/img/card-photos/card-teacher@2x.png" class="img-fluid move" alt="card-teacher">
+            <!-- Social icons -->
+            <div class="position-absolute bottom-10 left-n3 rounded bg-danger w-75 py-4 shadow-small-soft move">
+              <div class="d-flex justify-content-around">
+                <a href="#!" class="text-decoration-none"><i class="fe fe-facebook text-light"></i></a>
+                <a href="#!" class="text-decoration-none"><i class="fe fe-twitter text-light"></i></a>
+                <a href="#!" class="text-decoration-none"><i class="fe fe-youtube text-light"></i></a>
+                <a href="#!" class="text-decoration-none"><i class="fe fe-instagram text-light"></i></a>
+              </div>
+            </div>
+            <!-- Comments -->
+            <div
+              class="position-absolute top-5 left-n15 rounded bg-white w-90 py-3 px-2 shadow-small-soft text-center d-none d-md-block move">
+              <span class="main-heading text-nowrap">Life is an amazing journey to nowhere</span>
+            </div>
+            <!-- Dots back -->
+            <div class="position-absolute top-n5 left-n20" style="z-index: -1;">
+              <img src="assets/img/svg-shapes/all-dots-blue.svg" alt="dots-shape-blue">
+            </div>
+
+          </div>
+
+        </div><!-- / .col -->
+      </div><!-- / .row -->
+
+    </div><!-- / .container -->
+  </section>
+
+  <!-- shape
+    ================================================== -->
+  <div class="position-relative">
+    <div class="wave wave-top wave-fluid-x svg-shim text-white">
+      @@include("assets/img/shapes/waves/wave-1.svg")
+    </div>
+  </div>
+
+  <!-- Course Cards
+    ================================================== -->
+  <section class="py-6 py-md-12 bg-saaral">
+    <div class="container">
+      <div class="row justify-content-center">
+        <!-- Heading -->
+        <div class="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto text-center">
+          @@include("assets/img/svg-shapes/colored-line.svg")
+          <h1 class="display-3 mt-4">Our best online Courses</h1>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu vehicula turpis.
+            Quisque consectetur, eu pulvinar nisi eros nec nulla.</p>
+        </div>
+
+      </div>
+      <!-- Row -->
+      <div class="row justify-content-center mt-5 mt-md-8">
+        <!-- Course card -->
+        <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+          <div class="card mb-3 shadow-small-soft move" style="max-width: 56.5rem;">
+            <div class="row no-gutters">
+              <!-- Card photo -->
+              <div class="col-md-5">
+                <img src="assets/img/card-photos/pretty-women@2x.png" class="card-img" alt="pretty-woman">
+              </div>
+              <div class="col-md-7">
+                <!-- Card body -->
+                <a class="card-body p-5" href="@@webRoot/course-detail.html">
+                  <!-- Heading -->
+                  <h5 class="card-title mb-3">The Complete SQL Bootcamp 2020: Go from Zero to Hero</h5>
+                  <!-- Teacher name -->
+                  <div class="d-flex mb-2">
+                    <span class="card-text">Josa Portilla</span>
+                  </div>
+                  <!-- Tags -->
+                  <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start mb-2">
+                    <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                    <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                  </div>
+                  <!-- Star -->
+                  <div class="d-flex align-items-end justify-content-start mb-2">
+                    <span class="text-muted mr-3">4.6</span>
+                    <div class="mb-1 mr-3">
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                    </div>
+                    <span class="text-muted mr-3">(9876)</span>
+                  </div>
+                  <!-- Pricing -->
+                  <div class="mb-2">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-muted mr-3">$19.99</span>
+                      <span class="text-gray-500"><del>$112.99</del></span>
+                    </div>
+                  </div>
+                  <!-- Date -->
+                  <p class="card-text"><small class="text-muted">Last updated 12 june 2020</small></p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course card -->
+        <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+          <div class="card mb-3 shadow-small-soft move" style="max-width: 56.5rem;">
+            <div class="row no-gutters">
+              <!-- Card photo -->
+              <div class="col-md-5">
+                <img src="assets/img/card-photos/brain-lesson@2x.png" class="card-img" alt="pretty-woman">
+              </div>
+              <div class="col-md-7">
+                <!-- Card body -->
+                <a class="card-body p-5" href="@@webRoot/course-detail.html">
+                  <!-- Heading -->
+                  <h5 class="card-title mb-3">The Complete SQL Bootcamp 2020: Go from Zero to Hero</h5>
+                  <!-- Teacher name -->
+                  <div class="d-flex mb-2">
+                    <span class="card-text">Josa Portilla</span>
+                  </div>
+                  <!-- Tags -->
+                  <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start mb-2">
+                    <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                    <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                  </div>
+                  <!-- Star -->
+                  <div class="d-flex align-items-end justify-content-start mb-2">
+                    <span class="text-muted mr-3">4.6</span>
+                    <div class="mb-1 mr-3">
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                    </div>
+                    <span class="text-muted mr-3">(9876)</span>
+                  </div>
+                  <!-- Pricing -->
+                  <div class="mb-2">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-muted mr-3">$19.99</span>
+                      <span class="text-gray-500"><del>$112.99</del></span>
+                    </div>
+                  </div>
+                  <!-- Date -->
+                  <p class="card-text"><small class="text-muted">Last updated 12 june 2020</small></p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course card -->
+        <div class="col-12 col-md-10 col-lg-8 col-xl-6 mt-0 mt-lg-5">
+          <div class="card mb-3 shadow-small-soft move" style="max-width: 56.5rem;">
+            <div class="row no-gutters">
+              <!-- Card photo -->
+              <div class="col-md-5">
+                <img src="assets/img/card-photos/lesson-things@2x.png" class="card-img" alt="pretty-woman">
+              </div>
+              <div class="col-md-7">
+                <!-- Card body -->
+                <a class="card-body p-5" href="@@webRoot/course-detail.html">
+                  <!-- Heading -->
+                  <h5 class="card-title mb-3">The Complete SQL Bootcamp 2020: Go from Zero to Hero</h5>
+                  <!-- Teacher name -->
+                  <div class="d-flex mb-2">
+                    <span class="card-text">Josa Portilla</span>
+                  </div>
+                  <!-- Tags -->
+                  <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start mb-2">
+                    <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                    <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                  </div>
+                  <!-- Star -->
+                  <div class="d-flex align-items-end justify-content-start mb-2">
+                    <span class="text-muted mr-3">4.6</span>
+                    <div class="mb-1 mr-3">
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                    </div>
+                    <span class="text-muted mr-3">(9876)</span>
+                  </div>
+                  <!-- Pricing -->
+                  <div class="mb-2">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-muted mr-3">$19.99</span>
+                      <span class="text-gray-500"><del>$112.99</del></span>
+                    </div>
+                  </div>
+                  <!-- Date -->
+                  <p class="card-text"><small class="text-muted">Last updated 12 june 2020</small></p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course card -->
+        <div class="col-12 col-md-10 col-lg-8 col-xl-6 mt-0 mt-lg-5">
+          <div class="card mb-3 shadow-small-soft move" style="max-width: 56.5rem;">
+            <div class="row no-gutters">
+              <!-- Card photo -->
+              <div class="col-md-5">
+                <img src="assets/img/card-photos/tower@2x.png" class="card-img" alt="pretty-woman">
+              </div>
+              <div class="col-md-7">
+                <!-- Card body -->
+                <a class="card-body p-5" href="@@webRoot/course-detail.html">
+                  <!-- Heading -->
+                  <h5 class="card-title mb-3">The Complete SQL Bootcamp 2020: Go from Zero to Hero</h5>
+                  <!-- Teacher name -->
+                  <div class="d-flex mb-2">
+                    <span class="card-text">Josa Portilla</span>
+                  </div>
+                  <!-- Tags -->
+                  <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start mb-2">
+                    <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                    <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                  </div>
+                  <!-- Star -->
+                  <div class="d-flex align-items-end justify-content-start mb-2">
+                    <span class="text-muted mr-3">4.6</span>
+                    <div class="mb-1 mr-3">
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                    </div>
+                    <span class="text-muted mr-3">(9876)</span>
+                  </div>
+                  <!-- Pricing -->
+                  <div class="mb-2">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-muted mr-3">$19.99</span>
+                      <span class="text-gray-500"><del>$112.99</del></span>
+                    </div>
+                  </div>
+                  <!-- Date -->
+                  <p class="card-text"><small class="text-muted">Last updated 12 june 2020</small></p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--row-->
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6 text-center mt-10">
+          <a href="@@webRoot/course-middle.html" role="button"
+            class="btn btn-primary-desat btn-sm text-uppercase shadow-small-simple move">View
+            all&nbsp;<i class="fe fe-chevron-down"></i></a>
+        </div>
+      </div>
+      <!--row-->
+    </div>
+    <!--container-->
+  </section>
+
+  <!-- shape
+    ================================================== -->
+  <div class="position-relative">
+    <div class="wave wave-bottom wave-fluid-x svg-shim text-white">
+      @@include("assets/img/curves/curve-1.svg")
+    </div>
+  </div>
+
+  <!-- Video
+    ================================================== -->
+  <section class="py-6 py-md-8">
+    <div class="container">
+      <!-- Heading -->
+      <div class="row justify-content-center">
+        <div class="col-xs-12 col-md-12 col-lg-10 col-xl-10 col-xxl-8 text-center">
+          <h1 class="display-3 text-capitalize mt-4">Our video news</h1>
+        </div>
+      </div>
+      <!-- Video content -->
+      <div class="row mt-8 justify-content-center">
+        <div class="col-md-8">
+          <div class="embed-responsive embed-responsive-16by9 rounded shadow-dark-lg">
+            <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/58385453?badge=0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER
+    ================================================== -->
+  @@include("partials/footer.html", {
+  "classList": "bg-gray-100"
+  })
+
+
+  <!-- JAVASCRIPT
+    ================================================== -->
+  @@include("partials/scripts.html")
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+//
+// waves.scss
+// Theme component
+//
+
+.wave {
+  position: absolute;
+  pointer-events: none;
+}
+
+.wave>* {
+  display: block;
+}
+
+.wave:not([class*="wave-blur"]) {
+  overflow: hidden;
+}
+
+.wave:not([class*="wave-blur"])>* {
+  transform: scale(2);
+}
+
+
+// Hide SVG images in IE
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+
+  .wave>svg {
+    display: none;
+  }
+}
+
+
+// Position
+
+.wave-top {
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.wave-top>* {
+  transform-origin: bottom center;
+}
+
+.wave-right {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+
+.wave-right>* {
+  position: inherit;
+  top: inherit;
+  bottom: inherit;
+  right: inherit;
+  transform-origin: center left;
+}
+
+.wave-bottom {
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.wave-bottom>* {
+  transform-origin: top center;
+}
+
+.wave-bottom-100 {
+  right: 0;
+  bottom: 100%;
+  left: 0;
+}
+
+.wave-bottom-100>* {
+  transform-origin: top center;
+}
+
+.wave-left {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.wave-left>* {
+  position: inherit;
+  top: inherit;
+  bottom: inherit;
+  left: inherit;
+  transform-origin: center right;
+}
+
+
+// Orientation
+
+.wave-fluid-x>* {
+  width: 100%;
+  height: auto;
+}
+
+.wave-fluid-y>* {
+  width: auto;
+  height: 100%;
+}
+
+
+// Direction
+
+.wave-flip-x {
+  transform: scaleX(-1);
+}
+
+
+// Blurs
+
+.wave-blur-1 {
+  top: 0;
+  right: 0;
+  left: 0;
+
+  @include media-breakpoint-up(md) {
+    bottom: 0;
+    left: 50%;
+    right: auto;
+  }
+}
+
+.wave-blur-1>* {
+  width: 100%;
+  height: auto;
+
+  @include media-breakpoint-up(md) {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.wave-blur-2 {
+  top: 0;
+  right: 0;
+  left: 0;
+
+  @include media-breakpoint-up(md) {
+    bottom: 0;
+    right: 50%;
+    left: auto;
+  }
+}
+
+.wave-blur-2>* {
+  width: 100%;
+  height: auto;
+
+  @include media-breakpoint-up(md) {
+    width: auto;
+    height: 100%;
+    float: right;
+  }
+}
+
+.wave-blur-3 {
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.wave-blur-3>* {
+  width: 100%;
+  height: auto;
+}
+
+.wave-blur-4 {
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%) scale(1.3);
+}
+
+.wave-blur-4>* {
+  width: auto;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.line-wave {
+  content: url(#{$path-to-img}/svg-link-photos/wave-line-s1.svg);
+}
+
+.dots-white {
+  content: url(#{$path-to-img}/svg-link-photos/dots-white.svg);
+}
+
+.green-line {
+  content: url(#{$path-to-img}/svg-link-photos/green-line.svg);
+}
+
+.white-line {
+  content: url(#{$path-to-img}/svg-link-photos/white-line.svg);
+}
+
+.green-circle {
+  content: url(#{$path-to-img}/svg-link-photos/green-circle-shape.svg);
+}

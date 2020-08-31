@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  @@include("partials/head.html", {
+  "pageTitle": "Cursos"
+  })
+</head>
+
+<body class="bg-light">
+
+  <!-- MODALS
+  ================================================== -->
+  @@include("partials/modals.html")
+
+  <!-- Main Navbar
+    ================================================== -->
+  @@include("partials/navbar.html", {
+  "classList": "navbar-light bg-white",
+  "container": "container-fluid"
+  })
+
+  <!-- BREADCRUMB
+    ================================================== -->
+  <nav class="bg-danger d-md-none">
+    <div class="container-md">
+      <div class="row align-items-center">
+        <div class="col">
+
+          <!-- Breadcrumb -->
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <span class="text-white">
+                Student
+              </span>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              <span class="text-white">
+                Dashboard
+              </span>
+            </li>
+          </ol>
+
+        </div>
+        <div class="col-auto">
+
+          <!-- Toggler -->
+          <div class="navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sideNavCollapse"
+              aria-controls="sideNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </nav>
+
+  <!-- HEADER
+    ================================================== -->
+  <header class="bg-primary-desat py-6 py-xxl-11 d-none d-md-block">
+    <div class="container-md">
+      <div class="row align-items-center">
+        <div class="col">
+
+          <!-- Heading -->
+          <h1 class="font-weight-bold text-white mb-2">
+            Student Dashboard
+          </h1>
+
+          <!-- Breadcrumb -->
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="@@webRoot/student-dashboard.html" class="text-light">Student</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Personal Info</li>
+            </ol>
+          </nav>
+
+        </div>
+        <div class="col-auto">
+
+          <!-- Button -->
+          <a href="@@webRoot/index.html" class="btn btn-sm btn-outline-light">
+            Log Out
+          </a>
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </header>
+
+  <!-- MAIN
+    ================================================== -->
+  <main class="pb-8 pb-md-11 mt-6">
+    <div class="container-md">
+      <div class="row">
+        <div class="col-12 col-md-4 col-xl-3 mb-4 mb-sm-0">
+
+          <!-- Card -->
+          <div class="card border d-md-block">
+            <div class="card-header bg-primary-desat py-3">
+              <span class="text-light">Student Menu</span>
+            </div>
+
+            <div class="collapse d-md-block" id="sideNavCollapse">
+              <!-- Card-body -->
+              <div class="card-body">
+
+                <!-- Avatar -->
+                <div class="text-center mb-5">
+                  <div class="avatar avatar-online avatar-xxl">
+                    <img src="assets/img/avatar/user-6.png" alt="user-6" class="avatar-img rounded-circle">
+                  </div>
+                  <h3 class="main-heading">Julie Robert</h3>
+                  <span class="text-danger"><small>Pro user</small></span>
+                </div>
+
+                <!-- Heading -->
+                <h4 class="main-heading mb-4">
+                  Account
+                </h4>
+
+                <!-- List -->
+                <ul class="card-list list text-gray-700 mb-6">
+                  <li class="list-item active mb-3">
+                    <div class="d-flex align-items-baseline">
+                      <a class="link text-reset text-decoration-none active" href="@@webRoot/student-dashboard.html">
+                        <i class="fe fe-file-text mr-1"></i>
+                        Personal info
+                      </a>
+                    </div>
+                  </li>
+                  <li class="list-item mb-3">
+                    <div class="d-flex align-items-baseline">
+                      <a class="link text-reset text-decoration-none" href="@@webRoot/student-notification.html">
+                        <i class="fe fe-bell mr-1"></i>
+                        Notifications
+                      </a>
+                    </div>
+                  </li>
+
+                  <li class="list-item mb-3">
+                    <div class="d-flex align-items-baseline">
+                      <a class="link text-reset text-decoration-none" href="@@webRoot/student-settings.html">
+                        <i class="fe fe-list mr-1"></i>
+                        Preferences
+                      </a>
+                    </div>
+                  </li>
+                  <li class="list-item mb-3">
+                    <div class="d-flex align-items-baseline">
+                      <a class="link text-reset text-decoration-none" href="@@webRoot/student-security.html">
+                        <i class="fe fe-settings mr-1"></i>
+                        Security
+                      </a>
+                    </div>
+                  </li>
+
+                </ul>
+
+                <!-- Heading -->
+                <h4 class="main-heading mb-4">
+                  Courses
+                </h4>
+
+                <!-- List -->
+                <ul class="card-list list text-gray-700 mb-6">
+                  <li class="list-item mb-3">
+                    <div class="d-flex align-items-baseline">
+                      <a class="link text-reset text-decoration-none" href="@@webRoot/student-course.html">
+                        <i class="fe fe-youtube mr-1"></i>
+                        My Courses
+                      </a>
+                    </div>
+                  </li>
+                  <li class="list-item mb-3">
+                    <div class="d-flex align-items-baseline">
+                      <a class="link text-reset text-decoration-none" href="@@webRoot/student-test.html">
+                        <i class="fe fe-layers mr-1"></i>
+                        Online Test
+                      </a>
+                    </div>
+                  </li>
+
+                  <li class="list-item mb-3">
+                    <div class="d-flex align-items-baseline">
+                      <a class="link text-reset text-decoration-none" href="@@webRoot/teacher-help.html">
+                        <i class="fe fe-life-buoy mr-1"></i>
+                        Help Center
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+                <!-- Heading -->
+                <h4 class="main-heading mb-4">
+                  Leave course
+                </h4>
+
+                <!-- List -->
+                <ul class="card-list list text-gray-700 mb-6">
+                  <li class="list-item mb-3">
+                    <div class="d-flex align-items-baseline">
+                      <a class="link text-reset text-decoration-none" href="@@webRoot/index.html">
+                        <i class="fe fe-power mr-1"></i>
+                        Log out
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col-12 col-md-8 col-xl-9">
+          <!-- Card -->
+          <div class="card border">
+            <!-- Card header-->
+            <div class="card-header bg-primary-desat py-3">
+              <span class="text-light">Personal info</span>
+            </div>
+            <!-- Card profile photo -->
+            <div class="card-body">
+              <div class="row align-items-center pb-5">
+                <div class="col-12 col-md-6">
+                  <div class="d-flex align-items-center justify-content-around" id="preview-image">
+                    <span class="h4">Profile photo</span>
+                    <div class="image-p">
+                      <img src="assets/img/avatar/user-1.jpg" class="image-preview rounded-circle img-fluid"
+                        alt="student-avatar">
+                    </div>
+                  </div>
+                </div>
+                <!-- Photo upload button -->
+                <div class="col-12 col-md-6">
+                  <div class="d-flex flex-wrap align-items-center justify-content-between">
+                    <button class="btn btn-primary-desat text-light btn-sm file-upload text-nowrap mb-3 mb-xl-0">
+                      Upload photo
+                      <input type="file" class="file-upload__input" id="inputFile">
+                    </button>
+                    <button class="btn btn-danger text-light btn-sm text-nowrap ">Delete photo</button>
+                  </div>
+                </div>
+              </div>
+
+              <form>
+                <div class="row">
+                  <div class="col-md-6">
+                    <!--F Name -->
+                    <div class="form-group">
+                      <label for="name">First Name</label>
+                      <input class="form-control" id="name" type="text" placeholder="Full name">
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <!-- L Name -->
+                    <div class="form-group">
+                      <label for="lname">Last Name</label>
+                      <input class="form-control" id="lname" type="text" placeholder="Last name">
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input class="form-control" id="email" type="email" placeholder="name@address.com">
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label for="mobile">Mobile</label>
+                      <input class="form-control" id="moblie" type="number" placeholder="Phone number">
+                    </div>
+                  </div>
+                  <!-- choise input -->
+                  <div class="col-md-12 mt-4">
+                    <div class="form-group">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                          value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                          Male
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                          value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                          Female
+                        </label>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <!-- Textarea -->
+                    <div class="form-group">
+                      <label>Textarea</label>
+                      <div data-quill='{"placeholder": "textarea"}'></div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-auto pb-5">
+
+                    <!-- Button -->
+                    <button class="btn btn-block btn-primary-desat text-light" type="submit">
+                      Save changes
+                    </button>
+
+                  </div>
+
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </main>
+
+
+
+  <!-- FOOTER
+    ================================================== -->
+  @@include("partials/footer.html", {
+  "classList": "bg-light"
+  })
+
+  <!-- JAVASCRIPT
+    ================================================== -->
+  @@include("partials/scripts.html")
+
+  <script>
+    // input file upload
+    const inpFile = document.getElementById('inputFile');
+    const previewContainer = document.getElementById('preview-image');
+    const previewImage = previewContainer.querySelector('.image-preview');
+    // Change event
+    inpFile.addEventListener("change", function () {
+      const file = this.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.addEventListener("load", function () {
+          previewImage.setAttribute("src", this.result);
+        });
+
+        reader.readAsDataURL(file);
+      }
+    })
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  @@include("partials/head.html", {
+  "pageTitle": "Cursos"
+  })
+</head>
+
+<body>
+  <!-- MODALS
+  ================================================== -->
+  @@include("partials/modals.html")
+
+  <!--  TOP NAVBAR ======================= -->
+  @@include("partials/top-navbar.html", {
+  "container": "container-fluid"
+  })
+
+  <main class="bg-cover position-relative bg-primary-desat">
+    <!--  Main navbar ======================= -->
+    @@include("partials/navbar.html", {
+    "classList": "navbar-dark bg-transparent",
+    "container": "container-fluid"
+    })
+
+    <div class="position-absolute left-0 bottom-10 d-none d-xl-block">
+      <img src="assets/img/svg-shapes/rectancle-shape-reverse.png" class="img-fluid" alt="rectancle">
+    </div>
+
+    <div class="position-absolute right-0 bottom-10 d-none d-xl-block">
+      <img src="assets/img/svg-shapes/rectancle-shape.png" class="img-fluid" alt="rectancle">
+    </div>
+
+    <!-- WELCOME HEADING
+    ================================================== -->
+    <section class="py-6 py-md-12 py-xxl-16">
+      <div class="container-fluid">
+        <div class="row align-items-center justify-content-center mx-xl-9 mx-xxl-13">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8" data-aos="fade-up" data-aos-delay="100">
+
+            <!-- Heading -->
+            <h1 class="display-3 text-center text-light">
+              How can i know more about us
+            </h1>
+            <!-- Text -->
+
+            <p class="lead text-center text-light mb-7 mw-lg-75 mx-auto">
+              Anywhere, Anytime, Lifetime access, Enjoy risk-free with our 30-day money-back guarentee.
+            </p>
+
+
+            <!-- Buttons -->
+            <div class="text-center">
+              <a href="@@webRoot/blog-detail.html" class="btn btn-outline-light btn-pill shadow move text-uppercase">
+                Learn More
+              </a>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+  </main>
+
+  <!-- shape
+    ================================================== -->
+  <div class="position-relative">
+    <div class="wave wave-bottom wave-fluid-x svg-shim text-white">
+      @@include("assets/img/curves/curve-1.svg")
+    </div>
+  </div>
+
+
+  <!-- BRANDS
+    ================================================== -->
+  <figure class="pt-6 pt-md-8">
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-center mx-xl-9 mx-xxl-13 text-center">
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/Lenovo-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/verizon-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/dribbble-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/behance-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/laravel-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/jquery-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </figure>
+
+
+  <!-- LET'S START
+    ================================================== -->
+  <section class="py-6 py-md-11">
+    <div class="container">
+      <div class="row justify-content-center ">
+        <div class="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-6 mx-auto text-center">
+          <h1 class="display-3 mt-4">We strive to work with the best</h1>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu vehicula turpis.
+            Quisque consectetur, eu pulvinar nisi eros nec nulla.</p>
+        </div>
+      </div>
+
+
+      <div class="row align-items-center justify-content-center mt-5">
+        <div class="col-12 col-xl-6" data-aos="fade-right" data-aos-delay="100">
+          <picture>
+            <source media="(min-width:1500px)" srcset="assets/img/svg-link-photos/beauty-woman-xl@2x.png">
+            <source media="(min-width:992px)" srcset="assets/img/svg-link-photos/beauty-woman@2x.png">
+            <img src="assets/img/svg-link-photos/beauty-woman.png" alt="beauty-woman" class="img-fluid">
+          </picture>
+        </div>
+        <div class="col-12 col-xl-6" data-aos="fade-left" data-aos-delay="100">
+          <!-- Heading -->
+          <h1 class="display-3 mt-4">Are you ready to grow your business?</h1>
+          <!-- Main texts -->
+          <p class="text-muted">Nulla ac est non nulla hendrerit rutrum vel id ipsum. Integer sit amet orci quis purus
+            vulputate porttitor. Maecenas nec luctus ex, quis ultrices lacus. Sed tempor eros a mi sagittis varius.
+            In quis odio ex. In dapibus, sem vitae facilisis efficitur,
+            mi tellus rhoncus sem, eu imperdiet est justo non urna.
+            Donec ultrices felis urna, vitae accumsan magna consequat id.
+            Vestibulum est magna, suscipit in dui quis, porta elementum sapien.
+            Phasellus a nulla nibh. Nam laoreet nisi in mollis varius.
+            Proin posuere dui et commodo maximus.</p>
+
+          <!-- List row -->
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-6">
+              <!-- Item -->
+              <div class="d-flex align-items-baseline mt-6">
+
+                <!-- Icon -->
+                <div class="icon mr-3">
+                  @@include("assets/img/svg-colored-icon/anytime-icon.svg")
+                </div>
+
+                <!-- Heading -->
+                <span class="lead">
+                  Anytime Access
+                </span>
+
+              </div>
+
+              <!-- Item -->
+              <div class="d-flex align-items-baseline mt-6">
+
+                <!-- Icon -->
+                <div class="icon mr-3">
+                  @@include("assets/img/svg-colored-icon/pump-icon.svg")
+                </div>
+
+                <!-- Heading -->
+                <span class="lead">
+                  New Idea
+                </span>
+
+              </div>
+
+            </div>
+            <!--Column end-->
+
+            <div class="col-12 col-md-6 col-lg-6">
+              <!-- Item -->
+              <div class="d-flex align-items-baseline mt-6">
+
+                <!-- Icon -->
+                <div class="icon mr-3">
+                  @@include("assets/img/svg-colored-icon/growth-icon.svg")
+                </div>
+
+                <!-- Heading -->
+                <span class="lead">
+                  Healthy growth
+                </span>
+
+              </div>
+
+              <!-- Item -->
+              <div class="d-flex align-items-baseline mt-6">
+
+                <!-- Icon -->
+                <div class="icon mr-3">
+                  @@include("assets/img/svg-colored-icon/sumtai-icon.svg")
+                </div>
+
+                <!-- Heading -->
+                <span class="lead">
+                  SEO Optimization
+                </span>
+
+              </div>
+
+            </div>
+            <!--Column end-->
+
+          </div>
+        </div><!-- / .col -->
+      </div><!-- / .row -->
+    </div><!-- / .container -->
+  </section>
+
+  <!-- SUBSCRIBE NOW
+    ================================================== -->
+  <section class="py-5 py-md-11">
+    <div class="container-fluid">
+      <div class="row justify-content-center align-items-center mx-xl-9 mx-xxl-13">
+
+        <div class="col-12 bg-primary-desat shadow-small-soft py-8 py-xl-9 py-xxl-11 rounded position-relative">
+          <div class="position-absolute d-none d-lg-block bottom-n10 right-n5">
+            <img src="assets/img/svg-link-photos/line-wave-2.svg" alt="left-top-line-shape">
+          </div>
+          <div class="position-absolute left-n3 top-md-n20 top-lg-n10">
+            <img src="assets/img/svg-link-photos/line-wave-1.svg" alt="left-top-line-shape">
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-xs-12 col-md-6 text-center">
+              <!-- Text -->
+              <h1 class="display-4 text-light mr-7 text-nowrap">
+                Subscribe to our newsletter
+              </h1>
+            </div>
+            <div class="col-xs-12 col-md-5">
+              <!-- icon with button -->
+              <form>
+                <div class="input-group input-group-overlay flex-nowrap">
+                  <div class="input-group-prepend-overlay">
+                    <span class="input-group-text">
+                      <i class="fe fe-mail"></i>
+                    </span>
+                  </div>
+                  <input class="form-control prepended-form-control" type="email" name="email"
+                    placeholder="Your email" />
+                  <div class="input-group-append">
+                    <button class="btn btn-danger btn-sm" type="submit" name="subscribe">Subscribe</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div><!-- / .col -->
+      </div><!-- / .row -->
+    </div><!-- / .container -->
+  </section>
+
+  <section class="py-6 py-md-11">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8 text-center">
+
+          <!-- Headin -->
+          <h1 class="display-2">
+            Our Gallery
+          </h1>
+
+          <!-- Text -->
+          <p class="lead text-muted mb-7 mb-md-9">
+            Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in
+            their infancy.
+          </p>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+
+          <!-- Image -->
+          <div class="form-row">
+
+            <div class="col-5">
+
+              <img src="assets/img/photos/photo-17.png" class="img-fluid rounded shadow-lg mb-1" alt="...">
+
+              <div class="form-row mt-4">
+                <div class="col-5">
+
+                  <img src="assets/img/photos/photo-12.png" class="img-fluid rounded shadow-lg" alt="...">
+
+                </div>
+                <div class="col-7">
+
+                  <img src="assets/img/photos/photo-13.png" class="img-fluid rounded shadow-lg" alt="...">
+
+                </div>
+              </div> <!-- / .row -->
+
+            </div><!-- / .col -->
+
+            <div class="col-3">
+
+              <img src="assets/img/photos/photo-15.png" class="img-fluid rounded shadow-lg mb-4" alt="...">
+
+              <img src="assets/img/photos/photo-14.png" class="img-fluid rounded shadow-lg mt-1" alt="...">
+
+            </div><!-- / .col -->
+
+            <div class="col-4">
+
+              <img src="assets/img/photos/photo-16.png" class="img-fluid rounded shadow-lg" alt="...">
+
+            </div><!-- / .col -->
+
+          </div><!-- / .form-row -->
+
+        </div>
+      </div> <!-- / .row -->
+    </div><!-- / .container -->
+  </section>
+
+  <!--Word use 
+    ================================================== -->
+  <section class="py-6 py-md-11">
+    <div class="container">
+      <div class="row no-gutters align-items-start">
+        <div class="col-12 col-md-6">
+          <div class="card card-border border-danger">
+            <div class="card-body w-lg-80 p-xl-8 mx-auto">
+              <!-- Intro text -->
+              <h1 class="display-4 text-capitalize">We use data sience to help you make smarter decisions</h1>
+              <a href="#!" class="text-decoration-none"><span class="lead main-heading">Learn More</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="card card-border border-primary-desat shadow-small-soft move">
+            <div class="card-body w-lg-80 p-xl-8 mx-auto">
+              <!-- Intro paragraph -->
+              <p class="text-justify">It is a long established fact that a reader will be distracted by the readable
+                content of a page when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                of letters, as opposed to using 'Content here, content here', making it look like readable English. Many
+                desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
+                search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have
+                evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER
+    ================================================== -->
+  @@include("partials/footer.html", {
+  "classList": "bg-gray-100"
+  })
+
+
+  <!-- JAVASCRIPT
+    ================================================== -->
+  @@include("partials/scripts.html")
+</body>
+
+</html>

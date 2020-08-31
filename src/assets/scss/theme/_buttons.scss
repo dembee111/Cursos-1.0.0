@@ -1,0 +1,297 @@
+//
+// buttons.scss
+// Extended from Bootstrap
+//
+
+.btn>img {
+  max-height: 1em;
+  width: auto;
+}
+
+.btn:not([class*="btn-outline"]) {
+  border-color: transparent !important;
+}
+
+
+// Sizing
+
+.btn-xs {
+  padding: $input-btn-padding-y-xs $input-btn-padding-x-xs;
+  font-size: $input-btn-font-size-xs;
+}
+
+// Custom colors
+
+.btn-primary-desat {
+  background-color: $primary-desat;
+  color: $white;
+
+  @include hover-focus {
+    background-color: darken($primary-desat, 10%);
+    color: $white;
+  }
+
+  &.active {
+    background-color: darken($primary-desat, 10%);
+    color: $white;
+  }
+}
+
+// btn outline primary-desat hover
+.btn-outline-primary-desat {
+  &:hover {
+    color: $white;
+  }
+
+  &:focus,
+  &.focus {
+    color: $primary-desat;
+  }
+
+  &:focus:hover {
+    color: $white;
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  .show>&.dropdown-toggle {
+    color: $white !important;
+  }
+
+
+}
+
+// btn outline primary-danger hover
+.btn-outline-danger {
+  &:hover {
+    color: $white;
+  }
+
+  &:focus,
+  &.focus {
+    color: $primary-desat;
+  }
+
+  &:focus:hover {
+    color: $white;
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  .show>&.dropdown-toggle {
+    color: $white !important;
+  }
+}
+
+.btn-danger {
+  background-color: $danger;
+  color: $white;
+
+  @include hover-focus {
+    background-color: darken($danger, 5%);
+    color: $white;
+  }
+
+  &.active {
+    background-color: darken($danger, 5%);
+    color: $white;
+  }
+}
+
+
+.btn-white {
+  background-color: $white;
+  color: $primary;
+
+  @include hover-focus {
+    background-color: $white;
+    color: darken($primary, 5%);
+  }
+
+  &.active {
+    background-color: darken($white, 5%);
+    color: darken($primary, 5%);
+  }
+}
+
+.btn-group .btn-white {
+  border-color: $gray-300 !important;
+  color: $text-muted;
+
+  &.active {
+    background-color: darken($white, 5%);
+    color: darken($text-muted, 5%);
+    box-shadow: none;
+  }
+}
+
+.btn-gray-300-20 {
+  background-color: rgba($gray-300, .2);
+  color: $white;
+
+  @include hover-focus {
+    background-color: rgba($gray-300, .25);
+    color: $white;
+  }
+
+  &.active {
+    background-color: rgba($gray-300, .25);
+    color: $white;
+  }
+}
+
+.btn-gray-400 {
+  background-color: $gray-400;
+  color: $white;
+
+  @include hover-focus {
+    background-color: darken($gray-400, 5%);
+    color: darken($white, 5%);
+  }
+
+  &.active {
+    background-color: darken($gray-400, 5%);
+    color: darken($white, 5%);
+  }
+}
+
+.btn-gray-400-10 {
+  background-color: rgba($gray-400, .1);
+  color: $white;
+
+  @include hover-focus {
+    background-color: rgba($gray-400, .15);
+    color: $white;
+  }
+
+  &.active {
+    background-color: rgba($gray-400, .15);
+    color: $white;
+  }
+}
+
+.btn-outline-white {
+  border-color: $gray-300;
+  color: $body-color;
+
+  @include hover-focus {
+    background-color: darken($white, 5%);
+    border-color: $gray-400;
+    color: $body-color;
+  }
+
+  &.active {
+    background-color: darken($white, 5%);
+    border-color: $gray-400;
+    color: $body-color;
+  }
+}
+
+.btn-outline-gray-300 {
+  border-color: $gray-300;
+  color: $primary;
+
+  @include hover-focus {
+    background-color: $primary;
+    border-color: $primary;
+    color: $white;
+  }
+
+  &.active {
+    background-color: $primary;
+    border-color: $primary;
+    color: $white;
+  }
+}
+
+
+// Soft variants
+
+@each $color,
+$value in $theme-colors {
+  .btn-#{$color}-soft {
+    @include btn-variant-soft(rgba($value, $btn-soft-bg-opacity), $value);
+  }
+}
+
+
+// Pill
+
+.btn-pill {
+  border-radius: $rounded-pill;
+}
+
+
+// Rounded circle
+
+.btn-rounded-circle {
+  padding-left: $btn-padding-y;
+  padding-right: $btn-padding-y;
+  border-radius: $rounded-pill;
+}
+
+.btn-rounded-circle>* {
+  display: block;
+  line-height: 1;
+  width: 1em;
+}
+
+.btn-rounded-circle.btn-lg {
+  padding-left: $btn-padding-y-lg;
+  padding-right: $btn-padding-y-lg;
+}
+
+.btn-rounded-circle.btn-sm {
+  padding-left: $btn-padding-y-sm;
+  padding-right: $btn-padding-y-sm;
+}
+
+.btn-rounded-circle.btn-xs {
+  padding-left: $btn-padding-y-xs;
+  padding-right: $btn-padding-y-xs;
+}
+
+// btn-icon
+.btn-icon {
+  padding: .625rem .875rem;
+}
+
+// Go to top button
+.scrollToTop {
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background-color: $primary-desat;
+  color: #fff;
+  border-radius: 50%;
+  display: none;
+  z-index: 999;
+}
+
+.scrollToTop:hover {
+  background-color: $danger;
+  color: #fff;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    box-shadow: 0 0 0 0 rgba($danger, .7), 0 0 0 0 rgba($danger, .7);
+  }
+
+  40% {
+    box-shadow: 0 0 0 50px rgba($danger, 0), 0 0 0 0 rgba($danger, .7);
+  }
+
+  80% {
+    box-shadow: 0 0 0 50px rgba($danger, 0), 0 0 0 30px rgba($danger, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba($danger, 0), 0 0 0 30px rgba($danger, 0);
+  }
+}

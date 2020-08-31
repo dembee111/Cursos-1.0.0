@@ -1,0 +1,42 @@
+.bg-masthead {
+    background: linear-gradient(to left bottom, $gray-200 50%, $white 50%);
+}
+
+.bg-clip {
+    -webkit-clip-path: polygon(5% 0, 100% 0, 100% 100%, 40% 100%);
+    clip-path: polygon(5% 0, 100% 0, 100% 100%, 40% 100%);
+}
+
+.bg-clip-1 {
+    -webkit-clip-path: polygon(5% 0, 100% 0, 100% 100%, 20% 100%);
+    clip-path: polygon(5% 0, 100% 0, 100% 100%, 20% 100%);
+}
+
+// course horizontal bg photo
+.bg-horizontal {
+    background-image: url("#{$path-to-img}/background/laptop-businessmen.png");
+}
+
+.bg-middle {
+    background-image: url("#{$path-to-img}/background/laptop-pencil.jpg");
+}
+
+.bg-veritical {
+    background-image: url("#{$path-to-img}/background/young-woman-notebook-worked.png");
+}
+
+.bg-teachers {
+    background-image: url("#{$path-to-img}/background/teacher-smiling.png");
+}
+
+.bg-teacher-detail {
+    background-image: url("#{$path-to-img}/background/children-and-teacher.png");
+}
+
+.bg-blog-detail {
+    background-image: url("#{$path-to-img}/background/blonde-sitting-coffee.png");
+}
+
+.bg-blog {
+    background-image: url("#{$path-to-img}/background/leather-glass-women.png");
+}

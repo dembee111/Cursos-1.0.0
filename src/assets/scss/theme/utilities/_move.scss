@@ -1,0 +1,34 @@
+//
+// lift.scss
+// Theme utility
+//
+
+.move {
+  transition: box-shadow .25s ease, transform .25s ease;
+}
+
+.move:hover,
+.move:focus {
+  box-shadow: $box-shadow-lift !important;
+  transform: translate3d(0, -3px, 0);
+}
+
+.move-lg:hover,
+.move-lg:focus {
+  box-shadow: $box-shadow-lift-lg !important;
+  transform: translate3d(0, -5px, 0);
+}
+
+.clicked {
+  border: 1px solid $danger !important;
+}
+
+.step.active {
+  color: $white !important;
+  background-color: #EB9B4B !important;
+}
+
+.step.finish {
+  color: $white !important;
+  background-color: $success !important;
+}

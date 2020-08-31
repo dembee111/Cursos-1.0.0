@@ -1,0 +1,135 @@
+//
+// Postion-sizes.scss
+// Theme utility
+//
+@each $size, $sizeValue in $position-sizes {
+
+    // top
+  
+    .top-#{$size} {
+      top: $sizeValue !important;
+    }
+  
+    // bottom
+  
+    .bottom-#{$size} {
+        bottom: $sizeValue !important;
+    }
+
+    // left
+  
+    .left-#{$size} {
+        left: $sizeValue !important;
+    }
+
+    // right
+  
+    .right-#{$size} {
+        right: $sizeValue !important;
+    }
+  
+  }
+
+
+  // Responsive 
+
+@each $width, $widthValue in $container-max-widths {
+
+  @include media-breakpoint-up($width) {
+
+      
+      @each $size, $sizeValue in $position-negative-sizes {
+
+        // top
+      
+        .top-#{$width}-#{$size} {
+          top: $sizeValue !important;
+        }
+      
+        // bottom
+      
+        .bottom-#{$width}-#{$size} {
+            bottom: $sizeValue !important;
+        }
+
+        // left
+      
+        .left-#{$width}-#{$size} {
+            left: $sizeValue !important;
+        }
+
+        // right
+      
+        .right-#{$width}-#{$size} {
+            right: $sizeValue !important;
+        }
+      
+      }
+  }
+}
+
+
+  @each $size, $sizeValue in $position-negative-sizes {
+
+    // top
+  
+    .top-n#{$size} {
+      top: $sizeValue !important;
+    }
+  
+    // bottom
+  
+    .bottom-n#{$size} {
+        bottom: $sizeValue !important;
+    }
+
+    // left
+  
+    .left-n#{$size} {
+        left: $sizeValue !important;
+    }
+
+    // right
+  
+    .right-n#{$size} {
+        right: $sizeValue !important;
+    }
+  
+  }
+
+  // Responsive negative size
+
+@each $width, $widthValue in $container-max-widths {
+
+  @include media-breakpoint-up($width) {
+
+      
+      @each $size, $sizeValue in $position-negative-sizes {
+
+        // top
+      
+        .top-#{$width}-n#{$size} {
+          top: $sizeValue !important;
+        }
+      
+        // bottom
+      
+        .bottom-#{$width}-n#{$size} {
+            bottom: $sizeValue !important;
+        }
+
+        // left
+      
+        .left-#{$width}-n#{$size} {
+            left: $sizeValue !important;
+        }
+
+        // right
+      
+        .right-#{$width}-n#{$size} {
+            right: $sizeValue !important;
+        }
+      
+      }
+  }
+}

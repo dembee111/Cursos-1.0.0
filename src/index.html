@@ -1,0 +1,736 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    @@include("partials/head.html", {
+    "pageTitle": "Cursos online courses"
+    })
+</head>
+
+<body>
+    <!-- MODALS
+        ================================================== -->
+    @@include("partials/modals.html")
+
+    <!-- Top Nav
+    ================================================== -->
+    @@include("partials/top-navbar.html", {
+    "container": "container-fluid"
+    })
+    <!-- Main Navbar
+        ================================================== -->
+    @@include("partials/navbar.html", {
+    "classList": "navbar-dark bg-success",
+    "container": "container-fluid"
+    })
+
+    <!-- Welcome Header
+    ================================================== -->
+    <section class="pt-4 pt-md-10 pt-xxl-11 bg-masthead">
+        <!-- .container -->
+        <div class="container-fluid">
+            <!-- row -->
+            <div class="row align-items-center mx-xl-9 mx-xxl-13">
+                <!-- col -->
+                <div class="col-12 col-md-5 col-lg-5 order-md-2">
+                    <!-- Image -->
+                    <picture>
+                        <source media="(min-width:1500px)" srcset="assets/img/svg-link-photos/Header-cards@2x.png">
+                        <img src="assets/img/svg-link-photos/Header-cards.png" alt="Main-photo" class="img-fluid"
+                            data-aos="fade-up" data-aos-delay="100">
+                    </picture>
+                </div>
+                <!-- .col -->
+                <div class="col-12 col-md-7 col-lg-7 order-md-1" data-aos="fade-down" data-aos-delay="100">
+
+                    <div class="text-center text-md-left mb-2">
+                        <img src="assets/img/svg-link-photos/student-hat.svg" class="img-fluid" alt="student-hat">
+                    </div>
+                    <!-- Heading -->
+                    <h1 class="display-3 text-center text-md-left">
+                        Best instructors and Online Courses
+                    </h1>
+                    <!-- Text -->
+                    <p class="lead text-center text-muted text-md-left mb-6 mb-lg-8 mw-lg-75">
+                        Anywhere, Anytime, Lifetime access, Enjoy risk-free with our 30-day money-back guarentee.
+                    </p>
+                    <!-- Buttons -->
+                    <div class="text-center text-md-left">
+                        <a href="@@webRoot/register-colored.html"
+                            class="btn btn-success btn-pill shadow move mr-1 text-uppercase">
+                            Enroll Now
+                        </a>
+                        <button class="btn btn-outline-success btn-lg btn-rounded-circle video-btn" data-toggle="modal"
+                            data-src="https://player.vimeo.com/video/58385453?badge=0" data-target="#myModal">
+                            <i class="fe fe-play"></i>
+                        </button>
+                    </div>
+
+                </div><!-- / .col -->
+            </div> <!-- / .row -->
+
+        </div> <!-- / .container -->
+    </section>
+
+    <!-- ADVANTAGE
+    ================================================== -->
+    <section class="py-8 py-md-11 position-relative">
+        <!-- shap svg -->
+        <div class="position-absolute left-0 d-none d-lg-block" style="z-index: -1;">
+            <img src="assets/img/svg-link-photos/poly-shape.svg" alt="left-poly-shape">
+        </div>
+        <!-- .container -->
+        <div class="container-fluid">
+            <!-- .row -->
+            <div class="row justify-content-around mx-xl-9 mx-xxl-13">
+                <!-- Heading -->
+                <div class="col-12 text-center mb-5 mb-lg-10">
+                    @@include("assets/img/svg-icons/sonin-shape.svg")
+                    <h1 class="display-3 mt-4">If you choose our course</h1>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+
+                    <!-- Icon -->
+                    <div class="icon mb-3">
+                        @@include("assets/img/svg-icons/colored-time.svg")
+                    </div>
+
+                    <!-- Heading -->
+                    <h3>
+                        Lifetime access
+                    </h3>
+
+                    <!-- Text -->
+                    <p class="text-muted mb-6 mb-md-0">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non lacinia felis, quis
+                        dignissim purus.
+                    </p>
+
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <!-- Icon -->
+                    <div class="icon mb-3">
+                        @@include("assets/img/svg-icons/colored-location.svg")
+                    </div>
+
+                    <!-- Heading -->
+                    <h3>
+                        Anywhere
+                    </h3>
+
+                    <!-- Text -->
+                    <p class="text-muted mb-6 mb-md-0">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non lacinia felis, quis
+                        dignissim purus.
+                    </p>
+
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <!-- Icon -->
+                    <div class="icon mb-3">
+                        @@include("assets/img/svg-icons/colored-anytime.svg")
+                    </div>
+
+                    <!-- Heading -->
+                    <h3>
+                        Anytime
+                    </h3>
+
+                    <!-- Text -->
+                    <p class="text-muted mb-6 mb-md-0">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non lacinia felis, quis
+                        dignissim purus.
+                    </p>
+                </div><!-- / .col -->
+            </div><!-- / .row -->
+        </div><!-- / .container-->
+    </section>
+
+    <!-- REGISTER NOW ======================== -->
+    <section class="py-5 py-md-10">
+        <div class="container-fluid">
+            <div class="row justify-content-center mx-xl-9 mx-xxl-13">
+
+                <div class="col-12 bg-danger shadow-small-soft py-8 py-xl-9 py-xxl-11 rounded position-relative">
+                    <!-- Shape -->
+                    <div class="position-absolute top-10 right-0">
+                        <img src="assets/img/svg-link-photos/small-poly-shape.svg" class="img-fluid"
+                            alt="right-small-poly-shape">
+                    </div>
+                    <!-- Shape -->
+                    <div class="position-absolute d-none d-lg-block left-n3 top-0">
+                        <img src="assets/img/svg-link-photos/mid-circle-shape.svg" alt="left-mid-circle-shape">
+                    </div>
+                    <div class="d-md-flex justify-content-around align-items-center">
+                        <!-- Heading -->
+                        <h3 class="display-4 text-light mr-7 text-nowrap">
+                            Be the first to try month for free
+                        </h3>
+                        <a href="@@webRoot/register-horizontal.html"
+                            class="btn btn-white btn-pill shadow-small-soft move text-uppercase text-danger"
+                            target="_blank">Register
+                            now</a>
+                    </div>
+
+                </div><!-- / .col -->
+            </div><!-- / .row-->
+        </div><!-- / .container-->
+    </section>
+
+    <!-- ASKING TEST
+    ================================================== -->
+    <section class="py-5 py-md-11">
+        <div class="container-fluid">
+            <div class="row justify-content-around align-items-center mx-xl-9 mx-xxl-13">
+                <!-- Ask main photo -->
+                <div class="col-md-6">
+                    <!-- Image -->
+                    <picture>
+                        <source media="(min-width:1500px)"
+                            srcset="assets/img/svg-link-photos/smile-women-testing@2x.png">
+                        <img src="assets/img/svg-link-photos/smile-women-testing.png" alt="smile-woman"
+                            class="img-fluid" data-aos="fade-right" data-aos-delay="100">
+                    </picture>
+                </div>
+                <div class="col-md-6 pl-5 pl-lg-10 mt-0 mt-lg-5" data-aos="fade-left" data-aos-delay="100">
+                    <!-- .shape svg -->
+                    @@include("assets/img/svg-link-photos/sonin-shape-1.svg")
+                    <!-- Heading -->
+                    <h1 class="display-3 mt-4">Are you ready to test your skills?</h1>
+                    <p class="text-muted">There are many variations of passages of Lorem Ipsum available,
+                        but the majority have suffered alteration in some form, by injected humour, or randomised
+                        words
+                        which don't look even slightly believable.
+                        If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+                        embarrassing hidden in the middle of text. </p>
+                    <!-- text list -->
+                    <div class="ml-4 mt-6">
+                        <div class="d-flex align-items-baseline mb-5">
+                            <span class="badge badge-lg badge-rounded-circle badge-danger-soft">
+                                <i class="fe fe-check text-danger"></i>
+                            </span>
+                            <h4 class="ml-4">Clean and clear web design</h4>
+                        </div>
+
+                        <div class="d-flex align-items-baseline mb-5">
+                            <span class="badge badge-lg badge-rounded-circle badge-danger-soft">
+                                <i class="fe fe-check text-danger"></i>
+                            </span>
+                            <h4 class="ml-4">Web based testing system</h4>
+                        </div>
+
+                        <div class="d-flex align-items-baseline">
+                            <span class="badge badge-lg badge-rounded-circle badge-danger-soft">
+                                <i class="fe fe-check text-danger"></i>
+                            </span>
+                            <h4 class="ml-4">Full sharing and anywhere access to own certificate</h4>
+                        </div>
+
+                    </div>
+                </div><!-- / .col -->
+            </div><!-- / .row-->
+        </div><!-- / .container-->
+    </section>
+
+
+
+    <!-- COURSES
+    ================================================== -->
+    <section class="py-5 py-md-11">
+        <div class="container">
+            <div class="row justify-content-center mx-xl-9 mx-xxl-13">
+                <div class="col-12 col-md-6 mx-auto text-center">
+                    @@include("assets/img/svg-link-photos/sonin-shape-2.svg")
+                    <h1 class="display-3 mt-4">Our bestseller online courses</h1>
+                </div>
+            </div>
+            <div class="row justify-content-xxl-between mt-10">
+                <!-- First Card-->
+                <div class="col-xs-12 col-md-6 col-lg-4 col-xxl-3">
+                    <!-- Card -->
+                    <div class="card mb-6 mb-lg-0 shadow-lg move move-lg">
+
+                        <!-- Image -->
+                        <a class="card-img-top" href="#!">
+
+                            <!-- Image -->
+                            <picture>
+                                <source media="(min-width:992px)" srcset="assets/img/card-photos/student-table-2x.png">
+                                <img src="assets/img/card-photos/student-table-2x.png" alt="course-card-image"
+                                    class="card-img-top">
+                            </picture>
+
+                        </a>
+                        <!-- Heading -->
+                        <div class="bg-white shadow-small-soft mt-n7 mx-4" style="z-index: 2;">
+                            <h4 class="py-2 px-3">
+                                The Complete SQL Bootcamp 2020: Go from Zero to Hero
+                            </h4>
+                        </div>
+
+                        <!-- Body -->
+                        <div class="card-body mt-n4">
+
+
+                            <!-- Author and Tag -->
+                            <div class="mb-2">
+                                <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start">
+                                    <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                                    <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                                </div>
+                            </div>
+                            <!--Author-->
+                            <div class="mb-2">
+                                <span class="text-muted">Josa Portilla</span>
+                            </div>
+                            <!-- Star -->
+                            <div class="mb-2">
+                                <div class="d-flex align-items-end justify-content-start">
+                                    <span class="text-muted mr-3">4.6</span>
+                                    <div class="mb-1 mr-3">
+                                        <i>
+                                            @@include("assets/img/svg-icons/star.svg")
+                                        </i>
+                                        <i>
+                                            @@include("assets/img/svg-icons/star.svg")
+                                        </i>
+                                        <i>
+                                            @@include("assets/img/svg-icons/star.svg")
+                                        </i>
+                                        <i>
+                                            @@include("assets/img/svg-icons/star.svg")
+                                        </i>
+                                        <i>
+                                            @@include("assets/img/svg-icons/star-half.svg")
+                                        </i>
+                                    </div>
+                                    <span class="text-muted">(9876)</span>
+                                </div>
+                            </div>
+
+                            <!-- Pricing -->
+                            <div class="mb-4">
+                                <div class="d-flex align-items-end justify-content-start">
+                                    <span class="text-muted mr-3">$19.99</span>
+                                    <span class="text-gray-500"><del>$112.99</del></span>
+                                </div>
+                            </div>
+                            <!-- Button Enroll -->
+                            <a role="button" href="@@webRoot/course-detail.html"
+                                class="btn btn-danger btn-sm btn-pill shadow move text-white text-uppercase">Enroll
+                                Now</a>
+                        </div><!-- / card-body -->
+                    </div><!-- / card -->
+                </div>
+                <!--Second Card-->
+                <div class="col-xs-12 col-md-6 col-lg-4 col-xxl-3">
+                    <!-- Card -->
+                    <div class="card mb-6 mb-lg-0 shadow-lg move move-lg">
+
+                        <!-- Image -->
+                        <a class="card-img-top" href="#!">
+
+                            <!-- Image -->
+                            <picture>
+                                <source media="(min-width:992px)" srcset="assets/img/card-photos/card-2@2x.png">
+                                <img src="assets/img/card-photos/card-2.png" alt="course-card-image"
+                                    class="card-img-top">
+                            </picture>
+
+                        </a>
+                        <!-- Heading -->
+                        <div class="bg-white shadow-small-soft mt-n7 mx-4" style="z-index: 2;">
+                            <h4 class="py-2 px-3">
+                                CSS - The Complete Guide 2020 (Include: Flexbox, Grid & Sass)
+                            </h4>
+                        </div>
+
+                        <!-- Body -->
+                        <div class="card-body mt-n4">
+
+
+                            <!-- Author and Tag -->
+                            <div class="mb-2">
+                                <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start">
+                                    <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                                    <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <span class="text-muted">Santa Barbara</span>
+                            </div>
+                            <!-- Star -->
+                            <div class="mb-2">
+                                <div class="d-flex align-items-end justify-content-start">
+                                    <span class="text-muted mr-3">4.9</span>
+                                    <div class="mb-1 mr-3">
+                                        <i>
+                                            @@include("assets/img/svg-icons/star.svg")
+                                        </i>
+                                        <i>
+                                            @@include("assets/img/svg-icons/star.svg")
+                                        </i>
+                                        <i>
+                                            @@include("assets/img/svg-icons/star.svg")
+                                        </i>
+                                        <i>
+                                            @@include("assets/img/svg-icons/star.svg")
+                                        </i>
+                                        <i>
+                                            @@include("assets/img/svg-icons/star.svg")
+                                        </i>
+                                    </div>
+                                    <span class="text-muted">(18756)</span>
+                                </div>
+                            </div>
+
+                            <!-- Pricing -->
+                            <div class="mb-4">
+                                <div class="d-flex align-items-end justify-content-start">
+                                    <span class="text-muted mr-3">$19.99</span>
+                                    <span class="text-gray-500"><del>$112.99</del></span>
+                                </div>
+                            </div>
+                            <!-- Button Enroll -->
+                            <a href="@@webRoot/course-detail.html" role="button"
+                                class="btn btn-danger btn-sm btn-pill shadow move text-uppercase">Enroll
+                                Now</a>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Third Card-->
+                <div class="col-xs-12 col-md-6 col-lg-4 col-xxl-3 d-lg-none d-xxl-block">
+                    <!-- Card -->
+                    <div class="card mb-6 mb-lg-0 shadow-lg move move-lg">
+
+                        <!-- Image -->
+                        <a class="card-img-top" href="#!">
+
+                            <!-- Image -->
+                            <picture>
+                                <source media="(min-width:992px)" srcset="assets/img/card-photos/talking-people@2x.png">
+                                <img src="assets/img/card-photos/talking-people.png" alt="course-card-image"
+                                    class="card-img-top">
+                            </picture>
+
+                        </a>
+                        <!-- Heading -->
+                        <div class="bg-white shadow-small-soft mt-n7 mx-4" style="z-index: 2;">
+                            <h4 class="py-2 px-3">
+                                Discrete Mathematics (Include: Logic, Functions, Proofs and Combinatorics)
+                            </h4>
+                        </div>
+
+                        <!-- Body -->
+                        <div class="card-body mt-n4">
+
+
+                            <!-- Author and Tag -->
+                            <div class="mb-2">
+                                <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start">
+                                    <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                                    <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <span class="text-muted">Peter Morrow</span>
+                            </div>
+                            <!-- Star -->
+                            <div class="mb-2">
+                                <div class="d-flex align-items-end justify-content-start">
+                                    <span class="text-muted mr-3">4.9</span>
+                                    <div class="mb-1 mr-3">
+                                        <i>
+                                            @@include("assets/img/svg-icons/star.svg")
+                                        </i>
+                                        <i>
+                                            @@include("assets/img/svg-icons/star.svg")
+                                        </i>
+                                        <i>
+                                            @@include("assets/img/svg-icons/star.svg")
+                                        </i>
+                                        <i>
+                                            @@include("assets/img/svg-icons/star.svg")
+                                        </i>
+                                        <i>
+                                            @@include("assets/img/svg-icons/star.svg")
+                                        </i>
+                                    </div>
+                                    <span class="text-muted">(18756)</span>
+                                </div>
+                            </div>
+
+                            <!-- Pricing -->
+                            <div class="mb-4">
+                                <div class="d-flex align-items-end justify-content-start">
+                                    <span class="text-muted mr-3">$19.99</span>
+                                    <span class="text-gray-500"><del>$112.99</del></span>
+                                </div>
+                            </div>
+                            <!-- Button Enroll -->
+                            <a href="@@webRoot/course-detail.html" role="button"
+                                class="btn btn-danger btn-sm btn-pill shadow move text-uppercase">Enroll
+                                Now</a>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Fourth Card-->
+                <div class="col-xs-12 col-md-6 col-lg-4 col-xxl-3">
+                    <!-- Card -->
+                    <div class="card mb-6 mb-lg-0 shadow-lg move move-lg">
+
+                        <!-- Image -->
+                        <a class="card-img-top" href="#!">
+                            <!-- Image -->
+                            <picture>
+                                <source media="(min-width:992px)" srcset="assets/img/card-photos/card-4@2x.png">
+                                <img src="assets/img/card-photos/card-4.png" alt="course-card-image"
+                                    class="card-img-top">
+                            </picture>
+                        </a>
+
+                        <!-- Heading -->
+                        <div class="bg-white shadow-small-soft mt-n7 mx-4" style="z-index: 2;">
+                            <h4 class="py-2 px-3">
+                                The Complete Javascript Course 2020: Build Real Project
+                            </h4>
+                        </div>
+
+                        <!-- Body -->
+                        <div class="card-body mt-n4">
+
+                            <!-- Author and Tag -->
+                            <div class="mb-2">
+                                <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start">
+                                    <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                                    <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                                </div>
+                            </div>
+                            <!-- Teacher name -->
+                            <div class="mb-2">
+                                <span class="text-muted">John Anderson</span>
+                            </div>
+                            <!-- Star -->
+                            <div class="mb-2">
+                                <div class="d-flex align-items-end justify-content-start">
+                                    <span class="text-muted mr-3">4.9</span>
+                                    <div class="mb-1 mr-3">
+                                        <i>
+                                            @@include("assets/img/svg-icons/star.svg")
+                                        </i>
+                                        <i>
+                                            @@include("assets/img/svg-icons/star.svg")
+                                        </i>
+                                        <i>
+                                            @@include("assets/img/svg-icons/star.svg")
+                                        </i>
+                                        <i>
+                                            @@include("assets/img/svg-icons/star.svg")
+                                        </i>
+                                        <i>
+                                            @@include("assets/img/svg-icons/star.svg")
+                                        </i>
+                                    </div>
+                                    <span class="text-muted">(18756)</span>
+                                </div>
+                            </div>
+
+                            <!-- Pricing -->
+                            <div class="mb-4">
+                                <div class="d-flex align-items-end justify-content-start">
+                                    <span class="text-muted mr-3">$19.99</span>
+                                    <span class="text-gray-500"><del>$112.99</del></span>
+                                </div>
+                            </div>
+                            <!-- Button Enroll -->
+                            <a href="@@webRoot/course-detail.html" role="button"
+                                class="btn btn-danger btn-sm btn-pill shadow move text-uppercase">Enroll
+                                Now</a>
+                        </div>
+                    </div><!-- / .card -->
+
+                </div><!-- / .col -->
+            </div> <!-- / .row -->
+
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 text-center mt-10">
+                    <a href="@@webRoot/course-middle.html" role="button"
+                        class="btn btn-primary-desat btn-sm text-uppercase shadow-dark-lg">View
+                        all&nbsp;<i class="fe fe-chevron-down"></i></a>
+                </div>
+            </div><!-- / .row -->
+
+        </div><!-- / .container -->
+    </section>
+
+    <!-- SUBSCRIBE NOW
+    ================================================== -->
+    <section class="py-5 py-md-10">
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center mx-xl-9 mx-xxl-13">
+
+                <div class="col-12 bg-primary-desat shadow-small-soft py-8 py-xl-9 py-xxl-11 rounded position-relative">
+                    <!-- Line wave -->
+                    <div class="position-absolute d-none d-lg-block bottom-n10 right-n5">
+                        <img src="assets/img/svg-link-photos/line-wave-2.svg" alt="left-top-line-wave">
+                    </div>
+                    <!-- Line wave -->
+                    <div class="position-absolute left-n3 top-md-n20 top-lg-n10">
+                        <img src="assets/img/svg-link-photos/line-wave-1.svg" alt="left-top-line-wave">
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <!-- subs text -->
+                        <div class="col-xs-12 col-md-6 text-center">
+                            <h1 class="display-4 text-light mr-7 text-nowrap">
+                                Subscribe to our newsletter
+                            </h1>
+                        </div>
+                        <!-- button -->
+                        <div class="col-xs-12 col-md-5">
+                            <form>
+                                <div class="input-group input-group-overlay flex-nowrap">
+                                    <div class="input-group-prepend-overlay">
+                                        <span class="input-group-text">
+                                            <i class="fe fe-mail"></i>
+                                        </span>
+                                    </div>
+                                    <input class="form-control prepended-form-control" type="email" name="email"
+                                        placeholder="Your email" />
+                                    <div class="input-group-append">
+                                        <button class="btn btn-danger btn-sm" type="submit"
+                                            name="subscribe">Subscribe</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div><!-- / .col -->
+            </div><!-- / .row -->
+        </div><!-- / .container -->
+    </section>
+
+
+    <!-- STUDENTS COMMENTS =========================== -->
+    <section class="py-5 py-md-10">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-6 mx-auto text-center">
+                    @@include("assets/img/svg-link-photos/sonin-shape-3.svg")
+                    <h1 class="display-3 mt-4">What our students have to say</h1>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu
+                        vehicula
+                        turpis.
+                        Quisque consectetur, magna eget egestas tincidunt, tortor diam tristique massa,
+                        eu pulvinar nisi eros nec nulla. Curabitur at sem in augue ornare scelerisque.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-5 mt-lg-6">
+                <div class="col-10 col-lg-9 col-xl-8 col-xxl-7 d-none d-lg-block">
+                    <!-- Slider -->
+                    <div class="owl-carousel owl-theme">
+                        <div class="w-100">
+
+                            <!-- Body -->
+                            <div class="card card-body">
+                                <!-- Shapes -->
+                                <div class="white-line position-absolute bottom-0 left-5"></div>
+                                <div class="dots-white position-absolute bottom-10 left-25"></div>
+                                <!-- Text -->
+                                <blockquote
+                                    class="bg-danger position-absolute rounded shadow-small-soft p-5 mw-40 top-20 left-0">
+                                    <div class="line-wave position-absolute bottom-0 right-0"></div>
+                                    <h3 class="text-light">John Anderson</h3>
+                                    <p class="text-light text-justify">
+                                        I believe in lifelong learning and Cursos is a great place to learn from
+                                        experts.
+                                        I've learned a lot and recommend it to all my friends.
+                                    </p>
+                                </blockquote>
+                                <!-- Photo -->
+                                <img src="assets/img/card-photos/student-photo-smile@2x.png"
+                                    class="img-fluid rounded d-none d-lg-block shadow-small-soft" alt="student-smile">
+                            </div>
+
+                        </div>
+                        <div class="w-100">
+
+                            <!-- Body -->
+                            <div class="card card-body">
+                                <!-- Shapes -->
+                                <div class="green-circle position-absolute bottom-5 right-3"></div>
+                                <div class="green-line position-absolute bottom-0 left-5"></div>
+                                <div class="dots-white position-absolute bottom-10 left-25"></div>
+                                <!-- Text -->
+                                <blockquote
+                                    class="bg-primary-desat position-absolute rounded shadow-small-soft p-5 mw-40 top-20 left-0">
+                                    <div class="line-wave position-absolute bottom-0 right-0"></div>
+                                    <h3 class="text-light">Peter Morrow</h3>
+                                    <p class="text-light text-justify">
+                                        I believe in lifelong learning and Cursos is a great place to learn from
+                                        experts.
+                                        I've learned a lot and recommend it to all my friends.
+                                    </p>
+                                </blockquote>
+                                <!-- Photo -->
+                                <img src="assets/img/card-photos/student-photo-ura@2x.png"
+                                    class="img-fluid rounded d-none d-lg-block shadow-small-soft" alt="student-ura">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!--responsive card for sm -->
+                <div class="col-xs-12 col-lg-5 mb-5 d-block d-lg-none">
+                    <div
+                        class="bg-primary-desat rounded shadow-small-soft p-6 mw-100 mw-lg-50 top-0 top-lg-12 left-n0 left-lg-n10">
+                        <div class="line-wave position-absolute bottom-0 right-0"></div>
+                        <h3 class="text-light">John Anderson</h3>
+                        <p class="text-light">
+                            I believe in lifelong learning and Cursos is a great place to learn from experts.
+                            I've learned a lot and recommend it to all my friends.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-lg-5 d-block d-lg-none">
+                    <div
+                        class="bg-danger rounded shadow-small-soft p-6 mw-100 mw-lg-50 top-0 top-lg-12 left-n0 left-lg-n10">
+                        <div class="line-wave position-absolute bottom-0 right-0"></div>
+                        <h3 class="text-light">Peter Morrow</h3>
+                        <p class="text-light">
+                            I believe in lifelong learning and Cursos is a great place to learn from experts.
+                            I've learned a lot and recommend it to all my friends.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div><!-- / .row -->
+        </div><!-- / .container -->
+    </section>
+
+    <!-- Go to top -->
+    <a href="#" class="scrollToTop">
+        <i class="fe fe-arrow-up"></i>
+    </a>
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html", {
+    "classList": "bg-gray-100"
+    })
+
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+</body>
+
+</html>

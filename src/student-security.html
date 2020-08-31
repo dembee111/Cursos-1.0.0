@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  @@include("partials/head.html", {
+  "pageTitle": "Cursos"
+  })
+</head>
+
+<body class="bg-light">
+
+  <!-- MODALS
+  ================================================== -->
+  @@include("partials/modals.html")
+
+  <!-- Main Navbar
+    ================================================== -->
+  @@include("partials/navbar.html", {
+  "classList": "navbar-light bg-white",
+  "container": "container-fluid"
+  })
+
+  <!-- BREADCRUMB
+    ================================================== -->
+  <nav class="bg-danger d-md-none">
+    <div class="container-md">
+      <div class="row align-items-center">
+        <div class="col">
+
+          <!-- Breadcrumb -->
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <span class="text-white">
+                Student
+              </span>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              <span class="text-white">
+                Security
+              </span>
+            </li>
+          </ol>
+
+        </div>
+        <div class="col-auto">
+
+          <!-- Toggler -->
+          <div class="navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sideNavCollapse"
+              aria-controls="sideNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </nav>
+
+  <!-- HEADER
+      ================================================== -->
+  <header class="bg-primary-desat py-6 py-xxl-11 d-none d-md-block">
+    <div class="container-md">
+      <div class="row align-items-center">
+        <div class="col">
+
+          <!-- Heading -->
+          <h1 class="font-weight-bold text-white mb-2">
+            Student Dashboard
+          </h1>
+
+          <!-- Breadcrumb -->
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="@@webRoot/student-dashboard.html" class="text-light">Student</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Personal Info</li>
+            </ol>
+          </nav>
+
+        </div>
+        <div class="col-auto">
+
+          <!-- Button -->
+          <a href="@@webRoot/index.html" class="btn btn-sm btn-outline-light">
+            Log Out
+          </a>
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </header>
+
+  <!-- MAIN
+      ================================================== -->
+  <main class="pb-8 pb-md-11 mt-6">
+    <div class="container-md">
+      <div class="row">
+        <div class="col-12 col-md-4 col-xl-3 mb-4 mb-sm-0">
+
+          <!-- Card -->
+          <div class="card border d-md-block">
+            <div class="card-header bg-primary-desat py-3">
+              <span class="text-light">Student Menu</span>
+            </div>
+
+            <div class="collapse d-md-block" id="sideNavCollapse">
+              <!-- Card-body -->
+              <div class="card-body">
+
+                <!-- Avatar -->
+                <div class="text-center mb-5">
+                  <div class="avatar avatar-online avatar-xxl">
+                    <img src="assets/img/avatar/user-6.png" alt="user-6" class="avatar-img rounded-circle">
+                  </div>
+                  <h3 class="main-heading">Julie Robert</h3>
+                  <span class="text-danger"><small>Pro user</small></span>
+                </div>
+
+                <!-- Heading -->
+                <h4 class="main-heading mb-4">
+                  Account
+                </h4>
+
+                <!-- List -->
+                <ul class="card-list list text-gray-700 mb-6">
+                  <li class="list-item mb-3">
+                    <div class="d-flex align-items-baseline">
+                      <a class="link text-reset text-decoration-none active" href="@@webRoot/student-dashboard.html">
+                        <i class="fe fe-file-text mr-1"></i>
+                        Personal info
+                      </a>
+                    </div>
+                  </li>
+                  <li class="list-item mb-3">
+                    <div class="d-flex align-items-baseline">
+                      <a class="link text-reset text-decoration-none" href="@@webRoot/student-notification.html">
+                        <i class="fe fe-bell mr-1"></i>
+                        Notifications
+                      </a>
+                    </div>
+                  </li>
+
+                  <li class="list-item mb-3">
+                    <div class="d-flex align-items-baseline">
+                      <a class="link text-reset text-decoration-none" href="@@webRoot/student-settings.html">
+                        <i class="fe fe-list mr-1"></i>
+                        Preferences
+                      </a>
+                    </div>
+                  </li>
+                  <li class="list-item active mb-3">
+                    <div class="d-flex align-items-baseline">
+                      <a class="link text-reset text-decoration-none" href="@@webRoot/student-security.html">
+                        <i class="fe fe-settings mr-1"></i>
+                        Security
+                      </a>
+                    </div>
+                  </li>
+
+                </ul>
+
+                <!-- Heading -->
+                <h4 class="main-heading mb-4">
+                  Courses
+                </h4>
+
+                <!-- List -->
+                <ul class="card-list list text-gray-700 mb-6">
+                  <li class="list-item mb-3">
+                    <div class="d-flex align-items-baseline">
+                      <a class="link text-reset text-decoration-none" href="@@webRoot/student-course.html">
+                        <i class="fe fe-youtube mr-1"></i>
+                        My Courses
+                      </a>
+                    </div>
+                  </li>
+                  <li class="list-item mb-3">
+                    <div class="d-flex align-items-baseline">
+                      <a class="link text-reset text-decoration-none" href="@@webRoot/student-test.html">
+                        <i class="fe fe-layers mr-1"></i>
+                        Online Test
+                      </a>
+                    </div>
+                  </li>
+
+                  <li class="list-item mb-3">
+                    <div class="d-flex align-items-baseline">
+                      <a class="link text-reset text-decoration-none" href="@@webRoot/teacher-help.html">
+                        <i class="fe fe-life-buoy mr-1"></i>
+                        Help Center
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+                <!-- Heading -->
+                <h4 class="main-heading mb-4">
+                  Leave course
+                </h4>
+
+                <!-- List -->
+                <ul class="card-list list text-gray-700 mb-6">
+                  <li class="list-item mb-3">
+                    <div class="d-flex align-items-baseline">
+                      <a class="link text-reset text-decoration-none" href="@@webRoot/index.html">
+                        <i class="fe fe-power mr-1"></i>
+                        Log out
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col-12 col-md-8 col-xl-9">
+          <!-- Card -->
+          <div class="card border">
+            <div class="card-header bg-primary-desat py-3">
+              <span class="text-light">Security</span>
+            </div>
+
+            <div class="card-body">
+              <!-- Form -->
+              <form>
+                <div class="row justify-content-start">
+                  <div class="col-md-10 offset-md-1">
+                    <!--F Name -->
+                    <div class="form-group w-lg-80">
+                      <label for="cpassword">Current password</label>
+                      <input class="form-control" id="cpassword" type="password" placeholder="Current password">
+                    </div>
+
+                  </div>
+                  <div class="col-md-10 offset-md-1">
+                    <!--F Name -->
+                    <div class="form-group w-lg-80">
+                      <label for="npassword">New password</label>
+                      <input class="form-control" id="npassword" type="password" placeholder="New password">
+                    </div>
+
+                  </div>
+
+                  <div class="col-md-10 offset-md-1">
+                    <!--F Name -->
+                    <div class="form-group w-lg-80">
+                      <label for="rpassword">Confirm password</label>
+                      <input class="form-control" id="rpassword" type="password" placeholder="Repeat password">
+                    </div>
+
+                  </div>
+                  <!-- check input -->
+                  <div class="col-md-10 offset-md-1 mt-4">
+                    <div class="form-group">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                          value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                          Male
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                          value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                          Female
+                        </label>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="col-md-10 offset-md-1 pb-5">
+
+                    <!-- Button -->
+                    <button class="btn btn-sm btn-primary-desat" type="submit">
+                      Change password
+                    </button>
+
+                  </div>
+                </div>
+              </form><!-- / Form -->
+            </div>
+
+          </div>
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </main>
+
+
+
+  <!-- FOOTER
+    ================================================== -->
+  @@include("partials/footer.html", {
+  "classList": "bg-light"
+  })
+
+  <!-- JAVASCRIPT
+    ================================================== -->
+  @@include("partials/scripts.html")
+
+</body>
+
+</html>

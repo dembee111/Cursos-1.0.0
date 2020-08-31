@@ -1,0 +1,1172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  @@include("partials/head.html", {
+  "pageTitle": "Cursos"
+  })
+</head>
+
+<body>
+  <!-- MODALS
+  ================================================== -->
+  @@include("partials/modals.html")
+
+  @@include("partials/top-navbar.html", {
+  "container": "container-fluid"
+  })
+  <main class="bg-cover position-relative bg-veritical">
+
+    @@include("partials/navbar.html", {
+    "classList": "navbar-dark bg-transparent",
+    "container": "container-fluid"
+    })
+
+    <div class="bg-overlay"></div>
+    <div class="position-absolute left-3 top-35 d-none d-lg-block">
+      <img src="assets/img/svg-shapes/big-lines.svg" class="img-fluid" alt="circle-and-circle">
+    </div>
+
+    <div class="position-absolute right-3 top-35 d-none d-lg-block">
+      <img src="assets/img/svg-shapes/square-three.svg" class="img-fluid" alt="square-three">
+    </div>
+
+    <!-- WELCOME HEADING
+    ================================================== -->
+    <section class="py-6 py-md-12 py-xxl-16">
+      <div class="container-fluid">
+        <div class="row align-items-center justify-content-center mx-xl-9 mx-xxl-13">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+
+            <!-- Heading -->
+            <h1 class="display-3 text-center text-light">
+              Best Courses and Good Instructors
+            </h1>
+            <!-- Text -->
+            <p class="lead text-center text-light mb-7 mw-lg-75 mx-auto">
+              Anywhere, Anytime, Lifetime access, Enjoy risk-free with our 30-day money-back guarentee.
+            </p>
+
+            <!-- Buttons -->
+            <div class="text-center">
+              <a href="@@webRoot/blog-detail.html" class="btn btn-outline-light btn-pill shadow move text-uppercase">
+                Learn More
+              </a>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+  </main>
+
+  <!-- shape
+    ================================================== -->
+  <div class="position-relative">
+    <div class="wave wave-bottom wave-fluid-x svg-shim text-white">
+      @@include("assets/img/curves/curve-2.svg")
+    </div>
+  </div>
+
+  <!-- BRANDS
+    ================================================== -->
+  <figure class="pt-6 pt-md-8">
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-center mx-xl-9 mx-xxl-13 text-center">
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/Lenovo-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/verizon-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/dribbble-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/behance-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/laravel-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/jquery-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </figure>
+
+  <!-- SUBSCRIBE NOW
+    ================================================== -->
+  <section class="py-6 py-md-10 bg-danger mt-6 mt-md-11 shadow-small-soft position-relative">
+    <div class="position-absolute right-0 bottom-0">
+      <img src="assets/img/svg-shapes/line-shape-3.svg" alt="left-top-line-wave">
+    </div>
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12 position-relative">
+          <div class="position-absolute left-15 center">
+            <img src="assets/img/svg-shapes/circle-and-cricle.svg" alt="left-top-line-wave">
+          </div>
+
+          <div class="row justify-content-center align-items-center">
+            <div class="col-xs-12 col-md-5 col-lg-6 text-center">
+              <h1 class="display-3 text-light mr-7">
+                Our course room
+              </h1>
+            </div>
+            <div class="col-xs-12 col-md-7 col-lg-6">
+              <form>
+                <div class="input-group input-group-overlay flex-nowrap">
+                  <div class="input-group-prepend-overlay">
+                    <span class="input-group-text">
+                      <i class="fe fe-search"></i>
+                    </span>
+                  </div>
+                  <input type="text" class="form-control prepended-form-control" type="text" name="text"
+                    placeholder="Search for courses" />
+                  <div class="input-group-append">
+                    <button class="btn btn-primary-desat btn-sm" type="submit" name="subscribe">Subscribe</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Course
+    ================================================== -->
+  <main class="pb-8 pb-md-11">
+    <div class="container-md">
+
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-3 mt-n2 mt-md-n6 d-md-none d-lg-block">
+          <div class="category-sidebar rounded bg-light shadow-small-soft" id="category-sidebar">
+            <div class="category-sidebar-body">
+              <div class="sidebar-title">
+                <h3 class="font-second mb-4">Categories</h3>
+
+                <div class="widget widget-categories">
+                  <div class="accordion" id="accordion">
+                    <!--card-->
+                    <div class="card bg-light border-0">
+                      <!--Card header-->
+
+                      <div class="card-header border-0 p-0" role="tab">
+                        <h5 class="accordion-heading text-muted">
+                          <a data-toggle="collapse" aria-expanded="false" aria-controls="accordion .item-1"
+                            href="div#accordion .item-1" class="collapsed text-body">Web Development
+                            <span class="accordion-indicator">
+                            </span>
+                          </a>
+                        </h5>
+                      </div>
+                      <!--Card body Collapse-->
+                      <div class="collapse item-1" role="tabpanel" data-parent="#accordion">
+                        <div class="card-body py-1 pl-2 pr-0">
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">Javascript<br></span>
+                            <span class="card-text"><small>136</small></span>
+                          </a>
+
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">Laravel<br></span>
+                            <span class="card-text"><small>54</small></span>
+                          </a>
+
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">React js<br></span>
+                            <span class="card-text"><small>89</small></span>
+                          </a>
+
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">Vue js<br></span>
+                            <span class="card-text"><small>79</small></span>
+                          </a>
+
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">Node js<br></span>
+                            <span class="card-text"><small>124</small></span>
+                          </a>
+
+                        </div>
+                      </div>
+
+                    </div>
+                    <!--card end-->
+
+                    <!--card-->
+                    <div class="card bg-light border-0">
+                      <!--Card header-->
+
+                      <div class="card-header border-0 p-0" role="tab">
+                        <h5 class="accordion-heading text-muted">
+                          <a data-toggle="collapse" aria-expanded="false" aria-controls="accordion .item-2"
+                            href="div#accordion .item-2" class="collapsed text-body">IT & Software
+                            <span class="accordion-indicator">
+                            </span>
+                          </a>
+                        </h5>
+                      </div>
+                      <!--Card body Collapse-->
+                      <div class="collapse item-2" role="tabpanel" data-parent="#accordion">
+                        <div class="card-body py-1 pl-2 pr-0">
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">Networking<br></span>
+                            <span class="card-text"><small>136</small></span>
+                          </a>
+
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">IT security<br></span>
+                            <span class="card-text"><small>54</small></span>
+                          </a>
+
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">Computer Hardware<br></span>
+                            <span class="card-text"><small>89</small></span>
+                          </a>
+
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">Database<br></span>
+                            <span class="card-text"><small>79</small></span>
+                          </a>
+
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">Electronics<br></span>
+                            <span class="card-text"><small>124</small></span>
+                          </a>
+
+                        </div>
+                      </div>
+
+                    </div>
+                    <!--card end-->
+
+                    <!--card-->
+                    <div class="card bg-light border-0">
+                      <!--Card header-->
+
+                      <div class="card-header border-0 p-0" role="tab">
+                        <h5 class="accordion-heading text-muted">
+                          <a data-toggle="collapse" aria-expanded="false" aria-controls="accordion .item-3"
+                            href="div#accordion .item-3" class="collapsed text-body">Languages
+                            <span class="accordion-indicator">
+                            </span>
+                          </a>
+                        </h5>
+                      </div>
+                      <!--Card body Collapse-->
+                      <div class="collapse item-3" role="tabpanel" data-parent="#accordion">
+                        <div class="card-body py-1 pl-2 pr-0">
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">English<br></span>
+                            <span class="card-text"><small>136</small></span>
+                          </a>
+
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">Japanese<br></span>
+                            <span class="card-text"><small>54</small></span>
+                          </a>
+
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">German<br></span>
+                            <span class="card-text"><small>89</small></span>
+                          </a>
+
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">French<br></span>
+                            <span class="card-text"><small>79</small></span>
+                          </a>
+
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">Korean<br></span>
+                            <span class="card-text"><small>124</small></span>
+                          </a>
+
+                        </div>
+                      </div>
+
+                    </div>
+                    <!--card end-->
+
+                    <!--card-->
+                    <div class="card bg-light border-0">
+                      <!--Card header-->
+                      <div class="card-header border-0 p-0" role="tab">
+                        <h5 class="accordion-heading text-muted">
+                          <a data-toggle="collapse" aria-expanded="false" aria-controls="accordion .item-4"
+                            href="div#accordion .item-4" class="collapsed text-body">Academics
+                            <span class="accordion-indicator">
+                            </span>
+                          </a>
+                        </h5>
+                      </div>
+                      <!--Card body Collapse-->
+                      <div class="collapse item-4" role="tabpanel" data-parent="#accordion">
+                        <div class="card-body py-1 pl-2 pr-0">
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">Math<br></span>
+                            <span class="card-text"><small>136</small></span>
+                          </a>
+
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">Physics<br></span>
+                            <span class="card-text"><small>54</small></span>
+                          </a>
+
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">Anatomy<br></span>
+                            <span class="card-text"><small>89</small></span>
+                          </a>
+
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">Biology<br></span>
+                            <span class="card-text"><small>79</small></span>
+                          </a>
+
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">Chemistry<br></span>
+                            <span class="card-text"><small>124</small></span>
+                          </a>
+
+                        </div>
+                      </div>
+
+                    </div>
+                    <!--card end-->
+
+                    <!--card-->
+                    <div class="card bg-light border-0">
+                      <!--Card header-->
+                      <div class="card-header border-0 p-0" role="tab">
+                        <h5 class="accordion-heading text-muted">
+                          <a data-toggle="collapse" aria-expanded="false" aria-controls="accordion .item-5"
+                            href="div#accordion .item-5" class="collapsed text-body">Business
+                            <span class="accordion-indicator">
+                            </span>
+                          </a>
+                        </h5>
+                      </div>
+                      <!--Card body Collapse-->
+                      <div class="collapse item-5" role="tabpanel" data-parent="#accordion">
+                        <div class="card-body py-1 pl-2 pr-0">
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">Entrepreneurship<br></span>
+                            <span class="card-text"><small>75</small></span>
+                          </a>
+
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">Sales<br></span>
+                            <span class="card-text"><small>34</small></span>
+                          </a>
+
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">Management<br></span>
+                            <span class="card-text"><small>56</small></span>
+                          </a>
+
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">Marketing<br></span>
+                            <span class="card-text"><small>79</small></span>
+                          </a>
+
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">Law<br></span>
+                            <span class="card-text"><small>13</small></span>
+                          </a>
+
+                        </div>
+                      </div>
+
+                    </div>
+                    <!--card end-->
+
+                    <!--card-->
+                    <div class="card bg-light border-0">
+                      <!--Card header-->
+                      <div class="card-header border-0 p-0" role="tab">
+                        <h5 class="accordion-heading text-muted">
+                          <a data-toggle="collapse" aria-expanded="false" aria-controls="accordion .item-6"
+                            href="div#accordion .item-6" class="collapsed text-body">Grapic Design
+                            <span class="accordion-indicator">
+                            </span>
+                          </a>
+                        </h5>
+                      </div>
+                      <!--Card body Collapse-->
+                      <div class="collapse item-6" role="tabpanel" data-parent="#accordion">
+                        <div class="card-body py-1 pl-2 pr-0">
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">UI Design<br></span>
+                            <span class="card-text"><small>136</small></span>
+                          </a>
+
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">UX Design<br></span>
+                            <span class="card-text"><small>54</small></span>
+                          </a>
+
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">Computer Graphic<br></span>
+                            <span class="card-text"><small>89</small></span>
+                          </a>
+
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">Photoshop<br></span>
+                            <span class="card-text"><small>79</small></span>
+                          </a>
+
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">Vector Design<br></span>
+                            <span class="card-text"><small>124</small></span>
+                          </a>
+
+                        </div>
+                      </div>
+
+                    </div>
+                    <!--card end-->
+
+                    <!--card-->
+                    <div class="card bg-light border-0">
+                      <!--Card header-->
+                      <div class="card-header border-0 p-0" role="tab">
+                        <h5 class="accordion-heading text-muted">
+                          <a data-toggle="collapse" aria-expanded="false" aria-controls="accordion .item-7"
+                            href="div#accordion .item-7" class="collapsed text-body">Finance
+                            <span class="accordion-indicator">
+                            </span>
+                          </a>
+                        </h5>
+                      </div>
+                      <!--Card body Collapse-->
+                      <div class="collapse item-7" role="tabpanel" data-parent="#accordion">
+                        <div class="card-body py-1 pl-2 pr-0">
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">Accounting<br></span>
+                            <span class="card-text"><small>136</small></span>
+                          </a>
+
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">Economics<br></span>
+                            <span class="card-text"><small>54</small></span>
+                          </a>
+
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">Investing & Trading<br></span>
+                            <span class="card-text"><small>89</small></span>
+                          </a>
+
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">Forex<br></span>
+                            <span class="card-text"><small>79</small></span>
+                          </a>
+
+                          <a href="#!" class="d-flex justify-content-between text-muted mb-2">
+                            <span class="card-text">Modeling & Analysis<br></span>
+                            <span class="card-text"><small>124</small></span>
+                          </a>
+
+                        </div>
+                      </div>
+
+                    </div>
+                    <!--card end-->
+
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card Courses-->
+        <div class="col-12 col-md-12 col-lg-8 col-xl-8 col-xxl-9">
+
+          <div class="row mt-4">
+            <div class="col-12">
+              <div class="d-flex justify-content-center justify-content-sm-between align-items-center">
+                <div class="d-flex">
+                  <a href="#!" class="btn btn-icon btn-outline-light mr-2" role="button">
+                    <!-- <i class="icon-lg fe fe-grid text-light"></i> -->
+                    <i class="fe grid-icon-before text-primary-desat"></i>
+                  </a>
+
+                  <a href="#!" class="btn btn-icon btn-outline-light" role="button">
+                    <i class="icon-lg fe fe-list text-muted"></i>
+                  </a>
+                </div>
+
+                <div class="d-flex">
+                  <div class="form-inline flex-nowwrap mr-3 mr-sm-4">
+                    <label for="sort" class="text-muted text-nowrap mr-2 d-none d-sm-block">Sort by: </label>
+                    <select name="sort" id="sort" class="form-control form-control-sm">
+                      <option>A - Z Order</option>
+                      <option>Z - A Order</option>
+                      <option>Top Rating</option>
+                      <option>Best Seller</option>
+                      <option>Low - High Price</option>
+                    </select>
+                    <span class="text-muted text-nowrap ml-2 d-none d-sm-block">of 687 courses</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-start my-3">
+            <div class="col-12">
+              <div class="d-flex pb-3">
+
+                <a href="#!" class="nav-link text-muted mr-2">
+                  <i class="fe fe-chevron-left"></i>
+                </a>
+                <span class="text-muted py-2">1 / 7</span>
+
+                <a href="#!" class="nav-link text-muted ml-2">
+                  <i class="fe fe-chevron-right"></i>
+                </a>
+
+              </div>
+            </div>
+          </div>
+          <!--row-->
+          <div class="row mb-5">
+
+            <div class="col-12 col-md-6 col-xl-5 col-xxl-4">
+              <!-- Card -->
+              <div class="card mb-6 mb-lg-0 shadow-lg move move-lg">
+
+                <!-- Image -->
+                <a class="card-img-top" href="@@webRoot/course-detail.html">
+
+                  <!-- Image -->
+                  <picture>
+                    <img src="assets/img/card-photos/student-table-2x.png" alt="course-card-image" class="card-img-top">
+                  </picture>
+
+                </a>
+                <!-- Heading -->
+                <div class="bg-white shadow-small-soft mt-n7 mx-4" style="z-index: 2;">
+                  <h4 class="py-2 px-3">
+                    The Complete SQL Bootcamp 2020: Go from Zero to Hero
+                  </h4>
+                </div>
+
+                <!-- Body -->
+                <a class="card-body mt-n4" href="@@webRoot/course-detail.html">
+
+
+                  <!-- Author and Tag -->
+                  <div class="mb-2">
+                    <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start">
+                      <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                      <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                    </div>
+                  </div>
+                  <!--Author-->
+                  <div class="mb-2">
+                    <span class="text-muted">Josa Portilla</span>
+                  </div>
+                  <!-- Star -->
+                  <div class="mb-2">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-muted mr-3">4.6</span>
+                      <div class="mb-1 mr-3">
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star-half.svg")
+                        </i>
+                      </div>
+                      <span class="text-muted">(9876)</span>
+                    </div>
+                  </div>
+
+                  <!-- Pricing -->
+                  <div class="mb-4">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-muted mr-3">$19.99</span>
+                      <span class="text-gray-500"><del>$112.99</del></span>
+                    </div>
+                  </div>
+
+                </a>
+
+              </div>
+
+            </div> <!-- / col-md-4 end -->
+
+            <div class="col-12 col-md-6 col-xl-5 col-xxl-4">
+              <!-- Card -->
+              <div class="card mb-6 mb-lg-0 shadow-lg move move-lg">
+
+                <!-- Image -->
+                <a class="card-img-top" href="@@webRoot/course-detail.html">
+
+                  <!-- Image -->
+                  <picture>
+                    <img src="assets/img/card-photos/teaching-me.png" alt="course-card-image" class="card-img-top">
+                  </picture>
+
+                </a>
+                <!-- Heading -->
+                <div class="bg-white shadow-small-soft mt-n7 mx-4" style="z-index: 2;">
+                  <h4 class="py-2 px-3">
+                    Instagram Marketing 2020: Complete guide to Instagram
+                  </h4>
+                </div>
+
+                <!-- Body -->
+                <a class="card-body mt-n4" href="@@webRoot/course-detail.html">
+
+
+                  <!-- Author and Tag -->
+                  <div class="mb-2">
+                    <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start">
+                      <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                      <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                    </div>
+                  </div>
+                  <!--Author-->
+                  <div class="mb-2">
+                    <span class="text-muted">Chris Haroun</span>
+                  </div>
+                  <!-- Star -->
+                  <div class="mb-2">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-muted mr-3">4.6</span>
+                      <div class="mb-1 mr-3">
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star-half.svg")
+                        </i>
+                      </div>
+                      <span class="text-muted">(9876)</span>
+                    </div>
+                  </div>
+
+                  <!-- Pricing -->
+                  <div class="mb-4">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-muted mr-3">$19.99</span>
+                      <span class="text-gray-500"><del>$112.99</del></span>
+                    </div>
+                  </div>
+
+                </a>
+
+              </div>
+
+            </div> <!-- / col-md-4 end -->
+
+            <div class="col-12 col-md-6 col-xl-5 col-xxl-4 mt-5 mt-xxl-0">
+              <!-- Card -->
+              <div class="card mb-6 mb-lg-0 shadow-lg move move-lg">
+
+                <!-- Image -->
+                <a class="card-img-top" href="@@webRoot/course-detail.html">
+
+                  <!-- Image -->
+                  <picture>
+                    <img src="assets/img/card-photos/report-finacial.png" alt="course-card-image" class="card-img-top">
+                  </picture>
+
+                </a>
+                <!-- Heading -->
+                <div class="bg-white shadow-small-soft mt-n7 mx-4" style="z-index: 2;">
+                  <h4 class="py-2 px-3">
+                    The Complete Financial Analyst and Execute Course 2020
+                  </h4>
+                </div>
+
+                <!-- Body -->
+                <a class="card-body mt-n4" href="@@webRoot/course-detail.html">
+
+
+                  <!-- Author and Tag -->
+                  <div class="mb-2">
+                    <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start">
+                      <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                      <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                    </div>
+                  </div>
+                  <!--Author-->
+                  <div class="mb-2">
+                    <span class="text-muted">Josa Portilla</span>
+                  </div>
+                  <!-- Star -->
+                  <div class="mb-2">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-muted mr-3">4.6</span>
+                      <div class="mb-1 mr-3">
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star-half.svg")
+                        </i>
+                      </div>
+                      <span class="text-muted">(9876)</span>
+                    </div>
+                  </div>
+
+                  <!-- Pricing -->
+                  <div class="mb-4">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-muted mr-3">$19.99</span>
+                      <span class="text-gray-500"><del>$112.99</del></span>
+                    </div>
+                  </div>
+
+                </a>
+
+              </div>
+
+            </div> <!-- / col-md-4 end -->
+            <div class="col-12 col-md-6 col-xl-5 col-xxl-4 mt-5 mt-xxl-0 d-block d-xxl-none">
+              <!-- Card -->
+              <div class="card mb-6 mb-lg-0 shadow-lg move move-lg">
+
+                <!-- Image -->
+                <a class="card-img-top" href="@@webRoot/course-detail.html">
+
+                  <!-- Image -->
+                  <picture>
+                    <img src="assets/img/card-photos/report-finacial.png" alt="course-card-image" class="card-img-top">
+                  </picture>
+
+                </a>
+                <!-- Heading -->
+                <div class="bg-white shadow-small-soft mt-n7 mx-4" style="z-index: 2;">
+                  <h4 class="py-2 px-3">
+                    The Complete SQL Bootcamp 2020: Go from Zero to Hero
+                  </h4>
+                </div>
+
+                <!-- Body -->
+                <a class="card-body mt-n4" href="@@webRoot/course-detail.html">
+
+                  <!-- Author and Tag -->
+                  <div class="mb-2">
+                    <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start">
+                      <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                      <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                    </div>
+                  </div>
+                  <!--Author-->
+                  <div class="mb-2">
+                    <span class="text-muted">Isaac Rudansky</span>
+                  </div>
+                  <!-- Star -->
+                  <div class="mb-2">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-muted mr-3">4.6</span>
+                      <div class="mb-1 mr-3">
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star-half.svg")
+                        </i>
+                      </div>
+                      <span class="text-muted">(9876)</span>
+                    </div>
+                  </div>
+
+                  <!-- Pricing -->
+                  <div class="mb-4">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-muted mr-3">$19.99</span>
+                      <span class="text-gray-500"><del>$112.99</del></span>
+                    </div>
+                  </div>
+
+                </a>
+
+              </div>
+
+            </div> <!-- / col-md-4 end -->
+          </div>
+          <!--row end-->
+
+          <!--row-->
+          <div class="row mb-5">
+
+            <div class="col-12 col-md-6 col-xl-5 col-xxl-4">
+              <!-- Card -->
+              <div class="card mb-6 mb-lg-0 shadow-lg move move-lg">
+
+                <!-- Image -->
+                <a class="card-img-top" href="@@webRoot/course-detail.html">
+
+                  <!-- Image -->
+                  <picture>
+                    <img src="assets/img/card-photos/handsome-businessmen.png" alt="course-card-image"
+                      class="card-img-top">
+                  </picture>
+
+                </a>
+                <!-- Heading -->
+                <div class="bg-white shadow-small-soft mt-n7 mx-4" style="z-index: 2;">
+                  <h4 class="py-2 px-3">
+                    Microsoft Power BI - A Complete introduction 2020 new edition
+                  </h4>
+                </div>
+
+                <!-- Body -->
+                <a class="card-body mt-n4" href="@@webRoot/course-detail.html">
+
+                  <!-- Author and Tag -->
+                  <div class="mb-2">
+                    <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start">
+                      <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                      <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                    </div>
+                  </div>
+                  <!--Author-->
+                  <div class="mb-2">
+                    <span class="text-muted">Robert Daragh</span>
+                  </div>
+                  <!-- Star -->
+                  <div class="mb-2">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-muted mr-3">4.6</span>
+                      <div class="mb-1 mr-3">
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star-half.svg")
+                        </i>
+                      </div>
+                      <span class="text-muted">(9876)</span>
+                    </div>
+                  </div>
+
+                  <!-- Pricing -->
+                  <div class="mb-4">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-muted mr-3">$19.99</span>
+                      <span class="text-gray-500"><del>$112.99</del></span>
+                    </div>
+                  </div>
+
+                </a>
+
+              </div>
+
+            </div> <!-- / col-md-4 end -->
+
+            <div class="col-12 col-md-6 col-xl-5 col-xxl-4">
+              <!-- Card -->
+              <div class="card mb-6 mb-lg-0 shadow-lg move move-lg">
+
+                <!-- Image -->
+                <a class="card-img-top" href="@@webRoot/course-detail.html">
+
+                  <!-- Image -->
+                  <picture>
+                    <img src="assets/img/card-photos/people-talking.png" alt="course-card-image" class="card-img-top">
+                  </picture>
+
+                </a>
+                <!-- Heading -->
+                <div class="bg-white shadow-small-soft mt-n7 mx-4" style="z-index: 2;">
+                  <h4 class="py-2 px-3">
+                    Cisco CCNP Networking Router and Switching configuration guide
+                  </h4>
+                </div>
+
+                <!-- Body -->
+                <a class="card-body mt-n4" href="@@webRoot/course-detail.html">
+
+
+                  <!-- Author and Tag -->
+                  <div class="mb-2">
+                    <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start">
+                      <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                      <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                    </div>
+                  </div>
+                  <!--Author-->
+                  <div class="mb-2">
+                    <span class="text-muted">Peter Morrow</span>
+                  </div>
+                  <!-- Star -->
+                  <div class="mb-2">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-muted mr-3">4.6</span>
+                      <div class="mb-1 mr-3">
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star-half.svg")
+                        </i>
+                      </div>
+                      <span class="text-muted">(9876)</span>
+                    </div>
+                  </div>
+
+                  <!-- Pricing -->
+                  <div class="mb-4">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-muted mr-3">$19.99</span>
+                      <span class="text-gray-500"><del>$112.99</del></span>
+                    </div>
+                  </div>
+
+                </a>
+
+              </div>
+
+            </div> <!-- / col-md-4 end -->
+
+            <div class="col-12 col-md-6 col-xl-5 col-xxl-4 mt-5 mt-xxl-0">
+              <!-- Card -->
+              <div class="card mb-6 mb-lg-0 shadow-lg move move-lg">
+
+                <!-- Image -->
+                <a class="card-img-top" href="@@webRoot/course-detail.html">
+
+                  <!-- Image -->
+                  <picture>
+                    <img src="assets/img/card-photos/programming-work.png" alt="course-card-image" class="card-img-top">
+                  </picture>
+
+                </a>
+                <!-- Heading -->
+                <div class="bg-white shadow-small-soft mt-n7 mx-4" style="z-index: 2;">
+                  <h4 class="py-2 px-3">
+                    MERN: Node.js and React.js full stack development ecommerse site
+                  </h4>
+                </div>
+
+                <!-- Body -->
+                <a class="card-body mt-n4" href="@@webRoot/course-detail.html">
+
+
+                  <!-- Author and Tag -->
+                  <div class="mb-2">
+                    <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start">
+                      <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                      <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                    </div>
+                  </div>
+                  <!--Author-->
+                  <div class="mb-2">
+                    <span class="text-muted">Julie Robert</span>
+                  </div>
+                  <!-- Star -->
+                  <div class="mb-2">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-muted mr-3">4.6</span>
+                      <div class="mb-1 mr-3">
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star-half.svg")
+                        </i>
+                      </div>
+                      <span class="text-muted">(9876)</span>
+                    </div>
+                  </div>
+
+                  <!-- Pricing -->
+                  <div class="mb-4">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-muted mr-3">$19.99</span>
+                      <span class="text-gray-500"><del>$112.99</del></span>
+                    </div>
+                  </div>
+
+                </a>
+
+              </div>
+
+            </div> <!-- / col-md-4 end -->
+            <div class="col-12 col-md-6 col-xl-5 col-xxl-4 mt-5 mt-xxl-0 d-block d-xxl-none">
+              <!-- Card -->
+              <div class="card mb-6 mb-lg-0 shadow-lg move move-lg">
+
+                <!-- Image -->
+                <a class="card-img-top" href="@@webRoot/course-detail.html">
+
+                  <!-- Image -->
+                  <picture>
+                    <source media="(min-width:992px)" srcset="assets/img/card-photos/student-table-2x.png">
+                    <img src="assets/img/card-photos/student-table-1x.png" alt="course-card-image" class="card-img-top">
+                  </picture>
+
+                </a>
+                <!-- Heading -->
+                <div class="bg-white shadow-small-soft mt-n7 mx-4" style="z-index: 2;">
+                  <h4 class="py-2 px-3">
+                    The Complete SQL Bootcamp 2020: Go from Zero to Hero
+                  </h4>
+                </div>
+
+                <!-- Body -->
+                <a class="card-body mt-n4" href="@@webRoot/course-detail.html">
+
+
+                  <!-- Author and Tag -->
+                  <div class="mb-2">
+                    <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start">
+                      <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                      <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                    </div>
+                  </div>
+                  <!--Author-->
+                  <div class="mb-2">
+                    <span class="text-muted">Josa Portilla</span>
+                  </div>
+                  <!-- Star -->
+                  <div class="mb-2">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-muted mr-3">4.6</span>
+                      <div class="mb-1 mr-3">
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star.svg")
+                        </i>
+                        <i>
+                          @@include("assets/img/svg-icons/star-half.svg")
+                        </i>
+                      </div>
+                      <span class="text-muted">(9876)</span>
+                    </div>
+                  </div>
+
+                  <!-- Pricing -->
+                  <div class="mb-4">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-muted mr-3">$19.99</span>
+                      <span class="text-gray-500"><del>$112.99</del></span>
+                    </div>
+                  </div>
+
+                </a>
+
+              </div>
+
+            </div> <!-- / col-md-4 end -->
+          </div>
+          <!--row end-->
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </main>
+
+  <!-- FOOTER
+    ================================================== -->
+  @@include("partials/footer.html", {
+  "classList": "bg-gray-100"
+  })
+
+
+  <!-- JAVASCRIPT
+    ================================================== -->
+  @@include("partials/scripts.html")
+</body>
+
+</html>

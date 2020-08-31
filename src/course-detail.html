@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  @@include("partials/head.html", {
+  "pageTitle": "Cursos"
+  })
+</head>
+
+<body>
+  <!-- MODALS
+  ================================================== -->
+  @@include("partials/modals.html")
+
+  <!-- Top navbar ==================== -->
+  @@include("partials/top-navbar.html", {
+  "container": "container-fluid"
+  })
+
+  <!-- Main navbar ==================== -->
+  @@include("partials/navbar.html", {
+  "classList": "navbar-light bg-white",
+  "container": "container-fluid"
+  })
+
+  <main class="bg-cover bg-danger">
+    <!-- Welcome Heading ==================== -->
+    <section class="py-2">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12 col-md-10">
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item text-muted"><a href="@@webRoot/course-middle.html"
+                    class="text-light">Courses</a></li>
+                <li class="breadcrumb-item text-light" aria-current="page">Detail</li>
+              </ol>
+            </nav>
+            <!-- Main title -->
+            <h3 class="text-capitalize text-light font-second pt-7">Email Etiquette: Write more effective emails at work
+            </h3>
+            <!-- Description -->
+            <p class="text-light w-lg-50">How to write emails that get results. How to write emails that build better
+              working relationships.</p>
+            <!-- Star -->
+            <div class="mb-2">
+              <div class="d-flex align-items-end justify-content-start">
+                <span class="text-light mr-3">4.6</span>
+                <div class="mb-1 mr-3">
+                  <i>
+                    @@include("assets/img/svg-icons/star-white/star-full-light.svg")
+                  </i>
+                  <i>
+                    @@include("assets/img/svg-icons/star-white/star-full-light.svg")
+                  </i>
+                  <i>
+                    @@include("assets/img/svg-icons/star-white/star-full-light.svg")
+                  </i>
+                  <i>
+                    @@include("assets/img/svg-icons/star-white/star-full-light.svg")
+                  </i>
+                  <i>
+                    @@include("assets/img/svg-icons/star-white/star-half-light.svg")
+                  </i>
+                </div>
+                <span class="text-light">(9876)</span>
+              </div>
+            </div>
+            <!--Author-->
+            <div class="d-flex justify-content-start flex-wrap pb-10">
+              <a href="@@webRoot/teacher-detail.html" class="text-light mr-7 text-nowrap text-decoration-none">Created
+                by Jane Anderson</a>
+              <span class="text-light text-nowrap">Created 6/2020</span>
+            </div>
+          </div>
+        </div> <!-- / .row -->
+
+      </div> <!-- / .container -->
+    </section>
+  </main>
+  <!--Course detail ==================== -->
+  <section class="mt-n9">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-12 col-xl-10">
+          <div class="card mb-3 shadow-small-soft">
+            <div class="row no-gutters">
+              <div class="col-12 col-md-12 col-lg-4">
+                <!--Video content-->
+                <div class="embed-responsive embed-responsive-1by1 rounded rounded-bottom-right-0 rounded-top-right-0">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                </div>
+              </div>
+              <div class="col-12 col-md-12 col-lg-8">
+                <div class="card-body p-3 p-md-6">
+                  <div class="row align-items-center justify-content-center">
+                    <!-- Advantages -->
+                    <div class="col-12 col-md-6">
+                      <span class="main-heading">This course includes</span>
+                      <div class="d-flex align-items-center mt-3 mt-xl-5">
+                        <span class="badge badge-rounded-circle badge-primary-desat-soft">
+                          <i class="fe fe-check"></i>
+                        </span>
+                        <span class="text-muted pl-3">36 hour on-demand video</span>
+                      </div>
+
+                      <div class="d-flex align-items-center mt-4">
+                        <span class="badge badge-rounded-circle badge-primary-desat-soft">
+                          <i class="fe fe-check"></i>
+                        </span>
+                        <span class="text-muted pl-3">36 articles</span>
+                      </div>
+
+                      <div class="d-flex align-items-center mt-4">
+                        <span class="badge badge-rounded-circle badge-primary-desat-soft">
+                          <i class="fe fe-check"></i>
+                        </span>
+                        <span class="text-muted pl-3">Can be download</span>
+                      </div>
+
+                      <div class="d-flex align-items-center mt-4">
+                        <span class="badge badge-rounded-circle badge-primary-desat-soft">
+                          <i class="fe fe-check"></i>
+                        </span>
+                        <span class="text-muted pl-3 text-nowrap">Lifetime Access & Responsive</span>
+                      </div>
+
+                      <div class="d-flex align-items-center mt-4">
+                        <span class="badge badge-rounded-circle badge-primary-desat-soft">
+                          <i class="fe fe-check"></i>
+                        </span>
+                        <span class="text-muted pl-3">Test and Assignments</span>
+                      </div>
+
+                    </div>
+
+                    <div class="col-12 col-md-6 text-md-right mt-4 mt-md-0">
+
+                      <span class="p-2 border border-primary-desat text-primary-desat mt-5 text-nowrap">30-Day
+                        Money-Back Guarantee</span>
+                      <!-- Pricing -->
+                      <div class="mt-5">
+                        <div class="d-flex align-items-center justify-content-md-end">
+                          <h3 class="main-heading mr-3">$19.99</h3>
+                          <h4 class="text-muted"><del>$112.99</del></h4>
+                        </div>
+                      </div>
+
+                      <div class="mt-4">
+                        <a href="@@webRoot/checkout.html"
+                          class="text-capitalize btn btn-danger btn-sm shadow-small-simple move">Go to cart</a>
+                      </div>
+
+                      <div class="mt-4">
+                        <a href="@@webRoot/thankyou.html"
+                          class="text-capitalize btn btn-primary-desat btn-sm shadow-small-simple move">&nbsp;Buy
+                          now&nbsp;</a>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div><!-- / .card -->
+              </div>
+            </div>
+          </div>
+        </div><!-- / .col -->
+      </div><!-- / .row -->
+
+      <!-- What you learn -->
+      <div class="row justify-content-center align-content-center mt-6">
+        <div class="col-12 col-md-10">
+          <div class="mb-5">
+            <h3 class="main-heading">What you'll learn this course</h3>
+            <ul>
+              <li class="h4">Write punchier, more powerful emails every time</li>
+              <li class="h4">Never write an emrassing or ineffective email ever again</li>
+              <li class="h4">Contribute to a positive workplace culture through email</li>
+              <li class="h4">Avoid accusations of bullying, back-covering and discrimination in your emails</li>
+              <li class="h4">Save time and elimainate stress when writing your next email</li>
+            </ul>
+          </div>
+          <!-- Requirement -->
+          <div class="mb-4">
+            <h3 class="main-heading">Requirement</h3>
+            <ul>
+              <li class="h4">You should be using email most days as part of your work</li>
+              <li class="h4">Basic computer science knowledge and skills</li>
+            </ul>
+          </div>
+          <!-- Description -->
+          <div class="mb-4">
+            <h3 class="main-heading">Description</h3>
+            <p class="h4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+              alteration in some form, by injected humour, or randomised words which don't look even slightly
+              believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+              embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat
+              predefined chunks as necessary, making this the first true generator on the Internet.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!--Course list ==================== -->
+      <div class="row justify-content-center align-content-center mt-6">
+        <div class="col-12 col-md-10">
+          <!-- Card -->
+          <div class="card accordion" id="courseDetail">
+            <div class="card-body p-0">
+              <a class="d-flex flex-wrap justify-content-between mt-6 p-5 border border-gray-300 rounded text-reset text-decoration-none"
+                data-toggle="collapse" href="#detailOne" role="button" aria-expanded="true" aria-controls="detailOne">
+
+                <span class="main-heading mb-3 mb-md-0">Chapter One: Lesson 12&nbsp;</span>
+                <span class="main-heading">6 lectures</span>
+                <span class="main-heading">35:16</span>
+                <!-- Chevron -->
+                <span class="collapse-chevron text-muted ml-4">
+                  <i class="fe fe-lg fe-chevron-down"></i>
+                </span>
+              </a>
+
+              <!-- Collapse -->
+              <div class="collapse show" id="detailOne" data-parent="#courseDetail">
+                <div class="pl-5">
+                  <div class="d-flex justify-content-between p-4">
+                    <span class="text-muted">Lesson 51</span>
+                    <span class="collapse-chevron text-muted ml-4">
+                      <i class="fe fe-lg fe-lock"></i>
+                    </span>
+                    <span class="text-muted">6:03</span>
+                  </div>
+
+                  <div class="d-flex justify-content-between p-4">
+                    <span class="text-muted">Lesson 52</span>
+                    <span class="collapse-chevron text-muted ml-4">
+                      <i class="fe fe-lg fe-lock"></i>
+                    </span>
+                    <span class="text-muted">6:10</span>
+                  </div>
+
+                  <div class="d-flex justify-content-between p-4">
+                    <span class="text-muted">Lesson 53</span>
+                    <span class="collapse-chevron text-muted ml-4">
+                      <i class="fe fe-lg fe-lock"></i>
+                    </span>
+                    <span class="text-muted">4:56</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <a class="d-flex flex-wrap justify-content-between mt-3 p-5 border border-gray-300 rounded text-reset text-decoration-none"
+                data-toggle="collapse" href="#detailTwo" role="button" aria-expanded="false" aria-controls="detailTwo">
+
+                <span class="main-heading mb-3 mb-md-0">Chapter Two: Lesson 7&nbsp;</span>
+                <span class="main-heading">6 lectures</span>
+                <span class="main-heading">35:16</span>
+                <!-- Chevron -->
+                <span class="collapse-chevron text-muted ml-4">
+                  <i class="fe fe-lg fe-chevron-down"></i>
+                </span>
+              </a>
+
+              <!-- Collapse -->
+              <div class="collapse" id="detailTwo" data-parent="#courseDetail">
+                <div class="pl-5">
+                  <div class="d-flex justify-content-between p-4">
+                    <span class="text-muted">Lesson 51</span>
+                    <span class="collapse-chevron text-muted ml-4">
+                      <i class="fe fe-lg fe-lock"></i>
+                    </span>
+                    <span class="text-muted">6:03</span>
+                  </div>
+
+                  <div class="d-flex justify-content-between p-4">
+                    <span class="text-muted">Lesson 52</span>
+                    <span class="collapse-chevron text-muted ml-4">
+                      <i class="fe fe-lg fe-lock"></i>
+                    </span>
+                    <span class="text-muted">6:10</span>
+                  </div>
+
+                  <div class="d-flex justify-content-between p-4">
+                    <span class="text-muted">Lesson 53</span>
+                    <span class="collapse-chevron text-muted ml-4">
+                      <i class="fe fe-lg fe-lock"></i>
+                    </span>
+                    <span class="text-muted">4:56</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <a class="d-flex flex-wrap justify-content-between mt-3 p-5 border border-gray-300 rounded text-reset text-decoration-none"
+                data-toggle="collapse" href="#detailThree" role="button" aria-expanded="false"
+                aria-controls="detailThree">
+
+                <span class="main-heading mb-3 mb-md-0">Chapter Three: Lesson 13&nbsp;</span>
+                <span class="main-heading">12 lectures</span>
+                <span class="main-heading">35:16</span>
+                <!-- Chevron -->
+                <span class="collapse-chevron text-muted ml-4">
+                  <i class="fe fe-lg fe-chevron-down"></i>
+                </span>
+              </a>
+
+              <!-- Collapse -->
+              <div class="collapse" id="detailThree" data-parent="#courseDetail">
+                <div class="pl-5">
+                  <div class="d-flex justify-content-between p-4">
+                    <span class="text-muted">Lesson 51</span>
+                    <span class="collapse-chevron text-muted ml-4">
+                      <i class="fe fe-lg fe-lock"></i>
+                    </span>
+                    <span class="text-muted">6:03</span>
+                  </div>
+
+                  <div class="d-flex justify-content-between p-4">
+                    <span class="text-muted">Lesson 52</span>
+                    <span class="collapse-chevron text-muted ml-4">
+                      <i class="fe fe-lg fe-lock"></i>
+                    </span>
+                    <span class="text-muted">6:16</span>
+                  </div>
+
+                  <div class="d-flex justify-content-between p-4">
+                    <span class="text-muted">Lesson 53</span>
+                    <span class="collapse-chevron text-muted ml-4">
+                      <i class="fe fe-lg fe-lock"></i>
+                    </span>
+                    <span class="text-muted">4:56</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <a class="d-flex flex-wrap justify-content-between mt-3 p-5 border border-gray-300 rounded text-reset text-decoration-none"
+                data-toggle="collapse" href="#detailFour" role="button" aria-expanded="false"
+                aria-controls="detailFour">
+
+                <span class="main-heading mb-3 mb-md-0">Chapter Four: Lesson 26&nbsp;</span>
+                <span class="main-heading">4 lectures</span>
+                <span class="main-heading">35:16</span>
+                <!-- Chevron -->
+                <span class="collapse-chevron text-muted ml-4">
+                  <i class="fe fe-lg fe-chevron-down"></i>
+                </span>
+              </a>
+
+              <!-- Collapse -->
+              <div class="collapse" id="detailFour" data-parent="#courseDetail">
+                <div class="pl-5">
+                  <div class="d-flex justify-content-between p-4">
+                    <span class="text-muted">Lesson 51</span>
+                    <span class="collapse-chevron text-muted ml-4">
+                      <i class="fe fe-lg fe-lock"></i>
+                    </span>
+                    <span class="text-muted">6:03</span>
+                  </div>
+
+                  <div class="d-flex justify-content-between p-4">
+                    <span class="text-muted">Lesson 52</span>
+                    <span class="collapse-chevron text-muted ml-4">
+                      <i class="fe fe-lg fe-lock"></i>
+                    </span>
+                    <span class="text-muted">6:10</span>
+                  </div>
+
+                  <div class="d-flex justify-content-between p-4">
+                    <span class="text-muted">Lesson 53</span>
+                    <span class="collapse-chevron text-muted ml-4">
+                      <i class="fe fe-lg fe-lock"></i>
+                    </span>
+                    <span class="text-muted">4:56</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <a class="d-flex flex-wrap justify-content-between mt-3 p-5 border border-gray-300 rounded text-reset text-decoration-none"
+                data-toggle="collapse" href="#detailFive" role="button" aria-expanded="false"
+                aria-controls="detailFive">
+
+                <span class="main-heading mb-3 mb-md-0">Chapter five: Lesson 31&nbsp;</span>
+                <span class="main-heading">8 lectures</span>
+                <span class="main-heading">35:16</span>
+                <!-- Chevron -->
+                <span class="collapse-chevron text-muted ml-4">
+                  <i class="fe fe-lg fe-chevron-down"></i>
+                </span>
+              </a>
+
+              <!-- Collapse -->
+              <div class="collapse" id="detailFive" data-parent="#courseDetail">
+                <div class="pl-5">
+                  <div class="d-flex justify-content-between p-4">
+                    <span class="text-muted">Lesson 51</span>
+                    <span class="collapse-chevron text-muted ml-4">
+                      <i class="fe fe-lg fe-lock"></i>
+                    </span>
+                    <span class="text-muted">6:03</span>
+                  </div>
+
+                  <div class="d-flex justify-content-between p-4">
+                    <span class="text-muted">Lesson 52</span>
+                    <span class="collapse-chevron text-muted ml-4">
+                      <i class="fe fe-lg fe-lock"></i>
+                    </span>
+                    <span class="text-muted">6:10</span>
+                  </div>
+
+                  <div class="d-flex justify-content-between p-4">
+                    <span class="text-muted">Lesson 53</span>
+                    <span class="collapse-chevron text-muted ml-4">
+                      <i class="fe fe-lg fe-lock"></i>
+                    </span>
+                    <span class="text-muted">4:56</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- col end -->
+      </div>
+      <!--course row end-->
+    </div>
+
+    <!--Course instructor info ==================== -->
+    <div class="container mt-8">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-12 col-xl-4 mb-5 mb-lg-0">
+              <!--Teacher card -->
+              <div class="card mx-auto ml-md-0" style="width: 18rem;">
+                <img src="assets/img/avatar/avatar-1.jpeg" class="card-img-top" alt="...">
+                <div class="position-absolute bottom-0 bg-danger w-100 py-4">
+                  <!--Social icons -->
+                  <div class="d-flex justify-content-around">
+                    <a href="#!" class="text-decoration-none"><i class="fe fe-facebook text-light"></i></a>
+                    <a href="#!" class="text-decoration-none"><i class="fe fe-twitter text-light"></i></a>
+                    <a href="#!" class="text-decoration-none"><i class="fe fe-youtube text-light"></i></a>
+                    <a href="#!" class="text-decoration-none"><i class="fe fe-instagram text-light"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-12 col-xl-8">
+              <div class="d-flex flex-column">
+                <!-- Teacher name -->
+                <h1 class="display-4">Jane Casey</h1>
+                <!-- Teacher topic -->
+                <a href="$!" class="text-decoration-none"><small class="text-primary-desat">Lifestyle & Cook</small></a>
+                <!-- Star -->
+                <div class="d-flex flex-wrap align-items-center justify-content-between my-3">
+                  <div class="mb-1 mr-3">
+                    <i>
+                      @@include("assets/img/svg-icons/star.svg")
+                    </i>
+                    <i>
+                      @@include("assets/img/svg-icons/star.svg")
+                    </i>
+                    <i>
+                      @@include("assets/img/svg-icons/star.svg")
+                    </i>
+                    <i>
+                      @@include("assets/img/svg-icons/star.svg")
+                    </i>
+                    <i>
+                      @@include("assets/img/svg-icons/star.svg")
+                    </i>
+                  </div>
+                  <span class="text-primary-desat text-capitalize text-nowrap mt-3 mt-md-0">Enrolled Students
+                    (18756)</span>
+                </div>
+                <span class="h4 main-heading">Jaseandtest@gmail.com</span>
+                <!-- Cover -->
+                <span class="h4 text-muted mt-3 text-capitalize">My Cover History</span>
+                <p class="text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor rutrum erat. Lorem ipsum
+                  dolor sit amet, consectetur adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur porttitor rutrum erat. Lorem ipsum dolor sit amet, consectetur adipiscing.
+                </p>
+                <!-- Teacher comment -->
+                <span class="h4 text-muted mt-3 text-capitalize">My Comment</span>
+                <p class="text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor rutrum erat. Lorem ipsum
+                  dolor sit amet, consectetur adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur porttitor rutrum erat. Lorem ipsum dolor sit amet, consectetur adipiscing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Student comments -->
+      <div class="row justify-content-center py-6 py-md-8">
+        <div class="col-12 col-md-10">
+          <h3 class="main-heading">Comments</h3>
+          <div class="row no-gutters mt-7">
+
+            <div class="col-12 col-md-5 col-xl-3">
+              <div class="media">
+                <img src="assets/img/avatar/user-5.png" class="rounded-circle mr-3" alt="avatar-comment">
+                <div class="media-body">
+                  <h4 class="mt-0">Andrew Bocelli</h4>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="mb-4 mr-3">
+                      <i>
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i>
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i>
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i>
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i>
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                    </div>
+                  </div>
+                  <span class="text-muted">16 june 2020</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-7 col-xl-9">
+              <p class="text-muted">
+                learning how to write an email in a proper way, and how important spell correctly and also to address
+                the wright person who you sending the email to and another important information is make sure you write
+                clearly so the receipt can understand what the email about.
+              </p>
+            </div>
+          </div>
+          <!--row end-->
+          <!-- Student comments -->
+          <div class="row no-gutters mt-7">
+            <div class="col-12 col-md-5 col-xl-3">
+              <div class="media">
+                <img src="assets/img/avatar/user-2.png" class="rounded-circle mr-3 img-fluid" alt="avatar-comment">
+                <div class="media-body">
+                  <h4 class="mt-0">Sarah Peter</h4>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="mb-4 mr-3">
+                      <i>
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i>
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i>
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i>
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i>
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                    </div>
+                  </div>
+                  <span class="text-muted">16 june 2020</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-7 col-xl-9">
+              <p class="text-muted">
+                learning how to write an email in a proper way, and how important spell correctly and also to address
+                the wright person who you sending the email to and another important information is make sure you write
+                clearly so the receipt can understand what the email about.
+              </p>
+            </div>
+          </div>
+          <!--row end-->
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER
+    ================================================== -->
+  @@include("partials/footer.html", {
+  "classList": "bg-gray-100"
+  })
+
+
+  <!-- JAVASCRIPT
+    ================================================== -->
+  @@include("partials/scripts.html")
+</body>
+
+</html>
+z

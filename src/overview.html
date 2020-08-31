@@ -1,0 +1,1511 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    @@include("partials/head.html", {
+    "pageTitle": "Cursos"
+    })
+</head>
+
+<body>
+    <!-- MODALS
+  ================================================== -->
+    @@include("partials/modals.html")
+
+    <!-- Top Nav
+    ================================================== -->
+    @@include("partials/top-navbar.html", {
+    "container": "container-fluid"
+    })
+
+    <!-- Main Navbar
+    ================================================== -->
+    @@include("partials/navbar.html", {
+    "classList": "navbar-light bg-white",
+    "container": "container-fluid"
+    })
+
+    <!-- WELCOME HEADING
+    ================================================== -->
+    <section class="py-4 py-md-8 py-xxl-9">
+        <div class="container-fluid">
+            <div class="row align-items-center mx-xl-9 mx-xxl-13">
+                <div class="col-12 col-md-5 col-lg-6 order-md-2">
+                    <!-- Image -->
+                    <figure data-aos="fade-up" data-aos-delay="100">
+                        <picture>
+                            <source media="(min-width:1400px)" srcset="assets/img/svg-link-photos/Landing-pages@3x.png">
+                            <source media="(min-width:992px)" srcset="assets/img/svg-link-photos/Landing-pages@2x.png">
+                            <img src="assets/img/svg-link-photos/Landing-pages.png" alt="Main-photo" class="img-fluid">
+                        </picture>
+                    </figure>
+                </div>
+                <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-down" data-aos-delay="100">
+
+                    <!-- Logo -->
+                    <div class="text-center text-md-left mb-2">
+                        <img src="assets/img/svg-link-photos/student-hat.svg" class="img-fluid" alt="student-hat">
+                    </div>
+
+                    <!-- Heading -->
+                    <h1 class="display-3 text-center text-md-left">
+                        Best instructors and Online Courses
+                    </h1>
+
+                    <!-- Text -->
+                    <p class="lead text-center text-muted text-md-left mb-6 mb-lg-8">
+                        Anywhere, Anytime, Lifetime access, Enjoy risk-free with our 30-day money-back guarentee.
+                    </p>
+
+                    <!-- Buttons -->
+                    <div class="text-center text-md-left">
+                        <a href="@@webRoot/register-illustration.html"
+                            class="btn btn-primary-desat btn-pill shadow move mr-1 text-uppercase">
+                            Enroll Now
+                        </a>
+                        <!-- Play button -->
+                        <button class="btn btn-outline-primary-desat btn-lg btn-rounded-circle video-btn"
+                            data-toggle="modal" data-src="https://player.vimeo.com/video/58385453?badge=0"
+                            data-target="#myModal">
+                            <i class="fe fe-play"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </section>
+
+
+    <!-- BRANDS
+    ================================================== -->
+    <figure class="pt-6 border-top border-gray-300">
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-center mx-xl-9 mx-xxl-13 text-center">
+                <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+                    <!-- Brand -->
+                    <img src="assets/img/brands/svg/Lenovo-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+                    <!-- Brand -->
+                    <img src="assets/img/brands/svg/verizon-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+                    <!-- Brand -->
+                    <img src="assets/img/brands/svg/dribbble-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+                    <!-- Brand -->
+                    <img src="assets/img/brands/svg/behance-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+                    <!-- Brand -->
+                    <img src="assets/img/brands/svg/laravel-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+                    <!-- Brand -->
+                    <img src="assets/img/brands/svg/jquery-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </figure>
+
+    <!-- Modern Advantage
+    ================================================== -->
+    <section class="py-6 py-md-11">
+        <div class="container">
+            <div class="row justify-content-between">
+
+                <div class="col-sm-12 col-lg-4 px-2 px-lg-3 mb-3 mb-lg-0" data-aos="fade-right" data-aos-delay="100">
+                    <div class="card bg-danger shadow-small-soft move">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <img src="assets/img/card-photos/browser-content.png" class="img-fluid mb-3" alt="">
+                            </div>
+                            <h4 class="text-light">Responsive Design</h4>
+                            <p class="text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor
+                                doloremque ea illum tenetur impedit nobis </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-4 px-2 px-lg-3 mb-3 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card bg-light opacity-30 shadow-small-soft move">
+
+                        <div class="card-body">
+                            <div class="text-center">
+                                <img src="assets/img/card-photos/Elements.png" class="img-fluid mb-4" alt="">
+                            </div>
+                            <h4 class="text-muted">Clean, Modern Design</h4>
+                            <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor
+                                doloremque ea illum tenetur nobis!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-4 px-2 px-lg-3 mb-3 mb-lg-0" data-aos="fade-left" data-aos-delay="100">
+                    <div class="card bg-primary-desat shadow-small-soft move">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <img src="assets/img/card-photos/browser-layer.png" class="img-fluid mb-3" alt="">
+                            </div>
+                            <h4 class="text-light">Well-considered design</h4>
+                            <p class="text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor
+                                doloremque ea illum tenetur impedit nobis!</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Advantage
+    ================================================== -->
+    <section class="py-6 py-md-11 bg-saaral">
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+                    <!-- Heading -->
+                    <h3 class="main-heading">Landing Pages</h3>
+
+                    <!-- Text -->
+                    <p class="font-size-lg text-muted mb-6 mb-md-8">
+                        From rich starting points to simple single pagers, anything is possible.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="index.html">
+                        <picture>
+                            <img src="assets/img/background/screenshot/basic.png" class="card-img-top " alt="...">
+                        </picture>
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Basic Landing
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="success-landing.html">
+                        <img src="assets/img/background/screenshot/success-landing.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Success Landing
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class=" card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="index.html">
+                        <img src="assets/img/background/screenshot/little-course.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Little Course Landing
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Landing page
+    ================================================== -->
+    <section class="py-6 py-md-8 bg-saaral">
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+                    <!-- Heading -->
+                    <h3 class="main-heading">Company pages</h3>
+
+                    <!-- Text -->
+                    <p class="font-size-lg text-muted mb-6 mb-md-8">
+                        From rich starting points to simple single pagers, anything is possible.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="about.html">
+                        <img src="assets/img/background/screenshot/about.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                About Page
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="contact.html">
+                        <img src="assets/img/background/screenshot/contact.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Contact Us Page
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="teachers.html">
+                        <img src="assets/img/background/screenshot/teachers.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Teachers and Instructors Page
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="teacher-detail.html">
+                        <img src="assets/img/background/screenshot/teacher-detail.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Teacher Detail Page
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Courses
+    ================================================== -->
+    <section class="py-6 py-md-8 bg-saaral">
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+                    <!-- Heading -->
+                    <h3 class="main-heading">Online Course Pages</h3>
+
+                    <!-- Text -->
+                    <p class="font-size-lg text-muted mb-6 mb-md-8">
+                        From rich starting points to simple single pagers, anything is possible.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="course-horizontal.html">
+                        <img src="assets/img/background/screenshot/course-horizontal.png" class="card-img-top"
+                            alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Course Horizontal Page
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="course-detail.html">
+                        <img src="assets/img/background/screenshot/course-detail.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Course Detail Page
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="course-horizontal.html">
+                        <img src="assets/img/background/screenshot/course-middle.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Course Middle Page
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="course-veritical.html">
+                        <img src="assets/img/background/screenshot/course-veritical.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Course Veritical Page
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="student-course-detail.html">
+                        <img src="assets/img/background/screenshot/student-course-detail.png" class="card-img-top"
+                            alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Student Couser Detail Page
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Teacher Dashboard
+    ================================================== -->
+    <section class="py-6 py-md-8 bg-saaral">
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+                    <!-- Heading -->
+                    <h3 class="main-heading">Teacher Dashboard</h3>
+
+                    <!-- Text -->
+                    <p class="font-size-lg text-muted mb-6 mb-md-8">
+                        From rich starting points to simple single pagers, anything is possible.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="teacher-dashboard.html">
+                        <img src="assets/img/background/screenshot/teacher-dashboard.png" class="card-img-top"
+                            alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Teacher Dashboard
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="teacher-notification.html">
+                        <img src="assets/img/background/screenshot/teacher-notification.png" class="card-img-top"
+                            alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Teacher Notification
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="teacher-settings.html">
+                        <img src="assets/img/background/screenshot/teacher-settings.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Teacher Settings
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="teacher-security.html">
+                        <img src="assets/img/background/screenshot/teacher-security.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Teacher Security
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="teacher-structure.html">
+                        <img src="assets/img/background/screenshot/teacher-structure.png" class="card-img-top"
+                            alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Course Structure
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="teacher-add-course.html">
+                        <img src="assets/img/background/screenshot/teacher-add-course.png" class="card-img-top"
+                            alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Teacher Add Course
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="teacher-structure.html">
+                        <img src="assets/img/background/screenshot/teacher-courses.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Course Structure
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="teacher-add-exam.html">
+                        <img src="assets/img/background/screenshot/teacher-add-exam.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Teacher Add Exam
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="teacher-payment.html">
+                        <img src="assets/img/background/screenshot/teacher-payment.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Teacher Payment
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="teacher-help.html">
+                        <img src="assets/img/background/screenshot/teacher-help.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Teacher Help Center
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Student Dashboard
+    ================================================== -->
+    <section class="py-6 py-md-8 bg-saaral">
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+                    <!-- Heading -->
+                    <h3 class="main-heading">Student Dashboard</h3>
+
+                    <!-- Text -->
+                    <p class="font-size-lg text-muted mb-6 mb-md-8">
+                        From rich starting points to simple single pagers, anything is possible.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="student-dashboard.html">
+                        <img src="assets/img/background/screenshot/student-dashboard.png" class="card-img-top"
+                            alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Student Dashboard
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="student-notification.html">
+                        <img src="assets/img/background/screenshot/student-notification.png" class="card-img-top"
+                            alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Student Notification
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="student-settings.html">
+                        <img src="assets/img/background/screenshot/student-settings.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Student Settings
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="student-security.html">
+                        <img src="assets/img/background/screenshot/student-security.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Student Security
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="student-course.html">
+                        <img src="assets/img/background/screenshot/student-courses.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Student My Course List
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="student-test.html">
+                        <img src="assets/img/background/screenshot/student-test.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Student Online Test
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="student-exam.html">
+                        <img src="assets/img/background/screenshot/student-exam.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Student Online Exam
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+    <!-- Payment
+    ================================================== -->
+    <section class="py-6 py-md-8 bg-saaral">
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+                    <!-- Heading -->
+                    <h3 class="main-heading">Payment</h3>
+
+                    <!-- Text -->
+                    <p class="font-size-lg text-muted mb-6 mb-md-8">
+                        From rich starting points to simple single pagers, anything is possible.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="checkout.html">
+                        <img src="assets/img/background/screenshot/checkout.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Payment
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="thankyou.html">
+                        <img src="assets/img/background/screenshot/thankyou.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Payment Thankyou
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="faq.html">
+                        <img src="assets/img/background/screenshot/faq.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Frequently Asked Questions
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="invoice.html">
+                        <img src="assets/img/background/screenshot/invoice.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Payment Invoice
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Blog
+    ================================================== -->
+    <section class="py-6 py-md-8 bg-saaral">
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+                    <!-- Heading -->
+                    <h3 class="main-heading">Blog</h3>
+
+                    <!-- Text -->
+                    <p class="font-size-lg text-muted mb-6 mb-md-8">
+                        From rich starting points to simple single pagers, anything is possible.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="blog.html">
+                        <img src="assets/img/background/screenshot/blog.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Blog
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="blog-detail.html">
+                        <img src="assets/img/background/screenshot/blog-detail.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Blog Detail
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Account
+    ================================================== -->
+    <section class="py-6 py-md-8 bg-saaral">
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+                    <!-- Heading -->
+                    <h3 class="main-heading">Account</h3>
+
+                    <!-- Text -->
+                    <p class="font-size-lg text-muted mb-6 mb-md-8">
+                        From rich starting points to simple single pagers, anything is possible.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="login-colored.html">
+                        <img src="assets/img/background/screenshot/login-colored.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center py-5">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Colored Login
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="login-illustration.html">
+                        <img src="assets/img/background/screenshot/login-illustration.png" class="card-img-top"
+                            alt="...">
+                        <div class="card-body d-flex align-items-center py-5">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Login Illustration
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="login-horizontal.html">
+                        <img src="assets/img/background/screenshot/login-horizontal.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center py-5">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Login Horizontal
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="login.html">
+                        <img src="assets/img/background/screenshot/login-basic.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center py-5">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Login Basic
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="register-colored.html">
+                        <img src="assets/img/background/screenshot/register-colored.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center py-5">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Signup Colored
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="register-illustration.html">
+                        <img src="assets/img/background/screenshot/register-illustration.png" class="card-img-top"
+                            alt="...">
+                        <div class="card-body d-flex align-items-center py-5">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Signup Illustration
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="register.html">
+                        <img src="assets/img/background/screenshot/register-basic.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center py-5">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Signup Basic
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="reset-colored.html">
+                        <img src="assets/img/background/screenshot/reset-colored.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center py-5">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Reset Password Colored
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="reset-password-illustration.html">
+                        <img src="assets/img/background/screenshot/reset-illustration.png" class="card-img-top"
+                            alt="...">
+                        <div class="card-body d-flex align-items-center py-5">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Reset Password Illustration
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="reset-password.html">
+                        <img src="assets/img/background/screenshot/reset-basic.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center py-5">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Reset Password Basic
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="error-colored.html">
+                        <img src="assets/img/background/screenshot/error-colored.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center py-5">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Error Page Colored
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="error-illustration.html">
+                        <img src="assets/img/background/screenshot/error-illustration.png" class="card-img-top"
+                            alt="...">
+                        <div class="card-body d-flex align-items-center py-5">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                Error Page Illustration
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-4">
+
+                    <!-- Card -->
+                    <a class="card text-reset text-decoration-none move move-lg shadow-light-lg mb-6 mb-md-8"
+                        href="error.html">
+                        <img src="assets/img/background/screenshot/error-basic.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex align-items-center py-5">
+
+                            <!-- Heading -->
+                            <h5 class="mb-0 mr-auto">
+                                404
+                            </h5>
+
+                            <!-- Chevron -->
+                            <span class="collapse-chevron text-gray-400">
+                                <i class="fe fe-lg fe-chevron-right"></i>
+                            </span>
+
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Go to top -->
+    <a href="#" class="scrollToTop">
+        <i class="fe fe-arrow-up"></i>
+    </a>
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html", {
+    "classList": "bg-gray-100"
+    })
+
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+</body>
+
+</html>

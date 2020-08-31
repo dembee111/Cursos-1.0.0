@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  @@include("partials/head.html", {
+  "pageTitle": "Cursos"
+  })
+</head>
+
+<body>
+
+  <!-- Login 
+    ================================================== -->
+  <section class="bg-saaral">
+    <div class="container d-flex flex-column">
+      <div class="row align-items-center justify-content-center min-vh-100">
+        <div class="col-12 col-md-12 col-lg-11 py-8 col-md-10 py-xxl-11 bg-danger rounded-lg shadow-small-soft">
+          <!-- primary-desat absolute position -->
+          <div class="position-absolute bg-primary-desat h-100 w-60 right-0 top-0 rounded-lg rounded-left-0 bg-clip-1">
+          </div>
+          <!-- Cool men image -->
+          <img src="assets/img/card-photos/login-page.png"
+            class="img-fluid position-absolute left-n5 bottom-0 d-none d-md-block" alt="cool-men">
+          <div class="row">
+            <div class="col-12 col-md-6">
+
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 offset-xl-1">
+              <!-- Heading -->
+              <h1 class="mb-0 font-weight-bold text-center text-light">
+                Welcome to
+              </h1>
+
+              <!-- Text -->
+              <p class="mb-6 text-center text-light">
+                Simplify your workflow in minutes.
+              </p>
+
+              <!-- Form -->
+              <form class="mb-6">
+
+                <!-- Email -->
+                <div class="form-group">
+                  <label for="email" class="text-light">
+                    Email Address
+                  </label>
+                  <input type="email" class="form-control" id="email" placeholder="name@address.com">
+                </div>
+
+                <!-- Password -->
+                <div class="form-group mb-5">
+                  <label for="password" class="text-light">
+                    Password
+                  </label>
+                  <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                </div>
+
+                <!-- Submit -->
+                <button class="btn btn-block btn-danger shadow-small-soft move" type="submit">
+                  Sign in
+                </button>
+
+              </form>
+
+              <!-- Text -->
+              <p class="mb-0 font-size-sm text-center text-light">
+                Don't have an account yet <a href="#!" class="text-light">Sign up</a>.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </section>
+
+  <!-- JAVASCRIPT
+    ================================================== -->
+  @@include("partials/scripts.html")
+
+</body>
+
+</html>

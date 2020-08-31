@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  @@include("partials/head.html", {
+  "pageTitle": "Cursos"
+  })
+</head>
+
+<body>
+
+  <!-- MODALS
+  ================================================== -->
+  @@include("partials/modals.html")
+
+  @@include("partials/top-navbar.html", {
+  "container": "container-fluid"
+  })
+  <main class="bg-cover position-relative bg-teachers">
+
+    @@include("partials/navbar.html", {
+    "classList": "navbar-dark bg-transparent",
+    "container": "container-fluid"
+    })
+    <!-- Shape Line -->
+    <div class="bg-overlay"></div>
+    <div class="position-absolute left-3 top-35 d-none d-lg-block">
+      <img src="assets/img/svg-shapes/big-lines.svg" class="img-fluid" alt="circle-and-circle">
+    </div>
+    <!-- Shape Square -->
+    <div class="position-absolute right-3 top-35 d-none d-lg-block">
+      <img src="assets/img/svg-shapes/square-three.svg" class="img-fluid" alt="square-three">
+    </div>
+
+    <!-- WELCOME HEADING
+    ================================================== -->
+    <section class="py-6 py-md-12 py-xxl-16">
+      <div class="container-fluid">
+        <div class="row align-items-center justify-content-center mx-xl-9 mx-xxl-13">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+
+            <!-- Heading -->
+            <h1 class="display-3 text-center text-light">
+              Good team and Best instructors
+            </h1>
+
+            <!-- Text -->
+            <p class="lead text-center text-light mb-7 mw-lg-75 mx-auto">
+              Anywhere, Anytime, Lifetime access, Enjoy risk-free with our 30-day money-back guarentee.
+            </p>
+
+            <!-- Buttons -->
+            <div class="text-center">
+              <a href="@@webRoot/blog-detail.html" class="btn btn-outline-light btn-pill shadow move text-uppercase">
+                Learn More
+              </a>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+  </main>
+
+  <!-- BRANDS
+    ================================================== -->
+  <figure class="pt-6 pt-md-8">
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-center mx-xl-9 mx-xxl-13 text-center">
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/Lenovo-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/verizon-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/dribbble-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/behance-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/laravel-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/jquery-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </figure>
+
+  <!-- LET'S START
+    ================================================== -->
+  <section class="pt-6 pt-md-11 mb-n10 mb-sm-n15">
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto text-center">
+          <!-- Heading -->
+          <h1 class="display-3 mt-4">Let's introduce our best instructors</h1>
+          <!-- Text -->
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu vehicula turpis.
+            Quisque consectetur, eu pulvinar nisi eros nec nulla.</p>
+        </div>
+      </div>
+      <!-- teacher lists -->
+      <div class="row justify-content-center mt-8">
+        <!-- teacher -->
+        <div class="col-12 col-md-8 col-lg-4">
+          <div class="p-3">
+            <div class="rounded overlay overlay-primary-desat overlay-30 shadow-small-soft move move-lg">
+              <img src="assets/img/card-photos/teacher-card-back-1@2x.png" class="img-fluid rounded" alt="">
+              <a href="@@webRoot/teacher-detail.html">
+                <div class="bg-light p-4 mw-90 rounded-sm position-absolute bottom-5 left-5">
+                  <!-- Teacher name -->
+                  <div class="d-flex">
+                    <span class="text-muted">Julie Simon</span>
+                  </div>
+                  <!-- Tags -->
+                  <div class="d-flex">
+                    <span class="text-primary"><small>Language & Academic</small></span>
+                  </div>
+                  <!-- Star -->
+                  <div class="d-flex">
+                    <div class="mb-1 mr-3">
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                    </div>
+                  </div>
+                  <!-- Teacher comment -->
+                  <div class="d-flex">
+                    <p class="text-muted mb-0">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing Curabitur porttitor rutrum erat. Lorem ipsum
+                      dolor sit amet.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Teacher -->
+        <div class="col-12 col-md-8 col-lg-4">
+          <div class="p-3">
+            <div class="rounded overlay overlay-black overlay-30 shadow-small-soft move move-lg">
+              <img src="assets/img/card-photos/teacher-card-back-2@2x.png" class="img-fluid rounded" alt="">
+              <a href="@@webRoot/teacher-detail.html">
+                <div class="position-absolute bg-light bottom-5 left-5 mw-90 p-4 rounded-sm">
+                  <!-- Teacher name -->
+                  <div class="d-flex">
+                    <span class="text-body">John Anderson</span>
+                  </div>
+                  <!-- Tags -->
+                  <div class="d-flex">
+                    <span class="text-primary"><small>Engineering & Electronic</small></span>
+                  </div>
+                  <!-- Star -->
+                  <div class="d-flex">
+                    <div class="mb-1 mr-3">
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                    </div>
+                  </div>
+                  <!-- Teacher comment -->
+                  <div class="d-flex">
+                    <p class="text-muted mb-0">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor rutrum erat. Lorem
+                      ipsum dolor sit amet.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Teacher -->
+        <div class="col-12 col-md-8 col-lg-4">
+          <div class="p-3">
+            <!-- Teacher photo -->
+            <div class="rounded overlay overlay-danger overlay-30 shadow-small-soft move move-lg">
+              <img src="assets/img/card-photos/teacher-card-back-3@2x.png" class="img-fluid rounded" alt="">
+              <a href="@@webRoot/teacher-detail.html">
+                <div class="position-absolute bg-light bottom-3 left-5 mw-90 p-4 rounded-sm">
+                  <!-- Teacher name -->
+                  <div class="d-flex">
+                    <span class="text-muted">Julie Simon</span>
+                  </div>
+                  <!-- Tags -->
+                  <div class="d-flex">
+                    <span class="text-primary"><small>Language & Academic</small></span>
+                  </div>
+                  <!-- Star -->
+                  <div class="d-flex">
+                    <div class="mb-1 mr-3">
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                    </div>
+                  </div>
+                  <!-- Teacher comment -->
+                  <div class="d-flex">
+                    <p class="text-muted mb-0">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing Curabitur porttitor rutrum erat. Lorem ipsum
+                      dolor sit amet.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SHAPE CLIP PATH
+  ================================================== -->
+  <div class="py-10 py-md-16 position-relative bg-danger">
+    <div class="position-absolute bg-primary-desat h-100 w-60 right-0 top-0 rounded-lg rounded-left-0 bg-clip-1">
+    </div>
+  </div>
+
+  <!-- LET'S START
+    ================================================== -->
+  <section class="pt-6 pt-md-11 mt-5 mt-md-n17">
+    <div class="container">
+      <!-- Teacher lists-->
+      <div class="row justify-content-center mt-5">
+        <!-- Teacher -->
+        <div class="col-12 col-md-8 col-lg-4">
+          <div class="p-3">
+            <div class="rounded overlay overlay-primary-desat overlay-30 shadow-small-soft move move-lg">
+              <img src="assets/img/card-photos/teacher-4@2x.png" class="img-fluid rounded" alt="">
+              <a href="@@webRoot/teacher-detail.html">
+                <div class="position-absolute bg-light bottom-3 left-5 mw-90 p-4 rounded-sm">
+                  <!-- Teacher name -->
+                  <div class="d-flex">
+                    <span class="text-muted">Julie Simon</span>
+                  </div>
+                  <!-- Tags -->
+                  <div class="d-flex">
+                    <span class="text-primary"><small>Language & Academic</small></span>
+                  </div>
+                  <!-- Star -->
+                  <div class="d-flex">
+                    <div class="mb-1 mr-3">
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                    </div>
+                  </div>
+                  <!-- Teacher comment -->
+                  <div class="d-flex">
+                    <p class="text-muted mb-0">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing Curabitur porttitor rutrum erat. Lorem ipsum
+                      dolor sit amet.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Teacher -->
+        <div class="col-12 col-md-8 col-lg-4">
+          <div class="p-3">
+            <div class="rounded overlay overlay-black overlay-30 shadow-small-soft move move-lg">
+              <img src="assets/img/card-photos/teacher-5@2x.png" class="img-fluid rounded" alt="">
+              <a href="@@webRoot/teacher-detail.html">
+                <div class="position-absolute bg-light bottom-3 left-5 mw-90 p-4 rounded-sm">
+                  <!-- Teacher name -->
+                  <div class="d-flex">
+                    <span class="text-muted">Julie Simon</span>
+                  </div>
+                  <!-- Tags -->
+                  <div class="d-flex">
+                    <span class="text-primary"><small>Language & Academic</small></span>
+                  </div>
+                  <!-- Star -->
+                  <div class="d-flex">
+                    <div class="mb-1 mr-3">
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                    </div>
+                  </div>
+                  <!-- Teacher comment -->
+                  <div class="d-flex">
+                    <p class="text-muted mb-0">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing Curabitur porttitor rutrum erat. Lorem ipsum
+                      dolor sit amet.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Teacher -->
+        <div class="col-12 col-md-8 col-lg-4">
+          <div class="p-3">
+            <div class="rounded overlay overlay-danger overlay-30 shadow-small-soft move move-lg">
+              <img src="assets/img/card-photos/teacher-6@2x.png" class="img-fluid rounded" alt="">
+              <a href="@@webRoot/teacher-detail.html">
+                <div class="position-absolute bg-light bottom-3 left-5 mw-90 p-4 rounded-sm">
+                  <!-- Teacher name -->
+                  <div class="d-flex">
+                    <span class="text-muted">Julie Simon</span>
+                  </div>
+                  <!-- Tags -->
+                  <div class="d-flex">
+                    <span class="text-primary"><small>Language & Academic</small></span>
+                  </div>
+                  <!-- Star -->
+                  <div class="d-flex">
+                    <div class="mb-1 mr-3">
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                    </div>
+                  </div>
+                  <!-- Teacher comment -->
+                  <div class="d-flex">
+                    <p class="text-muted mb-0">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing Curabitur porttitor rutrum erat. Lorem ipsum
+                      dolor sit amet.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div><!-- / .col-->
+
+      </div><!-- / .row -->
+    </div><!-- / .container -->
+  </section>
+
+
+  <section class="py-6 py-md-11 py-xl-13 bg-primary-desat mt-13 position-relative">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-9 col-xl-8 text-center">
+          <!-- Heading -->
+          <h1 class="display-3 text-light ">Get Vimkit And Save Your Time</h1>
+          <!-- Text -->
+          <p class="text-light text-center 
+                    mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have
+            suffered alteration in some form, or randomised words even slightly believable.</p>
+          <a href="@@webRoot/register-colored.html"
+            class="btn btn-outline-light btn-pill shadow move mt-2 mt-md-0 text-uppercase" target="_blank">
+            Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Shape circle no wave -->
+    <div class="position-absolute top-3 right-3 d-none d-xl-block">
+      <picture>
+        <source media="(min-width:1500px)" srcset="assets/img/svg-shapes/circle-double-nowave.svg">
+        <img src="assets/img/svg-shapes/circle-double-nowave-md.svg" alt="no-wave-circle" class="img-fluid">
+      </picture>
+    </div>
+    <!-- Shape circle wave -->
+    <div class="position-absolute bottom-3 left-3 d-none d-xl-block">
+      <!-- Image -->
+      <picture>
+        <source media="(min-width:1500px)" srcset="assets/img/svg-shapes/big-cirle-wave.svg">
+        <img src="assets/img/svg-shapes/big-cirle-wave-md.svg" alt="wave-circle" class="img-fluid">
+      </picture>
+    </div>
+  </section>
+
+  <!-- shape
+    ================================================== -->
+  <div class="position-relative">
+    <div class="wave wave-bottom wave-fluid-x svg-shim text-white">
+      @@include("assets/img/curves/curve-1.svg")
+    </div>
+  </div>
+
+  <!-- FOOTER
+    ================================================== -->
+  @@include("partials/footer.html", {
+  "classList": "bg-gray-100"
+  })
+
+
+  <!-- JAVASCRIPT
+    ================================================== -->
+  @@include("partials/scripts.html")
+</body>
+
+</html>

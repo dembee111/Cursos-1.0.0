@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    @@include("partials/head.html", {
+    "pageTitle": "Cursos"
+    })
+</head>
+
+<body class="bg-light">
+
+    <!-- MODALS
+  ================================================== -->
+    @@include("partials/modals.html")
+
+    <!-- Main Navbar
+    ================================================== -->
+    @@include("partials/navbar.html", {
+    "classList": "navbar-light bg-white",
+    "container": "container-fluid"
+    })
+
+    <!-- BREADCRUMB
+    ================================================== -->
+    <nav class="bg-danger d-md-none">
+        <div class="container-md">
+            <div class="row align-items-center">
+                <div class="col">
+
+                    <!-- Breadcrumb -->
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <span class="text-white">
+                                Student
+                            </span>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <span class="text-white">
+                                My Courses
+                            </span>
+                        </li>
+                    </ol>
+
+                </div>
+                <div class="col-auto">
+
+                    <!-- Toggler -->
+                    <div class="navbar-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#sideNavCollapse" aria-controls="sideNavCollapse" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </nav>
+
+    <!-- HEADER
+        ================================================== -->
+    <header class="bg-primary-desat py-6 py-xxl-11 d-none d-md-block">
+        <div class="container-md">
+            <div class="row align-items-center">
+                <div class="col">
+
+                    <!-- Heading -->
+                    <h1 class="font-weight-bold text-white mb-2">
+                        Student Dashboard
+                    </h1>
+
+                    <!-- Breadcrumb -->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="@@webRoot/student-dashboard.html"
+                                    class="text-light">Student</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Personal Info</li>
+                        </ol>
+                    </nav>
+
+                </div>
+                <div class="col-auto">
+
+                    <!-- Button -->
+                    <a href="@@webRoot/index.html" class="btn btn-sm btn-outline-light">
+                        Log Out
+                    </a>
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </header>
+
+    <!-- MAIN
+        ================================================== -->
+    <main class="pb-8 pb-md-11 mt-6">
+        <div class="container-md">
+            <div class="row">
+                <div class="col-12 col-md-4 col-xl-3 mb-4 mb-sm-0">
+
+                    <!-- Card -->
+                    <div class="card border d-md-block">
+                        <div class="card-header bg-primary-desat py-3">
+                            <span class="text-light">Student Menu</span>
+                        </div>
+
+                        <div class="collapse d-md-block" id="sideNavCollapse">
+                            <!-- Card-body -->
+                            <div class="card-body">
+
+                                <!-- Avatar -->
+                                <div class="text-center mb-5">
+                                    <div class="avatar avatar-online avatar-xxl">
+                                        <img src="assets/img/avatar/user-6.png" alt="user-6"
+                                            class="avatar-img rounded-circle">
+                                    </div>
+                                    <h3 class="main-heading">Julie Robert</h3>
+                                    <span class="text-danger"><small>Pro user</small></span>
+                                </div>
+
+                                <!-- Heading -->
+                                <h4 class="main-heading mb-4">
+                                    Account
+                                </h4>
+
+                                <!-- List -->
+                                <ul class="card-list list text-gray-700 mb-6">
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none active"
+                                                href="@@webRoot/student-dashboard.html">
+                                                <i class="fe fe-file-text mr-1"></i>
+                                                Personal info
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/student-notification.html">
+                                                <i class="fe fe-bell mr-1"></i>
+                                                Notifications
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/student-settings.html">
+                                                <i class="fe fe-list mr-1"></i>
+                                                Preferences
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/student-security.html">
+                                                <i class="fe fe-settings mr-1"></i>
+                                                Security
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                                <!-- Heading -->
+                                <h4 class="main-heading mb-4">
+                                    Courses
+                                </h4>
+
+                                <!-- List -->
+                                <ul class="card-list list text-gray-700 mb-6">
+                                    <li class="list-item active mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/student-course.html">
+                                                <i class="fe fe-youtube mr-1"></i>
+                                                My Courses
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/student-test.html">
+                                                <i class="fe fe-layers mr-1"></i>
+                                                Online Test
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-help.html">
+                                                <i class="fe fe-life-buoy mr-1"></i>
+                                                Help Center
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!-- Heading -->
+                                <h4 class="main-heading mb-4">
+                                    Leave course
+                                </h4>
+
+                                <!-- List -->
+                                <ul class="card-list list text-gray-700 mb-6">
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none" href="@@webRoot/index.html">
+                                                <i class="fe fe-power mr-1"></i>
+                                                Log out
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-8 col-xl-9">
+                    <!-- Card -->
+                    <div class="card border">
+                        <div class="card-header bg-primary-desat py-3">
+                            <span class="text-light">My Courses</span>
+                        </div>
+
+                        <div class="card-body p-0 p-md-3 p-lg-6">
+                            <div class="row mt-5 mt-lg-0">
+                                <div class="col-12">
+                                    <div class="card bg-saaral rounded-0 border mw-100">
+                                        <div class="row no-gutters align-items-center justify-content-between">
+                                            <div class="col-xl-2">
+                                                <picture>
+                                                    <source media="(min-width:1200px)"
+                                                        srcset="assets/img/card-photos/discussion.jpg">
+                                                    <img src="assets/img/card-photos/discussion@2x.jpg" alt="discussion"
+                                                        class="card-img rounded-0">
+                                                </picture>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="card-body p-4 p-xxl-0">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div class="d-flex flex-column">
+                                                            <h4 class="mb-6">Write Better Emails: Tactics for Smarter
+                                                                Team Communication</h4>
+                                                            <div class="d-flex justify-content-between mb-3">
+                                                                <span>Time: 1 hour</span>
+                                                                <span>76 section</span>
+                                                                <span>Compeleted 85%</span>
+                                                            </div>
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 75%" aria-valuenow="75"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 p-4 p-xl-0 text-xl-center">
+                                                <a href="@@webRoot/student-course-detail.html"
+                                                    class="btn btn-danger text-nowrap btn-sm mr-3" role="button">Go to
+                                                    Course</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mt-6">
+                                    <div class="card bg-saaral rounded-0 border mw-100">
+                                        <div class="row no-gutters align-items-center justify-content-between">
+                                            <div class="col-xl-2">
+                                                <picture>
+                                                    <source media="(min-width:1200px)"
+                                                        srcset="assets/img/card-photos/writing-note.jpg">
+                                                    <img src="assets/img/card-photos/writing-note@2x.jpg"
+                                                        alt="writing-note" class="card-img rounded-0">
+                                                </picture>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="card-body p-4 p-xxl-0">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div class="d-flex flex-column">
+                                                            <h4 class="mb-6">Write Better Emails: Tactics for Smarter
+                                                                Team Communication</h4>
+                                                            <div class="d-flex justify-content-between mb-3">
+                                                                <span>Time: 1 hour</span>
+                                                                <span>76 section</span>
+                                                                <span>Compeleted 85%</span>
+                                                            </div>
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 75%" aria-valuenow="75"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 p-4 p-xl-0 text-xl-center">
+                                                <a href="@@webRoot/student-course-detail.html"
+                                                    class="btn btn-danger text-nowrap btn-sm mr-3" role="button">Go to
+                                                    Course</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mt-6">
+                                    <div class="card bg-saaral rounded-0 border mw-100">
+                                        <div class="row no-gutters align-items-center justify-content-between">
+                                            <div class="col-xl-2">
+                                                <picture>
+                                                    <source media="(min-width:1200px)"
+                                                        srcset="assets/img/card-photos/programming-display.jpg">
+                                                    <img src="assets/img/card-photos/programming-display@2x.jpg"
+                                                        alt="discussion" class="card-img rounded-0">
+                                                </picture>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="card-body p-4 p-xxl-0">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div class="d-flex flex-column">
+                                                            <h4 class="mb-6">Write Better Emails: Tactics for Smarter
+                                                                Team Communication</h4>
+                                                            <div class="d-flex justify-content-between mb-3">
+                                                                <span>Time: 1 hour</span>
+                                                                <span>76 section</span>
+                                                                <span>Compeleted 85%</span>
+                                                            </div>
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 75%" aria-valuenow="75"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 p-4 p-xl-0 text-xl-center">
+                                                <a href="@@webRoot/student-course-detail.html"
+                                                    class="btn btn-danger text-nowrap btn-sm mr-3" role="button">Go to
+                                                    Course</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row text-center my-6">
+                                <div class="col-12 mx-auto">
+                                    <button class="btn btn-outline-white btn-sm">View all</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </main>
+
+
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html", {
+    "classList": "bg-light"
+    })
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+
+</body>
+
+</html>

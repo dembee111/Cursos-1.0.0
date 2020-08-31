@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  @@include("partials/head.html", {
+  "pageTitle": "Cursos"
+  })
+</head>
+
+<body>
+
+  <!-- Colored pass reset
+    ================================================== -->
+  <section class="bg-saaral">
+    <div class="container d-flex flex-column">
+      <div class="row align-items-center justify-content-center min-vh-100">
+        <div class="col-12 col-md-12 col-lg-11 py-8 py-md-11 bg-danger rounded-lg shadow-small-soft">
+          <!-- Poly shape position -->
+          <div class="position-absolute bg-primary-desat h-100 w-60 right-0 top-0 rounded-lg rounded-left-0 bg-clip-1">
+          </div>
+          <!-- Photo -->
+          <img src="assets/img/card-photos/phone-with-woman.png"
+            class="img-fluid position-absolute left-n5 bottom-0 d-none d-md-block" alt="cool-men">
+          <div class="row">
+            <div class="col-12 col-md-6">
+
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 offset-xl-1">
+              <!-- Heading -->
+              <h1 class="mb-0 font-weight-bold text-center text-light">
+                Password reset
+              </h1>
+
+              <!-- Text -->
+              <p class="mb-5 text-center text-light">
+                Enter your email to reset your password
+              </p>
+
+              <!-- Form -->
+              <form class="mb-5">
+
+                <!-- Email -->
+                <div class="form-group mb-6">
+                  <label for="email" class="text-light">
+                    Email Address
+                  </label>
+                  <input type="email" class="form-control" id="email" placeholder="name@address.com">
+                </div>
+
+
+                <!-- Submit -->
+                <button class="btn btn-block btn-danger text-light shadow-small-soft move" type="submit">
+                  Reset Password
+                </button>
+
+              </form>
+
+              <!-- Text -->
+              <p class="mb-0 font-size-sm text-center text-light">
+                Remember your password? <a href="#!" class="text-light">Log in</a>.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </section>
+
+  <!-- JAVASCRIPT
+    ================================================== -->
+  @@include("partials/scripts.html")
+
+</body>
+
+</html>

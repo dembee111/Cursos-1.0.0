@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+    <link rel="stylesheet" href="./assets/libs/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <!-- Map -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.min.css">
+
+    <title>Cursos</title>
+</head>
+
+<body class="bg-saaral-md">
+    <!-- Printable Area
+    ================================================== -->
+    <section id="printableArea">
+        <div class="container">
+            <div class="row no-gutters justify-content-center">
+                <div class="col-12 col-lg-9 bg-white">
+                    <!-- Title -->
+                    <div class="d-flex justify-content-between bg-primary-desat px-3 px-lg-8 py-2 py-lg-4">
+                        <h3 class="text-light">Invoice</h3>
+                        <h3 class="text-light">MyCompany</h3>
+                    </div>
+                    <!-- Order and Invoice ID -->
+                    <div class="row">
+                        <div class="col-12 col-lg-10 offset-lg-1 mt-6">
+                            <div class="d-flex flex-column">
+                                <h4 class="main-heading">Date: <span class="text-muted">11 june 2020</span></h4>
+                                <h4>Invoice ID: <span class="text-muted">GNL848689</span></h4>
+                                <h4>Order ID: <span class="text-muted">123456789</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Buyer info -->
+                    <div class="row">
+                        <div class="col-12 col-lg-5 offset-0 offset-lg-1 mt-6">
+                            <h4 class="main-heading">From</h4>
+                            <hr>
+                            <div class="d-flex flex-column">
+                                <h4 class="main-heading">Company: <span class="text-muted">123456789</span></h4>
+                                <h4 class="main-heading">First Name: <span class="text-muted">John David</span></h4>
+                                <h4 class="main-heading">Email: <span class="text-muted">Johndavid@gmail.com</span></h4>
+                                <h4 class="main-heading">Address: <span class="text-muted">Khan tower building 16-3-3,
+                                        Test district, New York, USA</span></h4>
+                                <h4 class="main-heading">Website: <span class="text-muted">www.test.com</span></h4>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-5 offset-0 offset-lg-1 mt-6">
+                            <h4 class="main-heading">To</h4>
+                            <hr>
+                            <div class="d-flex flex-column">
+                                <h4 class="main-heading">Company: <span class="text-muted">Gegeensoft</span></h4>
+                                <h4 class="main-heading">First Name: <span class="text-muted">Peter Morrow</span></h4>
+                                <h4 class="main-heading">Email: <span class="text-muted">Market@gegeesoft.com</span>
+                                </h4>
+                                <h4 class="main-heading">Address: <span class="text-muted">Khan tower building 16-3-3,
+                                        Test district, New York, USA</span></h4>
+                                <h4 class="main-heading">Website: <span class="text-muted">www.gegeensoft.com</span>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Seller Info -->
+                    <div class="row mt-6">
+                        <div class="col-12 col-lg-10 offset-0 offset-lg-1">
+                            <div class="table-responsive">
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Course Name</th>
+                                            <th scope="col">Price</th>
+                                            <th scope="col">Discount</th>
+                                            <th scope="col">Total Amount</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Web design</td>
+                                            <td>$119</td>
+                                            <td>$100</td>
+                                            <td>$19</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Total price -->
+                    <div class="row justify-content-center mt-5">
+                        <div class="col-12 col-lg-10 text-right">
+                            <div class="d-flex flex-column">
+                                <h4 class="main-heading">Invoice Total: <span class="text-muted">USD $19</span></h4>
+                                <h4 class="main-heading">Purchase method via Paypal</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Printing button -->
+                    <div class="row justify-content-center my-6 pb-11">
+                        <div class="col-12 col-lg-10">
+                            <div class="d-flex justify-content-around justify-content-lg-between align-items-baseline">
+                                <h4 class="main-heading">Thanks for buying</h4>
+                                <button type="button" class="btn btn-danger" onclick="printDiv('printableArea')">Print
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+
+    <!---Libs-->
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/aos/dist/aos.js"></script>
+    <script src="./assets/libs/quill/dist/quill.min.js"></script>
+    <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="./assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+.file-upload{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+
+    &__input{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        min-width: 100%;
+        min-height: 100%;
+        cursor: inherit;
+        opacity: 0;
+    }
+}
+
+.image-p{
+    max-width: 128px;
+    max-height: 128px;
+}

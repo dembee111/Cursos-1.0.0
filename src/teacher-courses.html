@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    @@include("partials/head.html", {
+    "pageTitle": "Cursos"
+    })
+</head>
+
+<body class="bg-light">
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("partials/modals.html")
+
+    <!-- Main Navbar
+    ================================================== -->
+    @@include("partials/navbar.html", {
+    "classList": "navbar-light bg-white",
+    "container": "container-fluid"
+    })
+
+
+    <!-- BREADCRUMB
+    ================================================== -->
+    <nav class="bg-primary-desat d-md-none">
+        <div class="container-md">
+            <div class="row align-items-center">
+                <div class="col">
+
+                    <!-- Breadcrumb -->
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <span class="text-white">
+                                Teacher
+                            </span>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <span class="text-white">
+                                My Works
+                            </span>
+                        </li>
+                    </ol>
+
+                </div>
+                <div class="col-auto">
+
+                    <!-- Toggler -->
+                    <div class="navbar-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#sideNavCollapse" aria-controls="sideNavCollapse" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </nav>
+
+    <!-- HEADER
+    ================================================== -->
+    <header class="bg-danger py-6 py-xxl-11 d-none d-md-block">
+        <div class="container-md">
+            <div class="row align-items-center">
+                <div class="col">
+
+                    <!-- Heading -->
+                    <h1 class="font-weight-bold text-white mb-2">
+                        Teacher Dashboard
+                    </h1>
+
+                    <!-- Breadcrumb -->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="@@webRoot/index.html" class="text-light">Teacher</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">My Works</li>
+                        </ol>
+                    </nav>
+
+                </div>
+                <div class="col-auto">
+
+                    <!-- Button -->
+                    <a href="@@webRoot/index.html" role="button" class="btn btn-sm btn-outline-light">
+                        Log Out
+                    </a>
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </header>
+
+    <!-- MAIN
+    ================================================== -->
+    <main class="pb-8 pb-md-11 mt-6">
+        <div class="container-md">
+            <div class="row">
+                <div class="col-12 col-md-4 col-xl-3 mb-4 mb-sm-0">
+
+                    <!-- Card -->
+                    <div class="card border border-danger-soft">
+                        <div class="card-header bg-danger py-3">
+                            <span class="text-light">Teacher Menu</span>
+                        </div>
+
+                        <div class="collapse d-md-block" id="sideNavCollapse">
+                            <!-- card-body -->
+                            <div class="card-body">
+
+                                <!-- Avatar -->
+                                <div class="text-center mb-5">
+                                    <div class="avatar avatar-online avatar-xxl">
+                                        <img src="assets/img/avatar/avatar-1.jpeg" alt="..."
+                                            class="avatar-img rounded-circle">
+                                    </div>
+                                    <h3>Julie Robert</h3>
+                                    <span class="text-danger"><small>Math & Algoritm</small></span>
+                                </div>
+
+                                <!-- Heading -->
+                                <h4 class="main-heading mb-4">
+                                    Account
+                                </h4>
+
+                                <!-- List -->
+                                <ul class="card-list list text-gray-700 mb-6">
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none active"
+                                                href="@@webRoot/teacher-dashboard.html">
+                                                <i class="fe fe-file-text mr-1"></i>
+                                                Personal info
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-notification.html">
+                                                <i class="fe fe-bell mr-1"></i>
+                                                Notifications
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-settings.html">
+                                                <i class="fe fe-list mr-1"></i>
+                                                Preferences
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-security.html">
+                                                <i class="fe fe-settings mr-1"></i>
+                                                Security
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                                <!-- Heading -->
+                                <h4 class="main-heading mb-4">
+                                    Courses
+                                </h4>
+
+                                <!-- List -->
+                                <ul class="card-list list text-gray-700 mb-6">
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-structure.html">
+                                                <i class="fe fe-grid mr-1"></i>
+                                                Course structure
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-add-course.html">
+                                                <i class="fe fe-upload-cloud mr-1"></i>
+                                                Add Course
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-item active mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-courses.html">
+                                                <i class="fe fe-layers mr-1"></i>
+                                                My course list
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-add-exam.html">
+                                                <i class="fe fe-file-plus mr-1"></i>
+                                                Add exam
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                                <!-- Heading -->
+                                <h4 class="main-heading mb-4">
+                                    Payment
+                                </h4>
+
+                                <!-- List -->
+                                <ul class="card-list list text-gray-700 mb-6">
+
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-payment.html">
+                                                <i class="fe fe-dollar-sign mr-1"></i>
+                                                Payment
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-help.html">
+                                                <i class="fe fe-life-buoy mr-1"></i>
+                                                Help Center
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <!-- Heading -->
+                                <h4 class="main-heading mb-4">
+                                    Leave course
+                                </h4>
+
+                                <!-- List -->
+                                <ul class="card-list list text-gray-700 mb-6">
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none" href="@@webRoot/index.html">
+                                                <i class="fe fe-power mr-1"></i>
+                                                Log out
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-8 col-xl-9">
+                    <!-- Card -->
+                    <div class="card border border-danger-soft">
+                        <!-- Card header -->
+                        <div class="card-header bg-danger py-3">
+                            <span class="text-light">Instructor works</span>
+                        </div>
+                        <!-- Card body -->
+                        <div class="card-body p-0 p-md-3 p-lg-6">
+                            <div class="row mt-5 mt-lg-0">
+                                <!-- Card board -->
+                                <div class="col-12">
+                                    <div class="card bg-saaral rounded-0 border" style="max-width: 100%;">
+                                        <div class="row no-gutters align-items-center justify-content-between">
+                                            <!-- Card Image -->
+                                            <div class="col-xl-2">
+                                                <picture>
+                                                    <source media="(min-width:1200px)"
+                                                        srcset="assets/img/card-photos/programming-display.jpg">
+                                                    <img src="assets/img/card-photos/programming-display@2x.jpg"
+                                                        alt="programming" class="card-img rounded-0">
+                                                </picture>
+                                            </div>
+                                            <!-- Card content -->
+                                            <div class="col-xl-5">
+                                                <div class="card-body p-4 p-xxl-0">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div class="d-flex flex-column">
+                                                            <h4 class="mb-6">Write Better Emails: Tactics for Smarter
+                                                                Team Communication</h4>
+                                                            <span>24 june 20</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Card actions -->
+                                            <div class="col-xl-4 p-4 p-xl-0 text-xl-center">
+                                                <div class="d-flex align-items-center justify-content-around">
+                                                    <!-- Processing button -->
+                                                    <a href="#!" role="button" class="text-decoration-none">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="fe fe-loader mr-1 text-secondary"></i>
+                                                            <span class="text-secondary">Processing</span>
+                                                        </div>
+                                                    </a>
+                                                    <!-- Edit button -->
+                                                    <a href="#!" role="button" class="text-decoration-none">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="fe fe-edit-2 mr-1 text-primary-desat"></i>
+                                                            <span class="text-primary-desat">Edit</span>
+                                                        </div>
+                                                    </a>
+                                                    <!-- Delete button -->
+                                                    <a href="#!" role="button" class="text-decoration-none">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="fe fe-trash-2 mr-1 text-danger"></i>
+                                                            <span class="text-danger">Delete</span>
+                                                        </div>
+                                                    </a>
+
+                                                </div>
+                                            </div><!-- / .col -->
+                                        </div><!-- / .row -->
+                                    </div><!-- / card-->
+                                </div>
+                                <!-- Card board -->
+                                <div class="col-12 my-5">
+                                    <div class="card bg-saaral rounded-0 border" style="max-width: 100%;">
+                                        <div class="row no-gutters align-items-center justify-content-between">
+                                            <!-- Card image -->
+                                            <div class="col-xl-2">
+                                                <picture>
+                                                    <source media="(min-width:1200px)"
+                                                        srcset="assets/img/card-photos/discussion.jpg">
+                                                    <img src="assets/img/card-photos/discussion@2x.jpg" alt="discussion"
+                                                        class="card-img rounded-0">
+                                                </picture>
+                                            </div>
+                                            <!-- Card content -->
+                                            <div class="col-xl-5">
+                                                <div class="card-body p-4 p-xxl-0">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div class="d-flex flex-column">
+                                                            <h4 class="mb-6">The Complete Node.js Developer Course (3rd
+                                                                edition)</h4>
+                                                            <span>24 june 20</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Card actions -->
+                                            <div class="col-xl-4 p-4 p-xl-0 text-xl-center">
+                                                <div class="d-flex align-items-center justify-content-around">
+                                                    <!-- Published button -->
+                                                    <a href="#!" role="button" class="text-decoration-none">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="fe fe-check-circle mr-1 text-success"></i>
+                                                            <span class="text-success">Published</span>
+                                                        </div>
+                                                    </a>
+                                                    <!-- Edit button -->
+                                                    <a href="#!" role="button" class="text-decoration-none">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="fe fe-edit-2 mr-1 text-primary-desat"></i>
+                                                            <span class="text-primary-desat">Edit</span>
+                                                        </div>
+                                                    </a>
+                                                    <!-- Delete button -->
+                                                    <a href="#!" role="button" class="text-decoration-none">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="fe fe-trash-2 mr-1 text-danger"></i>
+                                                            <span class="text-danger">Delete</span>
+                                                        </div>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                        </div><!-- / .row -->
+                                    </div><!-- /  .Card -->
+                                </div><!-- / .col -->
+
+                                <!-- Card board -->
+                                <div class="col-12">
+                                    <div class="card bg-saaral rounded-0 border" style="max-width: 100%;">
+                                        <div class="row no-gutters align-items-center justify-content-between">
+                                            <!-- Card image -->
+                                            <div class="col-xl-2">
+                                                <picture>
+                                                    <source media="(min-width:1200px)"
+                                                        srcset="assets/img/card-photos/writing-note.jpg">
+                                                    <img src="assets/img/card-photos/writing-note@2x.jpg"
+                                                        alt="writing-note" class="card-img rounded-0">
+                                                </picture>
+                                            </div>
+                                            <!-- Card content -->
+                                            <div class="col-xl-5">
+                                                <div class="card-body p-4 p-xxl-0">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div class="d-flex flex-column">
+                                                            <h4 class="mb-6">Write Better Emails: Tactics for Smarter
+                                                                Team Communication</h4>
+                                                            <span>24 june 20</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Card actions -->
+                                            <div class="col-xl-4 p-4 p-xl-0 text-xl-center">
+                                                <div class="d-flex align-items-center justify-content-around">
+                                                    <!-- Cancelled button -->
+                                                    <a href="#!" role="button" class="text-decoration-none">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="fe fe-alert-triangle mr-1 text-info"></i>
+                                                            <span class="text-info">Cancelled</span>
+                                                        </div>
+                                                    </a>
+                                                    <!-- Edit button -->
+                                                    <a href="#!" role="button" class="text-decoration-none">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="fe fe-edit-2 mr-1 text-primary-desat"></i>
+                                                            <span class="text-primary-desat">Edit</span>
+                                                        </div>
+                                                    </a>
+                                                    <!-- Delete button -->
+                                                    <a href="#!" role="button" class="text-decoration-none">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="fe fe-trash-2 mr-1 text-danger"></i>
+                                                            <span class="text-danger">Delete</span>
+                                                        </div>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- / card -->
+                                </div><!-- / .col -->
+
+                            </div><!-- / .row -->
+
+                            <!-- View button -->
+                            <div class="row text-center my-6">
+                                <div class="col-12 mx-auto">
+                                    <button class="btn btn-outline-white btn-sm">View all</button>
+                                </div>
+                            </div>
+
+                        </div><!-- / card body -->
+
+                    </div>
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </main>
+
+
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html", {
+    "classList": "bg-light"
+    })
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+
+</body>
+
+</html>

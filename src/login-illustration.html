@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    @@include("partials/head.html", {
+    "pageTitle": "Cursos"
+    })
+</head>
+
+<body>
+
+    <!--Login content
+    ================================================== -->
+    <section>
+        <div class="container d-flex flex-column">
+            <div class="row align-items-center justify-content-center no-gutters min-vh-100">
+                <div class="col-12 col-md-5 col-lg-4 py-8 py-md-11">
+                    <div class="card border shadow-small-soft">
+
+                        <!-- Image -->
+                        <img src="./assets/img/background/3327590.jpg" alt="..." class="card-img-top">
+
+
+                        <!-- Body -->
+                        <div class="card-body">
+
+                            <!-- Heading -->
+                            <h2 class="mb-0 font-weight-bold text-center font-second" id="modalSigninVerticalTitle">
+                                Sign in
+                            </h2>
+
+                            <!-- Text -->
+                            <p class="mb-6 text-center text-muted">
+                                Welcome to our platform
+                            </p>
+
+                            <!-- Form -->
+                            <form class="mb-6">
+
+                                <!-- Email -->
+                                <div class="form-group">
+                                    <label class="sr-only" for="modalSigninVerticalEmail">
+                                        Your email
+                                    </label>
+                                    <input type="email" class="form-control" id="modalSigninVerticalEmail"
+                                        placeholder="Your email">
+                                </div>
+
+                                <!-- Password -->
+                                <div class="form-group mb-5">
+                                    <label class="sr-only" for="modalSigninVerticalPassword">
+                                        Enter your password
+                                    </label>
+                                    <input type="password" class="form-control" id="modalSigninVerticalPassword"
+                                        placeholder="Enter your password">
+                                </div>
+
+                                <!-- Submit -->
+                                <button class="btn btn-block btn-primary-desat move" type="submit">
+                                    Sign in
+                                </button>
+
+                            </form>
+
+                            <!-- Text -->
+                            <p class="mb-0 font-size-sm text-center text-muted">
+                                Don't have an account yet? <a href="#!" class="text-danger">Sign
+                                    up</a>.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </section>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+
+</body>
+
+</html>

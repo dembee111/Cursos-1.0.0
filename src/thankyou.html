@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  @@include("partials/head.html", {
+  "pageTitle": "Cursos"
+  })
+</head>
+
+<body>
+  <!-- MODALS
+  ================================================== -->
+  @@include("partials/modals.html")
+
+  <!-- TOP NAVBAR
+    ================================================== -->
+  @@include("partials/top-navbar.html", {
+  "container": "container-fluid"
+  })
+
+  <!-- MAIN NAVBAR
+    ================================================== -->
+  @@include("partials/navbar.html", {
+  "classList": "navbar-light bg-white",
+  "container": "container-fluid"
+  })
+
+  <main class="bg-cover bg-danger">
+    <!-- WELCOME HEADING
+    ================================================== -->
+    <section class="py-6 py-md-9">
+      <div class="container">
+        <div class="row no-gutters align-items-center justify-content-center">
+          <div class="col-12 col-md-5 order-2 order-md-1">
+
+            <!-- Heading -->
+            <h2 class="text-light font-second">
+              Thank you for join us
+            </h2>
+
+            <!-- Text -->
+            <p class="text-light">
+              All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this
+              the first true generator on the Internet
+            </p>
+
+          </div>
+
+          <!-- Heart illustration -->
+          <div class="col-12 col-md-5 text-center order-1 order-md-2">
+            <img src="assets/img/svg-link-photos/heart-and-box.svg" class="img-fluid" alt="">
+          </div>
+
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+  </main>
+
+  <!-- Main
+  ================================================== -->
+  <section class="py-5 pb-md-17">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-11 offset-1">
+          <!-- Heading -->
+          <h3 class="main-heading mb-4">Your order is confirmed</h3>
+          <!-- Text -->
+          <p class="text-muted">Top print your booking Order ID: <span class="text-primary">12345678</span>&nbsp;&nbsp;
+            Print now <span class="text-primary">(Invoice)&nbsp;</span><a href="@@webRoot/invoice.html">Click here</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- FOOTER
+    ================================================== -->
+  @@include("partials/footer.html", {
+  "classList": "bg-gray-100"
+  })
+
+
+  <!-- JAVASCRIPT
+    ================================================== -->
+  @@include("partials/scripts.html")
+</body>
+
+</html>

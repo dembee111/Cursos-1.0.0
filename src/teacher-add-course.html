@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    @@include("partials/head.html", {
+    "pageTitle": "Cursos"
+    })
+
+</head>
+
+<body class="bg-light" id="student-add-course">
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("partials/modals.html")
+
+    <!-- Main Navbar
+    ================================================== -->
+    @@include("partials/navbar.html", {
+    "classList": "navbar-light bg-white",
+    "container": "container-fluid"
+    })
+
+    <!-- BREADCRUMB
+    ================================================== -->
+    <nav class="bg-primary-desat d-md-none">
+        <div class="container-md">
+            <div class="row align-items-center">
+                <div class="col">
+
+                    <!-- Breadcrumb -->
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <span class="text-white">
+                                Teacher
+                            </span>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <span class="text-white">
+                                Add Course
+                            </span>
+                        </li>
+                    </ol>
+
+                </div>
+                <div class="col-auto">
+
+                    <!-- Toggler -->
+                    <div class="navbar-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#sideNavCollapse" aria-controls="sideNavCollapse" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </nav>
+
+    <!-- HEADER
+        ================================================== -->
+    <header class="bg-danger py-6 py-xxl-11 d-none d-md-block">
+        <div class="container-md">
+            <div class="row align-items-center">
+                <div class="col">
+
+                    <!-- Heading -->
+                    <h1 class="font-weight-bold text-white mb-2">
+                        Teacher Dashboard
+                    </h1>
+
+                    <!-- Breadcrumb -->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="@@webRoot/index.html" class="text-light">Teacher</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">Add Course</li>
+                        </ol>
+                    </nav>
+
+                </div>
+                <div class="col-auto">
+
+                    <!-- Button -->
+                    <a href="@@webRoot/index.html" role="button" class="btn btn-sm btn-outline-light">
+                        Log Out
+                    </a>
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </header>
+
+    <!-- MAIN
+        ================================================== -->
+    <main class="pb-8 pb-md-11 mt-6">
+        <div class="container-md">
+            <div class="row">
+                <div class="col-12 col-md-4 col-xl-3 mb-4 mb-sm-0">
+
+                    <!-- Card -->
+                    <div class="card border border-danger-soft">
+                        <div class="card-header bg-danger py-3">
+                            <span class="text-light">Teacher Menu</span>
+                        </div>
+
+                        <div class="collapse d-md-block" id="sideNavCollapse">
+                            <!-- card-body -->
+                            <div class="card-body">
+
+                                <!-- Avatar -->
+                                <div class="text-center mb-5">
+                                    <div class="avatar avatar-online avatar-xxl">
+                                        <img src="assets/img/avatar/avatar-1.jpeg" alt="..."
+                                            class="avatar-img rounded-circle">
+                                    </div>
+                                    <h3>Julie Robert</h3>
+                                    <span class="text-danger"><small>Math & Algoritm</small></span>
+                                </div>
+
+                                <!-- Heading -->
+                                <h4 class="main-heading mb-4">
+                                    Account
+                                </h4>
+
+                                <!-- List -->
+                                <ul class="card-list list text-gray-700 mb-6">
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none active"
+                                                href="@@webRoot/teacher-dashboard.html">
+                                                <i class="fe fe-file-text mr-1"></i>
+                                                Personal info
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-notification.html">
+                                                <i class="fe fe-bell mr-1"></i>
+                                                Notifications
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-settings.html">
+                                                <i class="fe fe-list mr-1"></i>
+                                                Preferences
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-security.html">
+                                                <i class="fe fe-settings mr-1"></i>
+                                                Security
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                                <!-- Heading -->
+                                <h4 class="main-heading mb-4">
+                                    Courses
+                                </h4>
+
+                                <!-- List -->
+                                <ul class="card-list list text-gray-700 mb-6">
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-structure.html">
+                                                <i class="fe fe-grid mr-1"></i>
+                                                Course structure
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="list-item active mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-add-course.html">
+                                                <i class="fe fe-upload-cloud mr-1"></i>
+                                                Add Course
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-courses.html">
+                                                <i class="fe fe-layers mr-1"></i>
+                                                My course list
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-add-exam.html">
+                                                <i class="fe fe-file-plus mr-1"></i>
+                                                Add exam
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                                <!-- Heading -->
+                                <h4 class="main-heading mb-4">
+                                    Payment
+                                </h4>
+
+                                <!-- List -->
+                                <ul class="card-list list text-gray-700 mb-6">
+
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-payment.html">
+                                                <i class="fe fe-dollar-sign mr-1"></i>
+                                                Payment
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-help.html">
+                                                <i class="fe fe-life-buoy mr-1"></i>
+                                                Help Center
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <!-- Heading -->
+                                <h4 class="main-heading mb-4">
+                                    Leave course
+                                </h4>
+
+                                <!-- List -->
+                                <ul class="card-list list text-gray-700 mb-6">
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none" href="@@webRoot/index.html">
+                                                <i class="fe fe-power mr-1"></i>
+                                                Log out
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-8 col-xl-9">
+                    <!-- Card -->
+                    <div class="card border border-danger-soft">
+                        <div class="card-header bg-danger py-3">
+                            <span class="text-light">Course Information</span>
+                        </div>
+
+                        <div class="card-body p-2">
+                            <div class="row justify-content-start">
+                                <div class="col-md-12">
+                                    <div class="card border">
+                                        <div class="row no-gutters">
+
+                                            <div class="col-lg-4">
+                                                <div class="card h-100">
+                                                    <div
+                                                        class="card-header bg-primary-desat text-light text-capitalize">
+                                                        Online test
+                                                    </div>
+                                                    <div class="card-body bg-primary-desat h-100">
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-baseline mb-7">
+                                                            <span class="text-light">Course Introduction</span>
+                                                            <span
+                                                                class="badge badge-lg badge-rounded-circle badge-light step"><i
+                                                                    class="fe fe-check"></i></span>
+                                                        </div>
+
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-baseline mb-7">
+                                                            <span class="text-light">Course Description</span>
+                                                            <span
+                                                                class="badge badge-lg badge-rounded-circle badge-light step"><i
+                                                                    class="fe fe-check"></i></span>
+                                                        </div>
+
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-baseline mb-7">
+                                                            <span class="text-light">Upload Video</span>
+                                                            <span
+                                                                class="badge badge-lg badge-rounded-circle badge-light step"><i
+                                                                    class="fe fe-check"></i></span>
+                                                        </div>
+
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-baseline mb-7">
+                                                            <span class="text-light">Curriculum</span>
+                                                            <span
+                                                                class="badge badge-lg badge-rounded-circle badge-light step"><i
+                                                                    class="fe fe-check"></i></span>
+                                                        </div>
+
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-baseline mb-7">
+                                                            <span class="text-light">Course Landing</span>
+                                                            <span
+                                                                class="badge badge-lg badge-rounded-circle badge-light step"><i
+                                                                    class="fe fe-check"></i></span>
+                                                        </div>
+
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-baseline mb-10 mb-lg-13">
+                                                            <span class="text-light">Course Price</span>
+                                                            <span
+                                                                class="badge badge-lg badge-rounded-circle badge-light step"><i
+                                                                    class="fe fe-check"></i></span>
+                                                        </div>
+
+                                                        <div class="d-flex justify-content-end align-items-baseline">
+                                                            <a href="@@webRoot/teacher-dashboard.html"
+                                                                class="btn btn-danger btn-sm">Back</a>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-8">
+                                                <div class="card-body p-3 p-lg-5">
+                                                    <form id="regForm1">
+                                                        <div class="tabcontent">
+                                                            <h4 class="mb-5">Course Introduction</h4>
+                                                            <div class="form-group">
+                                                                <label for="title">Course title</label>
+                                                                <input class="form-control" id="title" type="text"
+                                                                    placeholder="title">
+                                                            </div>
+
+                                                            <!-- Textarea -->
+                                                            <div class="form-group">
+                                                                <label>Short description</label>
+                                                                <div data-quill='{"placeholder": "textarea"}'></div>
+                                                            </div>
+                                                            <!-- Select -->
+                                                            <div class="form-group">
+                                                                <label for="selectShortCategory">Category</label>
+                                                                <select id="selectShortCategory" class="form-control">
+                                                                    <option selected>Algoritm</option>
+                                                                    <option>Math & Physic</option>
+                                                                    <option>Language</option>
+                                                                    <option>IT & Software</option>
+                                                                    <option selected>Web Development</option>
+                                                                    <option>Lifecycle & Personal</option>
+                                                                    <option>Engineering & Electronic</option>
+                                                                    <option>Marketing & Business</option>
+                                                                    <option>Finance & Sales</option>
+                                                                    <option>Science</option>
+                                                                    <option>Law</option>
+
+                                                                </select>
+                                                            </div>
+
+                                                            <!-- Select -->
+                                                            <div class="form-group mb-7">
+                                                                <label for="selectSubCategory">Sub Category</label>
+                                                                <select id="selectSubCategory" class="form-control">
+                                                                    <option selected>Java Spring</option>
+                                                                    <option>PHP Laravel</option>
+                                                                    <option>Node.js Express</option>
+                                                                    <option>Javascript React.js</option>
+                                                                    <option>Javascript Vue.js</option>
+                                                                    <option>HTML & CSS</option>
+                                                                    <option>Bootstrap 5.0</option>
+                                                                    <option>Sass & Scss</option>
+                                                                    <option>Gulp js</option>
+                                                                    <option>Database ERD</option>
+                                                                    <option>Mongo DB</option>
+
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Course Description -->
+                                                        <div class="tabcontent mb-6 mb-lg-14">
+                                                            <h4 class="mb-5">Course Description</h4>
+                                                            <!-- Textarea -->
+                                                            <div class="form-group">
+                                                                <label>Description</label>
+                                                                <div data-quill='{"placeholder": "textarea"}'></div>
+                                                            </div>
+
+                                                            <div class="form-group cont">
+
+                                                                <label for="title">Requirement</label>
+                                                                <div class="d-flex align-items-center">
+                                                                    <button type="button"
+                                                                        class="add_button btn btn-white btn-xs"><i
+                                                                            class="fe fe-plus icon-lg"></i></button>
+                                                                    <input class="form-control" id="requirement"
+                                                                        type="text" placeholder="Requirement">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group cont1">
+
+                                                                <label for="title">What we'll learn</label>
+                                                                <div class="d-flex align-items-center">
+                                                                    <button type="button"
+                                                                        class="add_button1 btn btn-white btn-xs"><i
+                                                                            class="fe fe-plus icon-lg"></i></button>
+                                                                    <input class="form-control" id="require" type="text"
+                                                                        placeholder="What we learn">
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <!-- Course Description -->
+                                                        <div class="tabcontent mb-6 mb-lg-17">
+                                                            <h4 class="mb-5">Course Description</h4>
+                                                            <div class="form-group mb-10">
+                                                                <h4>Upload videos</h4>
+                                                                <!-- Dropzone -->
+                                                                <div class="dropzone dropzone-single"
+                                                                    data-dropzone='{"url": "https://", "maxFiles": 1, "acceptedFiles": "image/*"}'>
+
+                                                                    <!-- Fallback -->
+                                                                    <div class="fallback">
+                                                                        <div class="custom-file">
+                                                                            <input class="custom-file-input"
+                                                                                id="projectCoverUploads" type="file">
+                                                                            <label class="custom-file-label"
+                                                                                for="projectCoverUploads">Choose
+                                                                                file</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <!-- Preview -->
+                                                                    <div class="dz-preview dz-preview-single">
+                                                                        <div class="dz-preview-cover">
+                                                                            <img class="dz-preview-img"
+                                                                                data-dz-thumbnail
+                                                                                src="data:image/svg+xml,%3csvg3c/svg%3e"
+                                                                                alt="...">
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Course Curriculum -->
+                                                        <div class="tabcontent mb-6 mb-lg-17">
+                                                            <h4 class="mb-5">Course Manage</h4>
+                                                            <div class="form-group">
+                                                                <div class="row no-gutters shadow-small-soft">
+                                                                    <div class="col-1 bg-danger position-relative">
+                                                                        <div class="position-absolute center">
+                                                                            <i
+                                                                                class="fe fe-plus text-light icon-lg"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-11">
+                                                                        <ul class="nav nav-pills mb-3" id="pills-tab"
+                                                                            role="tablist">
+                                                                            <li class="nav-item" role="presentation">
+                                                                                <a class="nav-link active"
+                                                                                    id="pills-home-tab"
+                                                                                    data-toggle="pill"
+                                                                                    href="#pills-home" role="tab"
+                                                                                    aria-controls="pills-home"
+                                                                                    aria-selected="true">Introduction</a>
+                                                                            </li>
+                                                                            <li class="nav-item" role="presentation">
+                                                                                <a class="nav-link"
+                                                                                    id="pills-profile-tab"
+                                                                                    data-toggle="pill"
+                                                                                    href="#pills-profile" role="tab"
+                                                                                    aria-controls="pills-profile"
+                                                                                    aria-selected="false">Add from
+                                                                                    library</a>
+                                                                            </li>
+                                                                            <li class="nav-item" role="presentation">
+                                                                                <a class="nav-link"
+                                                                                    id="pills-contact-tab"
+                                                                                    data-toggle="pill"
+                                                                                    href="#pills-upload" role="tab"
+                                                                                    aria-controls="pills-upload"
+                                                                                    aria-selected="false">Upload
+                                                                                    video</a>
+                                                                            </li>
+                                                                            <li class="nav-item" role="presentation">
+                                                                                <a class="nav-link"
+                                                                                    id="pills-contact-tab"
+                                                                                    data-toggle="pill"
+                                                                                    href="#pills-content" role="tab"
+                                                                                    aria-controls="pills-content"
+                                                                                    aria-selected="false">Content</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <div class="tab-content" id="pills-tabContent">
+                                                                            <div class="tab-pane fade show active"
+                                                                                id="pills-home" role="tabpanel"
+                                                                                aria-labelledby="pills-home-tab">
+                                                                                <div class="px-4 pb-3">
+                                                                                    <input class="form-control"
+                                                                                        id="intoTitle" type="text"
+                                                                                        placeholder="........">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="tab-pane fade"
+                                                                                id="pills-profile" role="tabpanel"
+                                                                                aria-labelledby="pills-profile-tab">
+                                                                                <div class="px-4 pb-3">
+                                                                                    <input
+                                                                                        class="form-control form-control-xs"
+                                                                                        id="searchTitle" type="text"
+                                                                                        placeholder="Search files by name">
+                                                                                    <table
+                                                                                        class="table table-responsive table-sm mt-6">
+                                                                                        <thead>
+                                                                                            <tr>
+                                                                                                <th scope="col">File
+                                                                                                    name</th>
+                                                                                                <th scope="col">Type
+                                                                                                </th>
+                                                                                                <th scope="col">Status
+                                                                                                </th>
+                                                                                                <th scope="col">Date
+                                                                                                </th>
+                                                                                            </tr>
+                                                                                        </thead>
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td>Video-nxg-1.mp4</td>
+                                                                                                <td>mp4/video</td>
+                                                                                                <td>Success</td>
+                                                                                                <td>16 june 20</td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="tab-pane fade" id="pills-upload"
+                                                                                role="tabpanel"
+                                                                                aria-labelledby="pills-contact-tab">
+                                                                                <div class="px-4 pb-3">
+                                                                                    <div class="form-group">
+                                                                                        <label
+                                                                                            for="exampleFormControlFile1">Upload
+                                                                                            file</label>
+                                                                                        <input type="file"
+                                                                                            class="form-control-file"
+                                                                                            id="exampleFormControlFile1">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="tab-pane fade"
+                                                                                id="pills-content" role="tabpanel"
+                                                                                aria-labelledby="pills-contact-tab">
+                                                                                <div class="px-4 pb-3">
+                                                                                    <!-- Textarea -->
+                                                                                    <div class="form-group">
+                                                                                        <label>Content</label>
+                                                                                        <div
+                                                                                            data-quill='{"placeholder": "textarea"}'>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="tabcontent mb-6 mb-lg-11">
+                                                            <h4 class="mb-5">Course Image</h4>
+                                                            <div class="row no-gutters">
+                                                                <div class="col-lg-5 mb-4 mb-lg-0">
+                                                                    <img src="assets/img/card-photos/no-photo@2x.png"
+                                                                        class="img-fluid" alt="">
+                                                                </div>
+                                                                <div class="col-lg-6 ml-0 ml-lg-4">
+                                                                    <div class="form-control">
+                                                                        <input class="custom-file-input"
+                                                                            id="projectCoverUploadsSecond" type="file">
+                                                                        <label class="custom-file-label"
+                                                                            for="projectCoverUploadsSecond">Choose
+                                                                            file</label>
+                                                                    </div>
+                                                                    <p class="text-justify text-muted mt-3 ml-0">Upload
+                                                                        your course image here. It must meet our course
+                                                                        image quality standards to be accepted.
+                                                                        Important guidelines: 750x422 pixels; .jpg,
+                                                                        .jpeg,. gif, or .png. no text on the image.</p>
+                                                                </div>
+                                                            </div>
+
+                                                            <h4 class="mb-5">Promotional Video</h4>
+                                                            <div class="row no-gutters">
+                                                                <div class="col-lg-5 mb-4 mb-lg-0">
+                                                                    <img src="assets/img/card-photos/no-photo@2x.png"
+                                                                        class="img-fluid" alt="">
+                                                                </div>
+                                                                <div class="col-lg-6 ml-0 ml-lg-4">
+                                                                    <div class="form-control">
+                                                                        <input class="custom-file-input"
+                                                                            id="projectCoverUploads" type="file">
+                                                                        <label class="custom-file-label"
+                                                                            for="projectCoverUploads">Choose
+                                                                            file</label>
+                                                                    </div>
+                                                                    <p class="text-justify text-muted mt-3 ml-0">Upload
+                                                                        your course image here. It must meet our course
+                                                                        image quality standards to be accepted.
+                                                                        Important guidelines: 750x422 pixels; .jpg,
+                                                                        .jpeg,. gif, or .png. no text on the image.</p>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="tabcontent mb-6 mb-lg-17">
+                                                            <h4 class="mb-5">Course Pricing</h4>
+                                                            <div class="row no-gutters">
+                                                                <div class="col-12">
+                                                                    <p>
+                                                                        It is a long established fact that a reader will
+                                                                        be distracted by the readable content of a page
+                                                                        when looking at its layout. The point of using
+                                                                        Lorem Ipsum is that it has a more-or-less normal
+                                                                        distribution of letters, as opposed to using
+                                                                        'Content here, content here', making it look
+                                                                        like readable English.
+                                                                    </p>
+
+                                                                    <!-- Select -->
+                                                                    <div class="d-flex">
+                                                                        <div class="form-group w-50 w-lg-25">
+                                                                            <select id="selectCurrentType"
+                                                                                class="form-control">
+                                                                                <option selected>USD</option>
+                                                                                <option>Canada USD</option>
+                                                                                <option>EUR</option>
+                                                                                <option>CNY</option>
+                                                                                <option>RUB</option>
+                                                                                <option>JPY</option>
+                                                                                <option>GBP</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="form-group w-50 w-lg-75">
+                                                                            <select id="selectPriceType"
+                                                                                class="form-control">
+                                                                                <option selected>$19.99</option>
+                                                                                <option>$21.99</option>
+                                                                                <option>$119.99</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="text-right">
+                                                            <!-- Button -->
+                                                            <button type="button" class="btn btn-danger btn-sm"
+                                                                id="prevBtn1" onclick="nextPrev1(-1)">previous</button>
+                                                            <button type="button" class="btn btn-primary-desat btn-sm"
+                                                                id="nextBtn1" onclick="nextPrev1(1)">next</button>
+                                                        </div>
+
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                        </div> <!-- / .row -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </main>
+
+
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html", {
+    "classList": "bg-light"
+    })
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+
+    <!-- Custom Student Exam -->
+    <!-- build:js @@webRoot/assets/js/add-course.js -->
+    <script src="@@webRoot/assets/js/add-course.js"></script>
+
+</body>
+
+</html>

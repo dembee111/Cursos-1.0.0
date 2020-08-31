@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  @@include("partials/head.html", {
+  "pageTitle": "Cursos"
+  })
+
+</head>
+
+<body class="bg-light">
+
+  <!-- MODALS
+  ================================================== -->
+  @@include("partials/modals.html")
+
+  <!-- Main Navbar
+    ================================================== -->
+  @@include("partials/navbar.html", {
+  "classList": "navbar-light bg-white",
+  "container": "container-fluid"
+  })
+
+
+  <!-- BREADCRUMB
+    ================================================== -->
+  <nav class="bg-primary-desat d-md-none">
+    <div class="container-md">
+      <div class="row align-items-center">
+        <div class="col">
+
+          <!-- Breadcrumb -->
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <span class="text-white">
+                Teacher
+              </span>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              <span class="text-white">
+                Structure
+              </span>
+            </li>
+          </ol>
+
+        </div>
+        <div class="col-auto">
+
+          <!-- Toggler -->
+          <div class="navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sideNavCollapse"
+              aria-controls="sideNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </nav>
+
+  <!-- HEADER
+      ================================================== -->
+  <header class="bg-danger py-6 py-xxl-11 d-none d-md-block">
+    <div class="container-md">
+      <div class="row align-items-center">
+        <div class="col">
+
+          <!-- Heading -->
+          <h1 class="font-weight-bold text-white mb-2">
+            Teacher Dashboard
+          </h1>
+
+          <!-- Breadcrumb -->
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="@@webRoot/index.html" class="text-light">Teacher</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Structure</li>
+            </ol>
+          </nav>
+
+        </div>
+        <div class="col-auto">
+
+          <!-- Button -->
+          <a href="@@webRoot/index.html" role="button" class="btn btn-sm btn-outline-light">
+            Log Out
+          </a>
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </header>
+
+  <!-- MAIN
+      ================================================== -->
+  <main class="pb-8 pb-md-11 mt-6">
+    <div class="container-md">
+      <div class="row">
+        <div class="col-12 col-md-4 col-xl-3 mb-4 mb-sm-0">
+
+          <!-- Card -->
+          <div class="card border border-danger-soft">
+            <div class="card-header bg-danger py-3">
+              <span class="text-light">Teacher Menu</span>
+            </div>
+
+            <div class="collapse d-md-block" id="sideNavCollapse">
+              <!-- card-body -->
+              <div class="card-body">
+
+                <!-- Avatar -->
+                <div class="text-center mb-5">
+                  <div class="avatar avatar-online avatar-xxl">
+                    <img src="assets/img/avatar/avatar-1.jpeg" alt="..." class="avatar-img rounded-circle">
+                  </div>
+                  <h3>Julie Robert</h3>
+                  <span class="text-danger"><small>Math & Algoritm</small></span>
+                </div>
+
+                <!-- Heading -->
+                <h4 class="main-heading mb-4">
+                  Account
+                </h4>
+
+                <!-- List -->
+                <ul class="card-list list text-gray-700 mb-6">
+                  <li class="list-item mb-3">
+                    <div class="d-flex align-items-baseline">
+                      <a class="link text-reset text-decoration-none active" href="@@webRoot/teacher-dashboard.html">
+                        <i class="fe fe-file-text mr-1"></i>
+                        Personal info
+                      </a>
+                    </div>
+                  </li>
+                  <li class="list-item mb-3">
+                    <div class="d-flex align-items-baseline">
+                      <a class="link text-reset text-decoration-none" href="@@webRoot/teacher-notification.html">
+                        <i class="fe fe-bell mr-1"></i>
+                        Notifications
+                      </a>
+                    </div>
+                  </li>
+
+                  <li class="list-item mb-3">
+                    <div class="d-flex align-items-baseline">
+                      <a class="link text-reset text-decoration-none" href="@@webRoot/teacher-settings.html">
+                        <i class="fe fe-list mr-1"></i>
+                        Preferences
+                      </a>
+                    </div>
+                  </li>
+                  <li class="list-item mb-3">
+                    <div class="d-flex align-items-baseline">
+                      <a class="link text-reset text-decoration-none" href="@@webRoot/teacher-security.html">
+                        <i class="fe fe-settings mr-1"></i>
+                        Security
+                      </a>
+                    </div>
+                  </li>
+
+                </ul>
+
+                <!-- Heading -->
+                <h4 class="main-heading mb-4">
+                  Courses
+                </h4>
+
+                <!-- List -->
+                <ul class="card-list list text-gray-700 mb-6">
+                  <li class="list-item active mb-3">
+                    <div class="d-flex align-items-baseline">
+                      <a class="link text-reset text-decoration-none" href="@@webRoot/teacher-structure.html">
+                        <i class="fe fe-grid mr-1"></i>
+                        Course structure
+                      </a>
+                    </div>
+                  </li>
+                  <li class="list-item mb-3">
+                    <div class="d-flex align-items-baseline">
+                      <a class="link text-reset text-decoration-none" href="@@webRoot/teacher-add-course.html">
+                        <i class="fe fe-upload-cloud mr-1"></i>
+                        Add Course
+                      </a>
+                    </div>
+                  </li>
+
+                  <li class="list-item mb-3">
+                    <div class="d-flex align-items-baseline">
+                      <a class="link text-reset text-decoration-none" href="@@webRoot/teacher-courses.html">
+                        <i class="fe fe-layers mr-1"></i>
+                        My course list
+                      </a>
+                    </div>
+                  </li>
+
+                  <li class="list-item mb-3">
+                    <div class="d-flex align-items-baseline">
+                      <a class="link text-reset text-decoration-none" href="@@webRoot/teacher-add-exam.html">
+                        <i class="fe fe-file-plus mr-1"></i>
+                        Add exam
+                      </a>
+                    </div>
+                  </li>
+
+                </ul>
+
+                <!-- Heading -->
+                <h4 class="main-heading mb-4">
+                  Payment
+                </h4>
+
+                <!-- List -->
+                <ul class="card-list list text-gray-700 mb-6">
+
+                  <li class="list-item mb-3">
+                    <div class="d-flex align-items-baseline">
+                      <a class="link text-reset text-decoration-none" href="@@webRoot/teacher-payment.html">
+                        <i class="fe fe-dollar-sign mr-1"></i>
+                        Payment
+                      </a>
+                    </div>
+                  </li>
+
+                  <li class="list-item mb-3">
+                    <div class="d-flex align-items-baseline">
+                      <a class="link text-reset text-decoration-none" href="@@webRoot/teacher-help.html">
+                        <i class="fe fe-life-buoy mr-1"></i>
+                        Help Center
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+
+                <!-- Heading -->
+                <h4 class="main-heading mb-4">
+                  Leave course
+                </h4>
+
+                <!-- List -->
+                <ul class="card-list list text-gray-700 mb-6">
+                  <li class="list-item mb-3">
+                    <div class="d-flex align-items-baseline">
+                      <a class="link text-reset text-decoration-none" href="@@webRoot/index.html">
+                        <i class="fe fe-power mr-1"></i>
+                        Log out
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col-12 col-md-8 col-xl-9">
+          <!-- Card -->
+          <div class="card border border-danger-soft">
+            <div class="card-header bg-danger py-3">
+              <span class="text-light">Course Information</span>
+            </div>
+
+            <div class="card-body">
+              <div class="row justify-content-start">
+                <div class="col-md-10 offset-md-1">
+                  <!-- Heading -->
+                  <h4 class="main-heading mb-6">Course Structure</h4>
+                  <!-- tips content -->
+                  <div class="media">
+                    <img src="assets/img/icons/alert/Icon metro-warning.svg" class="mr-5" alt="icon-warning">
+                    <div class="media-body">
+                      <h4 class="mt-0 main-heading">Tips</h4>
+                      <ul class="ml-4">
+                        <li>Your course has at least five lectures</li>
+                        <li>All lectures add up to at least 30+ minutes of total video</li>
+                        <li>Your course is composed of valuable educational content <a href="#!">Learn more</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Requirement content -->
+                  <div class="media mb-6">
+                    <img src="assets/img/icons/alert/information.svg" class="mr-5" alt="...">
+                    <div class="media-body">
+                      <h4 class="mt-0 main-heading">Requirement</h4>
+                      <br>
+                      <h4 class="text-muted">Create an outline</h4>
+                      <p class="mb-0 text-justify text-muted">
+                        These cases are perfectly simple and easy to distinguish. In a free hour, when our power of
+                        choice is untrammelled and when nothing prevents our being able to do what we like best, every
+                        pleasure is to be welcomed and every pain avoided.
+                      </p>
+                      <br>
+                      <h4 class="text-muted">Create an outline</h4>
+                      <p class="mb-0 text-justify text-muted">
+                        These cases are perfectly simple and easy to distinguish. In a free hour, when our power of
+                        choice is untrammelled and when nothing prevents our being able to do what we like best, every
+                        pleasure is to be welcomed and every pain avoided.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Resource content -->
+                  <div class="media mb-6">
+                    <img src="assets/img/icons/alert/info-list.svg" class="mr-5" alt="...">
+                    <div class="media-body">
+                      <h4 class="mt-0 main-heading">Resources</h4>
+                      <br>
+                      <h4 class="text-muted">Trust & Safety</h4>
+                      <p class="mb-0 text-justify text-muted">
+                        These cases are perfectly simple and easy to distinguish. In a free hour, when our power of
+                        choice is untrammelled and when nothing prevents our being able to do what we like best, every
+                        pleasure is to be welcomed and every pain avoided.
+                      </p>
+                      <br>
+                      <h4 class="text-muted">Create an outline</h4>
+                      <p class="mb-0 text-justify text-muted">
+                        These cases are perfectly simple and easy to distinguish. In a free hour, when our power of
+                        choice is untrammelled and when nothing prevents our being able to do what we like best, every
+                        pleasure is to be welcomed and every pain avoided.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </main>
+
+
+
+  <!-- FOOTER
+    ================================================== -->
+  @@include("partials/footer.html", {
+  "classList": "bg-light"
+  })
+
+  <!-- JAVASCRIPT
+    ================================================== -->
+  @@include("partials/scripts.html")
+
+</body>
+
+</html>

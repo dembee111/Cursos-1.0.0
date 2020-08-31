@@ -1,0 +1,1174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    @@include("partials/head.html", {
+    "pageTitle": "Cursos"
+    })
+</head>
+
+<body class="bg-light">
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("partials/modals.html")
+
+    <!-- Main Navbar
+    ================================================== -->
+    @@include("partials/navbar.html", {
+    "classList": "navbar-light bg-white",
+    "container": "container-fluid"
+    })
+
+
+    <!-- BREADCRUMB
+    ================================================== -->
+    <nav class="bg-primary-desat d-md-none">
+        <div class="container-md">
+            <div class="row align-items-center">
+                <div class="col">
+
+                    <!-- Breadcrumb -->
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <span class="text-white">
+                                Teacher
+                            </span>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <span class="text-white">
+                                Help Center
+                            </span>
+                        </li>
+                    </ol>
+
+                </div>
+                <div class="col-auto">
+
+                    <!-- Toggler -->
+                    <div class="navbar-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#sideNavCollapse" aria-controls="sideNavCollapse" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </nav>
+
+    <!-- HEADER
+        ================================================== -->
+    <header class="bg-danger py-6 py-xxl-11 d-none d-md-block">
+        <div class="container-md">
+            <div class="row align-items-center">
+                <div class="col">
+
+                    <!-- Heading -->
+                    <h1 class="font-weight-bold text-white mb-2">
+                        Teacher Dashboard
+                    </h1>
+
+                    <!-- Breadcrumb -->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="@@webRoot/index.html" class="text-light">Teacher</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">Help Center</li>
+                        </ol>
+                    </nav>
+
+                </div>
+                <div class="col-auto">
+
+                    <!-- Button -->
+                    <a href="@@webRoot/index.html" class="btn btn-sm btn-outline-light">
+                        Log Out
+                    </a>
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </header>
+
+    <!-- MAIN
+        ================================================== -->
+    <main class="pb-8 pb-md-11 mt-6">
+        <div class="container-md">
+            <div class="row">
+                <div class="col-12 col-md-4 col-xl-3 mb-4 mb-sm-0">
+
+                    <!-- Card -->
+                    <div class="card border border-danger-soft">
+                        <div class="card-header bg-danger py-3">
+                            <span class="text-light">Teacher Menu</span>
+                        </div>
+
+                        <div class="collapse d-md-block" id="sideNavCollapse">
+                            <!-- card-body -->
+                            <div class="card-body">
+
+                                <!-- Avatar -->
+                                <div class="text-center mb-5">
+                                    <div class="avatar avatar-online avatar-xxl">
+                                        <img src="assets/img/avatar/avatar-1.jpeg" alt="..."
+                                            class="avatar-img rounded-circle">
+                                    </div>
+                                    <h3>Julie Robert</h3>
+                                    <span class="text-danger"><small>Math & Algoritm</small></span>
+                                </div>
+
+                                <!-- Heading -->
+                                <h4 class="main-heading mb-4">
+                                    Account
+                                </h4>
+
+                                <!-- List -->
+                                <ul class="card-list list text-gray-700 mb-6">
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none active"
+                                                href="@@webRoot/teacher-dashboard.html">
+                                                <i class="fe fe-file-text mr-1"></i>
+                                                Personal info
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-notification.html">
+                                                <i class="fe fe-bell mr-1"></i>
+                                                Notifications
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-settings.html">
+                                                <i class="fe fe-list mr-1"></i>
+                                                Preferences
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-security.html">
+                                                <i class="fe fe-settings mr-1"></i>
+                                                Security
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                                <!-- Heading -->
+                                <h4 class="main-heading mb-4">
+                                    Courses
+                                </h4>
+
+                                <!-- List -->
+                                <ul class="card-list list text-gray-700 mb-6">
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-structure.html">
+                                                <i class="fe fe-grid mr-1"></i>
+                                                Course structure
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-add-course.html">
+                                                <i class="fe fe-upload-cloud mr-1"></i>
+                                                Add Course
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-courses.html">
+                                                <i class="fe fe-layers mr-1"></i>
+                                                My course list
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-add-exam.html">
+                                                <i class="fe fe-file-plus mr-1"></i>
+                                                Add exam
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                                <!-- Heading -->
+                                <h4 class="main-heading mb-4">
+                                    Payment
+                                </h4>
+
+                                <!-- List -->
+                                <ul class="card-list list text-gray-700 mb-6">
+
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-payment.html">
+                                                <i class="fe fe-dollar-sign mr-1"></i>
+                                                Payment
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-item active mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-help.html">
+                                                <i class="fe fe-life-buoy mr-1"></i>
+                                                Help Center
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <!-- Heading -->
+                                <h4 class="main-heading mb-4">
+                                    Leave course
+                                </h4>
+
+                                <!-- List -->
+                                <ul class="card-list list text-gray-700 mb-6">
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none" href="@@webRoot/index.html">
+                                                <i class="fe fe-power mr-1"></i>
+                                                Log out
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-8 col-xl-9">
+                    <!-- Card -->
+                    <div class="card border border-danger-soft">
+                        <div class="card-header bg-danger py-3">
+                            <span class="text-light">Help Center</span>
+                        </div>
+
+                        <div class="card-body p-0 p-md-3">
+
+                            <!--Row-->
+                            <div class="row no-gutters mt-5 mt-lg-3">
+                                <div class="col-lg-4">
+                                    <!-- Card -->
+                                    <div class="card">
+                                        <div class="card-body p-2">
+                                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                                aria-orientation="vertical">
+                                                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill"
+                                                    href="#v-pills-home" role="tab" aria-controls="v-pills-home"
+                                                    aria-selected="true">Privacy Policy and Cookie</a>
+                                                <a class="nav-link" id="property-legacy" data-toggle="pill"
+                                                    href="#property-legacy-v" role="tab"
+                                                    aria-controls="property-legacy-v"
+                                                    aria-selected="false">Interllectural Property Policy</a>
+                                                <a class="nav-link" id="agreement" data-toggle="pill"
+                                                    href="#agreement-v" role="tab" aria-controls="agreement-v"
+                                                    aria-selected="false">Agreement</a>
+                                                <a class="nav-link" id="service" data-toggle="pill" href="#service-v"
+                                                    role="tab" aria-controls="service-v" aria-selected="false">Mater
+                                                    Service Agreement</a>
+                                                <a class="nav-link" id="statement" data-toggle="pill"
+                                                    href="#statement-v" role="tab" aria-controls="statement-v"
+                                                    aria-selected="false">Priavacy Statement</a>
+                                                <a class="nav-link" id="instructor" data-toggle="pill"
+                                                    href="#instructor-v" role="tab" aria-controls="instructor-v"
+                                                    aria-selected="false">Instructor Terms</a>
+                                                <a class="nav-link" id="term" data-toggle="pill" href="#term-v"
+                                                    role="tab" aria-controls="term-v" aria-selected="false">Term and
+                                                    Conditions</a>
+                                                <a class="nav-link" id="program" data-toggle="pill" href="#program-v"
+                                                    role="tab" aria-controls="program-v" aria-selected="false">Academic
+                                                    & Program</a>
+                                                <a class="nav-link" id="price" data-toggle="pill" href="#price-v"
+                                                    role="tab" aria-controls="price-v" aria-selected="false">Pricing and
+                                                    License Policy</a>
+                                            </div>
+                                        </div>
+                                    </div><!-- / .card -->
+                                </div>
+                                <!-- Text content -->
+                                <div class="col-lg-8 mt-5 mt-lg-5">
+                                    <div class="tab-content px-3" id="v-pills-tabContent">
+                                        <!-- Tab-pane -->
+                                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                            aria-labelledby="v-pills-home-tab">
+                                            <h3 class="font-second">Main Legacy</h3>
+                                            <p class="main-heading mb-0">These Terms of Use ("Terms") were last updated
+                                                on April 27, 2020</p>
+                                            <br>
+                                            <p class="text-muted mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+                                            <br>
+                                            <p class="text-muted mb-0">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum
+                                            </p>
+                                            <br>
+                                            <p class="main-heading mb-0">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="text-muted mb-0">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <h4>1. Accounts</h4>
+                                            <p class="main-heading mb-0 bg-saaral p-3">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+                                            <br>
+                                            <h4>2. Cookie and Session</h4>
+                                            <p class="main-heading mb-0 bg-saaral p-3">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+
+                                            <br>
+                                            <h4>2. User Security</h4>
+                                            <p class="main-heading mb-0 bg-saaral p-3">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+                                        </div>
+                                        <!-- Tab-pane -->
+                                        <div class="tab-pane fade" id="property-legacy-v" role="tabpanel"
+                                            aria-labelledby="property-legacy">
+                                            <h3 class="font-second">Interllectural Property legacy</h3>
+                                            <p class="main-heading mb-0">These Terms of Use ("Terms") were last updated
+                                                on April 27, 2020</p>
+                                            <br>
+                                            <p class="text-muted mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+                                            <br>
+                                            <p class="text-muted mb-0">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum
+                                            </p>
+                                            <br>
+                                            <p class="main-heading mb-0">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="text-muted mb-0">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <h4>1. Accounts</h4>
+                                            <p class="main-heading mb-0 bg-saaral p-3">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+                                            <br>
+                                            <h4>2. Cookie and Session</h4>
+                                            <p class="main-heading mb-0 bg-saaral p-3">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+
+                                            <br>
+                                            <h4>2. User Security</h4>
+                                            <p class="main-heading mb-0 bg-saaral p-3">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+                                        </div>
+
+                                        <!-- Tab-pane -->
+                                        <div class="tab-pane fade" id="agreement-v" role="tabpanel"
+                                            aria-labelledby="agreement">
+                                            <h3 class="font-second">Agreement legacy</h3>
+                                            <p class="main-heading mb-0">These Terms of Use ("Terms") were last updated
+                                                on April 27, 2020</p>
+                                            <br>
+                                            <p class="text-muted mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+                                            <br>
+                                            <p class="text-muted mb-0">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum
+                                            </p>
+                                            <br>
+                                            <p class="main-heading mb-0">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="text-muted mb-0">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <h4>1. Accounts</h4>
+                                            <p class="main-heading mb-0 bg-saaral p-3">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+                                            <br>
+                                            <h4>2. Cookie and Session</h4>
+                                            <p class="main-heading mb-0 bg-saaral p-3">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+
+                                            <br>
+                                            <h4>2. User Security</h4>
+                                            <p class="main-heading mb-0 bg-saaral p-3">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+                                        </div>
+                                        <div class="tab-pane fade" id="service-v" role="tabpanel"
+                                            aria-labelledby="service">
+                                            <h3 class="font-second">Master Service Agreement</h3>
+                                            <p class="main-heading mb-0">These Terms of Use ("Terms") were last updated
+                                                on April 27, 2020</p>
+                                            <br>
+                                            <p class="text-muted mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+                                            <br>
+                                            <p class="text-muted mb-0">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum
+                                            </p>
+                                            <br>
+                                            <p class="main-heading mb-0">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="text-muted mb-0">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <h4>1. Accounts</h4>
+                                            <p class="main-heading mb-0 bg-saaral p-3">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+                                            <br>
+                                            <h4>2. Cookie and Session</h4>
+                                            <p class="main-heading mb-0 bg-saaral p-3">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+
+                                            <br>
+                                            <h4>2. User Security</h4>
+                                            <p class="main-heading mb-0 bg-saaral p-3">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+                                        </div>
+                                        <!-- Tab-pane -->
+                                        <div class="tab-pane fade" id="statement-v" role="tabpanel"
+                                            aria-labelledby="statement">
+                                            <h3 class="font-second">Privacy Statement</h3>
+                                            <p class="main-heading mb-0">These Terms of Use ("Terms") were last updated
+                                                on April 27, 2020</p>
+                                            <br>
+                                            <p class="text-muted mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+                                            <br>
+                                            <p class="text-muted mb-0">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum
+                                            </p>
+                                            <br>
+                                            <p class="main-heading mb-0">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="text-muted mb-0">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <h4>1. Accounts</h4>
+                                            <p class="main-heading mb-0 bg-saaral p-3">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+                                            <br>
+                                            <h4>2. Cookie and Session</h4>
+                                            <p class="main-heading mb-0 bg-saaral p-3">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+
+                                            <br>
+                                            <h4>2. User Security</h4>
+                                            <p class="main-heading mb-0 bg-saaral p-3">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+                                        </div>
+                                        <!-- Tab-pane -->
+                                        <div class="tab-pane fade" id="instructor-v" role="tabpanel"
+                                            aria-labelledby="instructor">
+                                            <h3 class="font-second">Instructor Terms</h3>
+                                            <p class="main-heading mb-0">These Terms of Use ("Terms") were last updated
+                                                on April 27, 2020</p>
+                                            <br>
+                                            <p class="text-muted mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+                                            <br>
+                                            <p class="text-muted mb-0">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum
+                                            </p>
+                                            <br>
+                                            <p class="main-heading mb-0">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="text-muted mb-0">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <h4>1. Accounts</h4>
+                                            <p class="main-heading mb-0 bg-saaral p-3">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+                                            <br>
+                                            <h4>2. Cookie and Session</h4>
+                                            <p class="main-heading mb-0 bg-saaral p-3">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+
+                                            <br>
+                                            <h4>2. User Security</h4>
+                                            <p class="main-heading mb-0 bg-saaral p-3">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+                                        </div>
+                                        <!-- Tab-pane -->
+                                        <div class="tab-pane fade" id="term-v" role="tabpanel" aria-labelledby="term">
+                                            <h3 class="font-second">Term and Conditions</h3>
+                                            <p class="main-heading mb-0">These Terms of Use ("Terms") were last updated
+                                                on April 27, 2020</p>
+                                            <br>
+                                            <p class="text-muted mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+                                            <br>
+                                            <p class="text-muted mb-0">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum
+                                            </p>
+                                            <br>
+                                            <p class="main-heading mb-0">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="text-muted mb-0">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <h4>1. Accounts</h4>
+                                            <p class="main-heading mb-0 bg-saaral p-3">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+                                            <br>
+                                            <h4>2. Cookie and Session</h4>
+                                            <p class="main-heading mb-0 bg-saaral p-3">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+
+                                            <br>
+                                            <h4>2. User Security</h4>
+                                            <p class="main-heading mb-0 bg-saaral p-3">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+                                        </div>
+                                        <!-- Tab-pane -->
+                                        <div class="tab-pane fade" id="program-v" role="tabpanel"
+                                            aria-labelledby="program">
+                                            <h3 class="font-second">Academic & Program</h3>
+                                            <p class="main-heading mb-0">These Terms of Use ("Terms") were last updated
+                                                on April 27, 2020</p>
+                                            <br>
+                                            <p class="text-muted mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+                                            <br>
+                                            <p class="text-muted mb-0">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum
+                                            </p>
+                                            <br>
+                                            <p class="main-heading mb-0">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="text-muted mb-0">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <h4>1. Accounts</h4>
+                                            <p class="main-heading mb-0 bg-saaral p-3">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+                                            <br>
+                                            <h4>2. Cookie and Session</h4>
+                                            <p class="main-heading mb-0 bg-saaral p-3">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+
+                                            <br>
+                                            <h4>2. User Security</h4>
+                                            <p class="main-heading mb-0 bg-saaral p-3">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+                                        </div>
+                                        <!-- Tab-pane -->
+                                        <div class="tab-pane fade" id="price-v" role="tabpanel" aria-labelledby="price">
+                                            <h3 class="font-second">Pricing and License Policy</h3>
+                                            <p class="main-heading mb-0">These Terms of Use ("Terms") were last updated
+                                                on April 27, 2020</p>
+                                            <br>
+                                            <p class="text-muted mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+                                            <br>
+                                            <p class="text-muted mb-0">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum
+                                            </p>
+                                            <br>
+                                            <p class="main-heading mb-0">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="text-muted mb-0">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <h4>1. Accounts</h4>
+                                            <p class="main-heading mb-0 bg-saaral p-3">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+                                            <br>
+                                            <h4>2. Cookie and Session</h4>
+                                            <p class="main-heading mb-0 bg-saaral p-3">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+
+                                            <br>
+                                            <h4>2. User Security</h4>
+                                            <p class="main-heading mb-0 bg-saaral p-3">
+                                                It uses a dictionary of over 200 Latin words, combined with a handful of
+                                                model sentence structures, to generate Lorem Ipsum which looks
+                                                reasonable. The generated Lorem Ipsum is therefore always free from
+                                                repetition, injected humour, or non-characteristic words etc.
+                                            </p>
+                                            <br>
+                                            <p class="mb-0">
+                                                There are many variations of passages of Lorem Ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable. If you are
+                                                going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                                generators on the Internet tend to repeat predefined chunks as
+                                                necessary, making this the first true generator on the Internet.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div> <!-- / .row -->
+                                <!--Row end-->
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </main>
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html", {
+    "classList": "bg-light"
+    })
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+
+</body>
+
+</html>

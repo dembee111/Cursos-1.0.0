@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  @@include("partials/head.html", {
+  "pageTitle": "Cursos"
+  })
+</head>
+
+<body>
+  <!-- MODALS
+  ================================================== -->
+  @@include("partials/modals.html")
+
+  <!--  Top navbar ======================= -->
+  @@include("partials/top-navbar.html", {
+  "container": "container-fluid"
+  })
+
+  <main class="bg-cover position-relative bg-blog">
+
+    <!-- === Main navbar ======================= -->
+    @@include("partials/navbar.html", {
+    "classList": "navbar-dark bg-transparent",
+    "container": "container-fluid"
+    })
+
+    <div class="bg-overlay"></div>
+    <div class="position-absolute left-3 top-35 d-none d-lg-block">
+      <img src="assets/img/svg-shapes/big-lines.svg" class="img-fluid" alt="circle-and-circle">
+    </div>
+
+    <div class="position-absolute right-3 top-35 d-none d-lg-block">
+      <img src="assets/img/svg-shapes/square-three.svg" class="img-fluid" alt="square-three">
+    </div>
+
+    <!-- WELCOME HEADING
+    ================================================== -->
+    <section class="py-6 py-md-12 py-xxl-16">
+      <div class="container-fluid">
+        <div class="row align-items-center justify-content-center mx-xl-9 mx-xxl-13">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8" data-aos="fade-up" data-aos-delay="100">
+
+            <!-- Heading -->
+            <h1 class="display-3 text-center text-light">
+              Good advice and new information
+            </h1>
+            <!-- Text -->
+            <p class="lead text-center text-light mb-7 mw-lg-75 mx-auto">
+              Anywhere, Anytime, Lifetime access, Enjoy risk-free with our 30-day money-back guarentee.
+            </p>
+
+            <!-- Buttons -->
+            <div class="text-center">
+              <a href="@@webRoot/blog-detail.html" class="btn btn-outline-light btn-pill shadow move text-uppercase">
+                Learn More
+              </a>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+  </main>
+
+  <!-- BRANDS
+    ================================================== -->
+  <figure class="pt-6 pt-md-8">
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-center mx-xl-9 mx-xxl-13 text-center">
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/Lenovo-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/verizon-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/dribbble-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/behance-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/laravel-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/jquery-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </figure>
+
+  <!-- News
+    ================================================== -->
+  <section class="py-6 py-md-10">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xs-12 col-md-12 col-lg-10 col-xl-10 col-xxl-8 text-center">
+          <h1 class="display-3 text-capitalize mt-4">Our latest news</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-8">
+        <div class="col-12 col-md-6 col-lg-4">
+          <!--Blog card-->
+          <a href="@@webRoot/blog-detail.html" class="card">
+            <div class="position-relative">
+              <img src="assets/img/card-photos/blog/vanilla-bear-films-EbV2mEdM15o-unsplash.png" class="card-img-top"
+                alt="vanilla-bear">
+              <div class="bg-overlay rounded"></div>
+            </div>
+            <div class="card-body p-0 pb-3 border-bottom border-primary-desat">
+              <div class="d-flex p-3">
+                <span class="text-danger mr-4">Technology</span>
+                <span class="text-danger">Programming</span>
+              </div>
+              <h2 class="text-body">Lorem ipsum dolor sit amet consectetur</h2>
+              <div class="card-bottom pb-2">
+                <div class="float-left">
+                  <span class="text-muted"><small>September 12 2020</small></span>
+                </div>
+                <div class="float-right">
+                  <span class="text-muted">Posted by Admin</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--Blog card end-->
+        </div>
+        <!--col end-->
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <!--Blog card-->
+          <a href="@@webRoot/blog-detail.html" class="card">
+            <div class="position-relative">
+              <img src="assets/img/card-photos/blog/blog-photo-3.png" class="card-img-top" alt="vanilla-bear">
+              <div class="bg-overlay rounded"></div>
+            </div>
+            <div class="card-body p-0 pb-3 border-bottom border-danger">
+              <div class="d-flex p-3">
+                <span class="text-danger mr-4">Technology</span>
+                <span class="text-danger">Programming</span>
+              </div>
+              <h2 class="text-body">Lorem ipsum dolor sit amet consectetur.</h2>
+              <div class="card-bottom pb-2">
+                <div class="float-left">
+                  <span class="text-muted"><small>September 12 2020</small></span>
+                </div>
+                <div class="float-right">
+                  <span class="text-muted">Posted by Admin</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--Blog card end-->
+        </div>
+        <!--col end-->
+
+        <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
+          <!--Blog card-->
+          <a href="@@webRoot/blog-detail.html" class="card">
+            <div class="position-relative">
+              <img src="assets/img/card-photos/blog/blog-photo-2.png" class="card-img-top" alt="vanilla-bear">
+              <div class="bg-overlay rounded"></div>
+            </div>
+            <div class="card-body p-0 pb-3 border-bottom border-success">
+              <div class="d-flex p-3">
+                <span class="text-danger mr-4">Technology</span>
+                <span class="text-danger">Programming</span>
+              </div>
+              <h2 class="text-body">Lorem ipsum dolor sit amet consectetur.</h2>
+              <div class="card-bottom pb-2">
+                <div class="float-left">
+                  <span class="text-muted"><small>September 12 2020</small></span>
+                </div>
+                <div class="float-right">
+                  <span class="text-muted">Posted by Admin</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--Blog card end-->
+        </div>
+        <!--col end-->
+      </div>
+      <div class="row mt-8">
+        <div class="col-12 col-md-6 col-lg-4">
+          <!--Blog card-->
+          <a href="@@webRoot/blog-detail.html" class="card" style="width: 100%">
+            <div class="position-relative">
+              <img src="assets/img/card-photos/blog/blog-photo-4.png" class="card-img-top" alt="vanilla-bear">
+              <div class="bg-overlay rounded"></div>
+            </div>
+            <div class="card-body p-0 pb-3 border-bottom border-success">
+              <div class="d-flex p-3">
+                <span class="text-danger mr-4">Technology</span>
+                <span class="text-danger">Programming</span>
+              </div>
+              <h2 class="text-body">Lorem ipsum dolor sit amet consectetur</h2>
+              <div class="card-bottom pb-2">
+                <div class="float-left">
+                  <span class="text-muted"><small>September 12 2020</small></span>
+                </div>
+                <div class="float-right">
+                  <span class="text-muted">Posted by Admin</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--Blog card end-->
+
+        </div>
+        <!--col end-->
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <!--Blog card-->
+          <a href="@@webRoot/blog-detail.html" class="card" style="width: 100%">
+            <div class="position-relative">
+              <img src="assets/img/card-photos/blog/blog-photo-5.png" class="card-img-top" alt="vanilla-bear">
+              <div class="bg-overlay rounded"></div>
+            </div>
+            <div class="card-body p-0 pb-3 border-bottom border-primary-desat">
+              <div class="d-flex p-3">
+                <span class="text-danger mr-4">Technology</span>
+                <span class="text-danger">Programming</span>
+              </div>
+              <h2 class="text-body">Lorem ipsum dolor sit amet consectetur</h2>
+              <div class="card-bottom pb-2">
+                <div class="float-left">
+                  <span class="text-muted"><small>September 12 2020</small></span>
+                </div>
+                <div class="float-right">
+                  <span class="text-muted">Posted by Admin</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--Blog card end-->
+
+        </div>
+        <!--col end-->
+
+        <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
+          <!--Blog card-->
+          <a href="@@webRoot/blog-detail.html" class="card" style="width: 100%">
+            <div class="position-relative">
+              <img src="assets/img/card-photos/blog/blog-photo-6.png" class="card-img-top" alt="vanilla-bear">
+              <div class="bg-overlay rounded"></div>
+            </div>
+            <div class="card-body p-0 pb-3 border-bottom border-danger">
+              <div class="d-flex p-3">
+                <span class="text-danger mr-4">Technology</span>
+                <span class="text-danger">Programming</span>
+              </div>
+              <h2 class="text-body">Lorem ipsum dolor sit amet consectetur</h2>
+              <div class="card-bottom pb-2">
+                <div class="float-left">
+                  <span class="text-muted"><small>September 12 2020</small></span>
+                </div>
+                <div class="float-right">
+                  <span class="text-muted">Posted by Admin</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--Blog card end-->
+
+        </div>
+        <!--col end-->
+      </div>
+    </div>
+  </section>
+
+  <!-- Video
+    ================================================== -->
+  <section class="py-6 py-md-8">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xs-12 col-md-12 col-lg-10 col-xl-10 col-xxl-8 text-center">
+          <h1 class="display-3 text-capitalize mt-4">Our video news</h1>
+        </div>
+      </div>
+      <div class="row mt-8 justify-content-center">
+        <div class="col-md-8">
+          <div class="embed-responsive embed-responsive-16by9 rounded shadow-small-soft">
+            <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/58385453?badge=0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER
+    ================================================== -->
+  @@include("partials/footer.html", {
+  "classList": "bg-gray-100"
+  })
+
+
+  <!-- JAVASCRIPT
+    ================================================== -->
+  @@include("partials/scripts.html")
+</body>
+
+</html>

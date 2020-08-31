@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  @@include("partials/head.html", {
+  "pageTitle": "Cursos"
+  })
+</head>
+
+<body>
+
+  <!-- MODALS
+  ================================================== -->
+  @@include("partials/modals.html")
+
+  <!-- Top navbar ======================== -->
+  @@include("partials/top-navbar.html", {
+  "container": "container-fluid"
+  })
+
+  <main class="bg-cover position-relative bg-danger">
+    <!-- Main navbar ======================== -->
+    @@include("partials/navbar.html", {
+    "classList": "navbar-dark bg-transparent",
+    "container": "container-fluid"
+    })
+    <!-- Header shape left -->
+    <div class="position-absolute left-3 top-35 d-none d-lg-block">
+      <img src="assets/img/svg-shapes/big-lines.svg" class="img-fluid" alt="circle-and-circle">
+    </div>
+    <!-- Header shape right -->
+    <div class="position-absolute right-3 top-35 d-none d-lg-block">
+      <img src="assets/img/svg-shapes/square-three.svg" class="img-fluid" alt="square-three">
+    </div>
+
+    <!-- Welcome Heading ======================== -->
+    <section class="py-6 py-md-12 py-xxl-16">
+      <div class="container-fluid">
+        <div class="row align-items-center justify-content-center mx-xl-9 mx-xxl-13">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+
+            <!-- Heading -->
+            <h1 class="display-3 text-center text-light">
+              How can i know more about us
+            </h1>
+            <!-- Text -->
+            <p class="lead text-center text-light mb-7 mw-lg-75 mx-auto">
+              Anywhere, Anytime, Lifetime access, Enjoy risk-free with our 30-day money-back guarentee.
+            </p>
+
+            <!-- Buttons -->
+            <div class="text-center">
+              <a href="@@webRoot/blog-detail.html" class="btn btn-outline-light btn-pill shadow move text-uppercase">
+                Learn More
+              </a>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+  </main>
+
+  <!-- Shape ======================== -->
+  <div class="position-relative">
+    <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+      @@include("assets/img/curves/curve-1.svg")
+    </div>
+  </div>
+
+  <!-- BRANDS
+    ================================================== -->
+  <figure class="pt-6 pt-md-8">
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-center mx-xl-9 mx-xxl-13 text-center">
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/Lenovo-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/verizon-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/dribbble-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/behance-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/laravel-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/jquery-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </figure>
+
+  <!-- Contact cards ======================== -->
+  <section class="py-6 py-md-12">
+    <div class="container">
+      <div class="row justify-content-center no-gutters">
+        <!-- chat card -->
+        <div class="col-xs-12 col-md-4">
+          <div class="shadow-small-simple card card-border border-success mx-auto move" style="max-width: 20rem;">
+            <div class="card-body py-9 d-flex flex-column text-center">
+              <img src="assets/img/svg-colored-icon/chat-icon.svg" class="img-fluid mb-5" alt="">
+              <h4 class="text-uppercase mt-5">Chat us</h4>
+              <span class="text-capitalize">Let's start chat</span>
+            </div>
+          </div>
+        </div>
+        <!-- Phone card -->
+        <div class="col-xs-12 col-md-4">
+          <div class="shadow-small-simple card card-border border-primary-desat mx-auto move" style="max-width: 20rem;">
+            <div class="card-body py-9 d-flex flex-column text-center">
+              <img src="assets/img/svg-colored-icon/phone-call-icon.svg" class="img-fluid mb-3" alt="">
+              <h4 class="text-uppercase mt-5">Call us</h4>
+              <span class="text-capitalize">(555) 1234-5678</span>
+            </div>
+          </div>
+        </div>
+        <!-- Email card -->
+        <div class="col-xs-12 col-md-4">
+          <div class="shadow-small-simple card card-border border-danger mx-auto move" style="max-width: 20rem;">
+            <div class="card-body py-9 d-flex flex-column text-center">
+              <img src="assets/img/svg-colored-icon/email-open-icon.svg" class="img-fluid mb-3" alt="">
+              <h4 class="text-uppercase mt-5">Mail us</h4>
+              <span class="text-lowercase text-nowrap">support@gegeensoft.com</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- / .row -->
+    </div><!-- / .container -->
+  </section>
+
+  <section class="py-6 py-md-11">
+    <div class="container-fluid">
+      <div class="row no-gutters">
+        <div class="col-12 col-md-6 card-border border-danger">
+
+          <!-- Map (mobile) -->
+          <div class="embed-responsive embed-responsive-1by1 d-md-none">
+            <div class="embed-responsive-item" data-toggle="map" data-options='{"center": [-74.5, 40], "zoom": 12}'>
+            </div>
+          </div>
+
+          <!-- Map -->
+          <div class="position-relative h-100 vw-50 float-right d-none d-md-block">
+            <!-- Map -->
+            <div class="h-100 w-100" data-toggle="map" data-options='{"center": [-73.961696, 40.708653], "zoom": 12}'>
+            </div>
+          </div>
+
+        </div><!-- / .col -->
+
+        <div class="col-12 col-md-6 p-3 p-lg-8 card-border border-primary-desat">
+          <!-- Heading -->
+          <h1 class="display-4">Let us hear from you dirctly</h1>
+          <!-- Paragraph -->
+          <p class="text-muted w-md-75 mb-5">We always want to hear from you! Let us know how we can best help you and
+            we'll do our very best.</p>
+          <!-- form -->
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="fullname">Full Name</label>
+                <input type="text" class="form-control" id="fullname">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Text</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary-desat btn-sm move shadow-small-soft">Send us</button>
+          </form><!-- / .form -->
+        </div><!-- / .col -->
+      </div><!-- / .row -->
+    </div><!-- / .container -->
+  </section>
+
+
+  <!-- FOOTER
+    ================================================== -->
+  @@include("partials/footer.html", {
+  "classList": "bg-gray-100"
+  })
+
+
+  <!-- JAVASCRIPT
+    ================================================== -->
+  @@include("partials/scripts.html")
+
+</body>
+
+</html>

@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  @@include("partials/head.html", {
+  "pageTitle": "Cursos"
+  })
+</head>
+
+<body>
+  <!-- MODALS
+  ================================================== -->
+  @@include("partials/modals.html")
+
+  <!-- Top Nav
+    ================================================== -->
+  @@include("partials/top-navbar.html", {
+  "container": "container-fluid"
+  })
+
+  <!-- Main Navbar
+    ================================================== -->
+  @@include("partials/navbar.html", {
+  "classList": "navbar-light bg-white",
+  "container": "container-fluid"
+  })
+
+  <!-- WELCOME HEADING
+    ================================================== -->
+  <section
+    class="py-8 py-sm-10 py-md-11 py-xl-13 py-xxl-16 bg-danger mx-0 mx-lg-5 my-0 my-lg-0 rounded-lg position-relative">
+    <!-- Primary desat clip path -->
+    <div class="position-absolute bg-primary-desat h-100 w-60 right-0 top-0 rounded-lg rounded-left-0 bg-clip">
+    </div>
+    <!-- Cover photo -->
+    <img src="assets/img/card-photos/smile-men.png"
+      class="img-fluid h-75 position-absolute left-0 bottom-0 d-none d-lg-block" alt="">
+
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-center mx-xl-9 mx-xxl-13">
+        <div class="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-7">
+
+          <!-- Heading -->
+          <h1 class="display-3 text-center text-light">
+            Online Learning and best Courses
+          </h1>
+
+          <!-- Text -->
+          <p class="lead text-center text-light mb-6 mb-lg-8">
+            Anywhere, Anytime, Lifetime access, Enjoy risk-free with our 30-day money-back guarentee.
+          </p>
+
+          <!-- Buttons -->
+          <div class="text-center">
+            <a data-toggle="modal" href="#modalLoginVertical"
+              class="btn btn-outline-light btn-pill shadow move mt-2 mt-md-0 mr-0 mr-md-1 text-uppercase">
+              Enroll Now
+            </a>
+            <a data-toggle="modal" href="#modalSignupHorizontal" class="btn btn-outline-light btn-pill shadow move mt-2
+              mt-md-0 text-uppercase">
+              Get Started
+            </a>
+          </div>
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </section>
+
+
+  <!-- BRANDS
+    ================================================== -->
+  <figure class="pt-6 pt-md-8">
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-center mx-xl-9 mx-xxl-13 text-center">
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/Lenovo-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/verizon-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/dribbble-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/behance-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/laravel-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/jquery-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </figure>
+
+  <!-- LET'S START
+    ================================================== -->
+  <section class="pt-6 pt-md-11">
+    <div class="container">
+      <div class="row justify-content-center">
+        <!-- Heading -->
+        <div class="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-6 mx-auto text-center">
+          <!-- Shape -->
+          @@include("assets/img/svg-shapes/colored-line.svg")
+          <!-- Heading -->
+          <h1 class="display-3 mt-4">Let's start your success journey</h1>
+          <!-- Text -->
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu vehicula turpis.
+            Quisque consectetur, eu pulvinar nisi eros nec nulla.</p>
+        </div><!-- / .col -->
+      </div><!-- / .row -->
+
+      <div class="row align-items-center mt-5">
+        <!-- Photo -->
+        <div class="col-12 col-lg-6">
+          <img src="assets/img/svg-link-photos/bravo-course@2x.png" class="img-fluid" alt="">
+        </div>
+        <!-- Heading -->
+        <div class="col-12 col-lg-6">
+          <h1 class="display-3 mt-4">Why do we choose it?</h1>
+          <!-- Text -->
+          <p class="text-muted">Nulla ac est non nulla hendrerit rutrum vel id ipsum. Integer sit amet orci quis purus
+            vulputate porttitor. Maecenas nec luctus ex, quis ultrices lacus. Sed tempor eros a mi sagittis varius.
+            In quis odio ex. In dapibus, sem vitae facilisis efficitur,
+            mi tellus rhoncus sem, eu imperdiet est justo non urna.
+            Donec ultrices felis urna, vitae accumsan magna consequat id.
+            Vestibulum est magna, suscipit in dui quis, porta elementum sapien.
+            Phasellus a nulla nibh. Nam laoreet nisi in mollis varius.
+            Proin posuere dui et commodo maximus.</p>
+
+          <!-- List row -->
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-6">
+              <!-- Item -->
+              <div class="d-flex align-items-baseline mt-6">
+
+                <!-- Icon -->
+                <div class="icon mr-3">
+                  @@include("assets/img/svg-colored-icon/anytime-icon.svg")
+                </div>
+
+                <!-- Heading -->
+                <span class="lead">
+                  Anytime Access
+                </span>
+
+              </div>
+
+              <!-- Item -->
+              <div class="d-flex align-items-baseline mt-6">
+
+                <!-- Icon -->
+                <div class="icon mr-3">
+                  @@include("assets/img/svg-colored-icon/Desktop-unlimited.svg")
+                </div>
+
+                <!-- Heading -->
+                <span class="lead">
+                  Lifetime Access
+                </span>
+
+              </div>
+
+            </div>
+            <!--Column end-->
+
+            <div class="col-12 col-md-6 col-lg-6">
+              <!-- Item -->
+              <div class="d-flex align-items-baseline mt-6">
+
+                <!-- Icon -->
+                <div class="icon mr-3">
+                  @@include("assets/img/svg-colored-icon/anywhere-icon.svg")
+                </div>
+
+                <!-- Heading -->
+                <span class="lead">
+                  Anywhere
+                </span>
+
+              </div>
+
+              <!-- Item -->
+              <div class="d-flex align-items-baseline mt-6">
+
+                <!-- Icon -->
+                <div class="icon mr-3">
+                  @@include("assets/img/svg-colored-icon/Best-Icon.svg")
+                </div>
+
+                <!-- Heading -->
+                <span class="lead">
+                  Best Courses
+                </span>
+
+              </div>
+
+            </div><!-- / .col -->
+          </div><!-- / .row -->
+
+        </div><!-- / .col -->
+
+
+      </div><!-- / .row -->
+    </div><!-- / .container -->
+  </section>
+
+
+  <!-- INSTRUCTOR FIELDS
+    ================================================== -->
+  <section class="pt-6 pt-md-11">
+    <div class="container">
+      <!-- Heading -->
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto text-center">
+          @@include("assets/img/svg-shapes/colored-line.svg")
+          <h1 class="display-3 mt-4">Let's introduce our best instructors</h1>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu vehicula turpis.
+            Quisque consectetur, eu pulvinar nisi eros nec nulla.</p>
+        </div>
+      </div>
+      <!-- Instructor contents -->
+      <div class="row justify-content-center mt-5">
+        <!-- Instructor content -->
+        <div class="col-12 col-md-8 col-lg-4">
+          <div class="p-3">
+            <div class="rounded overlay overlay-primary-desat overlay-30 shadow-small-soft move move-lg">
+              <img src="assets/img/card-photos/teacher-card-back-1@2x.png" class="img-fluid rounded" alt="">
+              <a href="@@webRoot/teacher-detail.html">
+                <div class="bg-light p-4 mw-90 rounded-sm position-absolute bottom-5 left-5">
+                  <!-- Teacher name -->
+                  <div class="d-flex">
+                    <span class="text-muted">Julie Simon</span>
+                  </div>
+                  <!-- Tags -->
+                  <div class="d-flex">
+                    <span class="text-primary"><small>Language & Academic</small></span>
+                  </div>
+                  <!-- Star -->
+                  <div class="d-flex">
+                    <div class="mb-1 mr-3">
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                    </div>
+                  </div>
+                  <!-- Teacher comment -->
+                  <div class="d-flex">
+                    <p class="text-muted mb-0">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing Curabitur porttitor rutrum erat. Lorem ipsum
+                      dolor sit amet.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div><!-- / .col -->
+        <!-- Instructor content -->
+        <div class="col-12 col-md-8 col-lg-4">
+          <div class="p-3">
+            <div class="rounded overlay overlay-black overlay-30 shadow-small-soft move move-lg">
+              <img src="assets/img/card-photos/teacher-card-back-2@2x.png" class="img-fluid rounded" alt="">
+              <a href="@@webRoot/teacher-detail.html">
+                <div class="position-absolute bg-light bottom-5 left-5 mw-90 p-4 rounded-sm">
+                  <!-- Teacher name -->
+                  <div class="d-flex">
+                    <span class="text-body">John Anderson</span>
+                  </div>
+                  <!-- Tags -->
+                  <div class="d-flex">
+                    <span class="text-primary"><small>Engineering & Electronic</small></span>
+                  </div>
+                  <!-- Star -->
+                  <div class="d-flex">
+                    <div class="mb-1 mr-3">
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                    </div>
+                  </div>
+                  <!-- Teacher comment -->
+                  <div class="d-flex">
+                    <p class="text-muted mb-0">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor rutrum erat. Lorem
+                      ipsum dolor sit amet.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Instructor content -->
+        <div class="col-12 col-md-8 col-lg-4">
+          <div class="p-3">
+            <div class="rounded overlay overlay-danger overlay-30 shadow-small-soft move move-lg">
+              <img src="assets/img/card-photos/teacher-card-back-3@2x.png" class="img-fluid rounded" alt="">
+              <a href="@@webRoot/teacher-detail.html">
+                <div class="position-absolute bg-light bottom-3 left-5 mw-90 p-4 rounded-sm">
+                  <!-- Teacher name -->
+                  <div class="d-flex">
+                    <span class="text-muted">Julie Simon</span>
+                  </div>
+                  <!-- Tags -->
+                  <div class="d-flex">
+                    <span class="text-primary"><small>Language & Academic</small></span>
+                  </div>
+                  <!-- Star -->
+                  <div class="d-flex">
+                    <div class="mb-1 mr-3">
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                    </div>
+                  </div>
+                  <!-- Teacher comment -->
+                  <div class="d-flex">
+                    <p class="text-muted mb-0">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing Curabitur porttitor rutrum erat. Lorem ipsum
+                      dolor sit amet.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Subscribe
+    ================================================== -->
+  <section class="pb-7 pb-md-11 pt-7 pt-md-15 bg-danger position-relative mt-4 mt-md-n13">
+    <!-- Clip path -->
+    <div class="position-absolute bg-primary-desat h-100 w-60 right-0 top-0 rounded-lg rounded-left-0 bg-clip">
+    </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <!-- Heading -->
+        <div class="col-xs-12 col-md-10 col-lg-6">
+          <h1 class="display-3 text-light mr-7">
+            Subscribe to our newsletter
+          </h1>
+        </div>
+        <!-- Form -->
+        <div class="col-xs-12 col-md-10 col-lg-6">
+          <form>
+            <div class="input-group input-group-overlay flex-nowrap">
+              <div class="input-group-prepend-overlay">
+                <span class="input-group-text">
+                  <i class="fe fe-mail"></i>
+                </span>
+              </div>
+              <input class="form-control prepended-form-control" type="email" name="email" placeholder="Your email" />
+              <div class="input-group-append">
+                <button class="btn btn-danger btn-sm" type="submit" name="subscribe">Subscribe</button>
+              </div>
+            </div>
+          </form>
+        </div><!-- / .col -->
+      </div><!-- / .row -->
+    </div><!-- / .container -->
+  </section>
+
+  <!-- Course Cards
+    ================================================== -->
+  <section class="py-6 py-md-12 bg-saaral">
+    <div class="container">
+      <!-- Heading -->
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto text-center">
+          @@include("assets/img/svg-shapes/colored-line.svg")
+          <h1 class="display-3 mt-4">Our best online Courses</h1>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu vehicula
+            turpis.
+            Quisque consectetur, eu pulvinar nisi eros nec nulla.</p>
+        </div>
+      </div>
+      <!-- Course Cards -->
+      <div class="row justify-content-center mt-5 mt-md-8">
+        <!-- Card -->
+        <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+          <div class="card mb-3 shadow-small-soft move" style="max-width: 56.5rem;">
+            <div class="row no-gutters">
+              <div class="col-md-5">
+                <img src="assets/img/card-photos/pretty-women@2x.png" class="card-img" alt="...">
+              </div>
+              <div class="col-md-7">
+                <a class="card-body p-5" href="@@webRoot/course-detail.html">
+                  <h5 class="card-title mb-3">The Complete SQL Bootcamp 2020: Go from Zero to Hero</h5>
+                  <div class="d-flex mb-2">
+                    <span class="card-text">Josa Portilla</span>
+                  </div>
+                  <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start mb-2">
+                    <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                    <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                  </div>
+
+                  <div class="d-flex align-items-end justify-content-start mb-2">
+                    <span class="text-muted mr-3">4.6</span>
+                    <div class="mb-1 mr-3">
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                    </div>
+                    <span class="text-muted mr-3">(9876)</span>
+                  </div>
+                  <!-- Pricing -->
+                  <div class="mb-2">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-muted mr-3">$19.99</span>
+                      <span class="text-gray-500"><del>$112.99</del></span>
+                    </div>
+                  </div>
+                  <p class="card-text"><small class="text-muted">Last updated 12 june 2020</small></p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div><!-- / Card -->
+        <!-- Card -->
+        <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+          <div class="card mb-3 shadow-small-soft move" style="max-width: 56.5rem;">
+            <div class="row no-gutters">
+              <div class="col-md-5">
+                <img src="assets/img/card-photos/cool-guys@2x.png" class="card-img" alt="...">
+              </div>
+              <div class="col-md-7">
+                <a class="card-body p-5" href="@@webRoot/course-detail.html">
+                  <h5 class="card-title mb-3">The Complete SQL Bootcamp 2020: Go from Zero to Hero</h5>
+                  <div class="d-flex mb-2">
+                    <span class="card-text">Josa Portilla</span>
+                  </div>
+                  <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start mb-2">
+                    <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                    <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                  </div>
+
+                  <div class="d-flex align-items-end justify-content-start mb-2">
+                    <span class="text-muted mr-3">4.6</span>
+                    <div class="mb-1 mr-3">
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                    </div>
+                    <span class="text-muted mr-3">(9876)</span>
+                  </div>
+                  <!-- Pricing -->
+                  <div class="mb-2">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-muted mr-3">$19.99</span>
+                      <span class="text-gray-500"><del>$112.99</del></span>
+                    </div>
+                  </div>
+                  <p class="card-text"><small class="text-muted">Last updated 12 june 2020</small></p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div><!-- / Card -->
+        <!-- Card -->
+        <div class="col-12 col-md-10 col-lg-8 col-xl-6 mt-0 mt-xxl-6">
+          <div class="card mb-3 shadow-small-soft move" style="max-width: 56.5rem;">
+            <div class="row no-gutters">
+              <div class="col-md-5">
+                <img src="assets/img/card-photos/coffee-notebook@2x.png" class="card-img" alt="...">
+              </div>
+              <div class="col-md-7">
+                <a class="card-body p-5" href="@@webRoot/course-detail.html">
+                  <h5 class="card-title mb-3">The Complete SQL Bootcamp 2020: Go from Zero to Hero</h5>
+                  <div class="d-flex mb-2">
+                    <span class="card-text">Josa Portilla</span>
+                  </div>
+                  <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start mb-2">
+                    <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                    <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                  </div>
+
+                  <div class="d-flex align-items-end justify-content-start mb-2">
+                    <span class="text-muted mr-3">4.6</span>
+                    <div class="mb-1 mr-3">
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                    </div>
+                    <span class="text-muted mr-3">(9876)</span>
+                  </div>
+                  <!-- Pricing -->
+                  <div class="mb-2">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-muted mr-3">$19.99</span>
+                      <span class="text-gray-500"><del>$112.99</del></span>
+                    </div>
+                  </div>
+                  <p class="card-text"><small class="text-muted">Last updated 12 june 2020</small></p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div><!-- / Card -->
+        <!-- Card -->
+        <div class="col-12 col-md-10 col-lg-8 col-xl-6 mt-0 mt-xxl-6">
+          <div class="card mb-3 shadow-small-soft move" style="max-width: 56.5rem;">
+            <div class="row no-gutters">
+              <div class="col-md-5">
+                <img src="assets/img/card-photos/iphone-rain@2x.png" class="card-img" alt="...">
+              </div>
+              <div class="col-md-7">
+                <a class="card-body p-5" href="@@webRoot/course-detail.html">
+                  <h5 class="card-title mb-3">The Complete SQL Bootcamp 2020: Go from Zero to Hero</h5>
+                  <div class="d-flex mb-2">
+                    <span class="card-text">Josa Portilla</span>
+                  </div>
+                  <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start mb-2">
+                    <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                    <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                  </div>
+
+                  <div class="d-flex align-items-end justify-content-start mb-2">
+                    <span class="text-muted mr-3">4.6</span>
+                    <div class="mb-1 mr-3">
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                      <i class="icon-xs">
+                        @@include("assets/img/svg-icons/star.svg")
+                      </i>
+                    </div>
+                    <span class="text-muted mr-3">(9876)</span>
+                  </div>
+                  <!-- Pricing -->
+                  <div class="mb-2">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-muted mr-3">$19.99</span>
+                      <span class="text-gray-500"><del>$112.99</del></span>
+                    </div>
+                  </div>
+                  <p class="card-text"><small class="text-muted">Last updated 12 june 2020</small></p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div><!-- / Card -->
+
+      </div>
+      <!--/ .row-->
+
+      <!-- View button -->
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6 text-center mt-10">
+          <a href="@@webRoot/course-horizontal.html" role="button"
+            class="btn btn-primary-desat btn-sm text-uppercase shadow-small-simple move">View all&nbsp;<i
+              class="fe fe-chevron-down"></i></a>
+        </div>
+      </div>
+      <!-- / row-->
+    </div>
+    <!-- / container-->
+  </section>
+
+  <!-- shape
+    ================================================== -->
+  <div class="position-relative">
+    <div class="wave wave-bottom wave-fluid-x svg-shim text-white">
+      @@include("assets/img/curves/curve-1.svg")
+    </div>
+  </div>
+
+  <!--Click Card
+    ================================================== -->
+  <section class="py-6 py-md-12">
+    <div class="container">
+      <!-- Heading -->
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto text-center">
+          @@include("assets/img/svg-shapes/colored-line.svg")
+          <h1 class="display-3 mt-4">Join us create success</h1>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu vehicula turpis.
+            Quisque consectetur, eu pulvinar nisi eros nec nulla.</p>
+        </div>
+      </div>
+      <!--row-->
+
+      <div class="row justify-content-center mt-8">
+        <div class="col-12 col-md-11 col-xl-10 col-xxl-8 mx-auto position-relative">
+          <!-- Dots -->
+          <div class="position-absolute left-n5 left-lg-n3 top-n3 top-lg-n10" style="z-index: -1;">
+            <img src="assets/img/svg-shapes/all-dots.svg" alt="dots">
+          </div>
+          <!--card-->
+          <div class="card mb-3 shadow-dark-lg w-100">
+            <div class="row no-gutters">
+              <div class="col-lg-5 order-2 order-lg-1">
+
+                <div class="d-flex flex-column h-100">
+                  <!-- Card body -->
+                  <div class="card-body">
+                    <!-- Heading -->
+                    <h6 class="card-title display-4">Simple design, prototyping and colloboration</h6>
+                    <!-- Start button -->
+                    <a href="@@webRoot/register-colored.html" role="button"
+                      class="btn btn-primary-desat btn-pill btn-sm move">Get
+                      Started</a>
+                    <!-- Text -->
+                    <div class="card-text mt-7">This is a wider card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.</div>
+                  </div>
+                  <!-- Social link -->
+                  <div class="card-footer py-2 rounded-bottom-right-0 bg-primary-desat mt-auto">
+                    <div class="d-flex">
+                      <a href="#!" class="nav-link"><i class="icon fe fe-facebook text-light"></i></a>
+                      <a href="#!" class="nav-link"><i class="icon fe fe-twitter text-light"></i></a>
+                      <a href="#!" class="nav-link"><i class="icon fe fe-youtube text-light"></i></a>
+                      <a href="#!" class="nav-link"><i class="icon fe fe-instagram text-light"></i></a>
+
+                      <a href="@@webRoot/faq.html" class="nav-link ml-auto"><span class="text-light">Help?</span></a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- Photo -->
+              <div class="col-lg-7 order-1 order-lg-2">
+                <img src="assets/img/card-photos/bak.png"
+                  class="card-img h-100 rounded-bottom-left-0 rounded-top-left-0" alt="bak-cover">
+              </div>
+            </div>
+          </div>
+          <!--card end-->
+        </div>
+      </div>
+      <!--/ .row-->
+    </div>
+    <!-- ./container-->
+  </section>
+
+  <!-- Go to top -->
+  <a href="#" class="scrollToTop">
+    <i class="fe fe-arrow-up"></i>
+  </a>
+
+  <!-- FOOTER
+    ================================================== -->
+  @@include("partials/footer.html", {
+  "classList": "bg-gray-100"
+  })
+
+
+  <!-- JAVASCRIPT
+    ================================================== -->
+  @@include("partials/scripts.html")
+</body>
+
+</html>

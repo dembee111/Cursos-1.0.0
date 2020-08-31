@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    @@include("partials/head.html", {
+    "pageTitle": "Cursos"
+    })
+</head>
+
+<body class="bg-light">
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("partials/modals.html")
+
+    <!-- Main Navbar
+    ================================================== -->
+    @@include("partials/navbar.html", {
+    "classList": "navbar-light bg-white",
+    "container": "container-fluid"
+    })
+
+    <!-- BREADCRUMB
+    ================================================== -->
+    <nav class="bg-primary-desat d-md-none">
+        <div class="container-md">
+            <div class="row align-items-center">
+                <div class="col">
+
+                    <!-- Breadcrumb -->
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <span class="text-white">
+                                Teacher
+                            </span>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <span class="text-white">
+                                Settings
+                            </span>
+                        </li>
+                    </ol>
+
+                </div>
+                <div class="col-auto">
+
+                    <!-- Toggler -->
+                    <div class="navbar-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#sideNavCollapse" aria-controls="sideNavCollapse" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </nav>
+
+    <!-- HEADER
+        ================================================== -->
+    <header class="bg-danger py-6 py-xxl-11 d-none d-md-block">
+        <div class="container-md">
+            <div class="row align-items-center">
+                <div class="col">
+
+                    <!-- Heading -->
+                    <h1 class="font-weight-bold text-white mb-2">
+                        Teacher Dashboard
+                    </h1>
+
+                    <!-- Breadcrumb -->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="@@webRoot/index.html" class="text-light">Teacher</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">Settings</li>
+                        </ol>
+                    </nav>
+
+                </div>
+                <div class="col-auto">
+
+                    <!-- Button -->
+                    <a href="@@webRoot/index.html" role="button" class="btn btn-sm btn-outline-light">
+                        Log Out
+                    </a>
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </header>
+
+    <!-- MAIN
+        ================================================== -->
+    <main class="pb-8 pb-md-11 mt-6">
+        <div class="container-md">
+            <div class="row">
+                <div class="col-12 col-md-4 col-xl-3 mb-4 mb-sm-0">
+
+                    <!-- Card -->
+                    <div class="card border border-danger-soft">
+                        <div class="card-header bg-danger py-3">
+                            <span class="text-light">Teacher Menu</span>
+                        </div>
+
+                        <div class="collapse d-md-block" id="sideNavCollapse">
+                            <!-- card-body -->
+                            <div class="card-body">
+
+                                <!-- Avatar -->
+                                <div class="text-center mb-5">
+                                    <div class="avatar avatar-online avatar-xxl">
+                                        <img src="assets/img/avatar/avatar-1.jpeg" alt="..."
+                                            class="avatar-img rounded-circle">
+                                    </div>
+                                    <h3>Julie Robert</h3>
+                                    <span class="text-danger"><small>Math & Algoritm</small></span>
+                                </div>
+
+                                <!-- Heading -->
+                                <h4 class="main-heading mb-4">
+                                    Account
+                                </h4>
+
+                                <!-- List -->
+                                <ul class="card-list list text-gray-700 mb-6">
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none active"
+                                                href="@@webRoot/teacher-dashboard.html">
+                                                <i class="fe fe-file-text mr-1"></i>
+                                                Personal info
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-notification.html">
+                                                <i class="fe fe-bell mr-1"></i>
+                                                Notifications
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-item active mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-settings.html">
+                                                <i class="fe fe-list mr-1"></i>
+                                                Preferences
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-security.html">
+                                                <i class="fe fe-settings mr-1"></i>
+                                                Security
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                                <!-- Heading -->
+                                <h4 class="main-heading mb-4">
+                                    Courses
+                                </h4>
+
+                                <!-- List -->
+                                <ul class="card-list list text-gray-700 mb-6">
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-structure.html">
+                                                <i class="fe fe-grid mr-1"></i>
+                                                Course structure
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-add-course.html">
+                                                <i class="fe fe-upload-cloud mr-1"></i>
+                                                Add Course
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-courses.html">
+                                                <i class="fe fe-layers mr-1"></i>
+                                                My course list
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-add-exam.html">
+                                                <i class="fe fe-file-plus mr-1"></i>
+                                                Add exam
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                                <!-- Heading -->
+                                <h4 class="main-heading mb-4">
+                                    Payment
+                                </h4>
+
+                                <!-- List -->
+                                <ul class="card-list list text-gray-700 mb-6">
+
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-payment.html">
+                                                <i class="fe fe-dollar-sign mr-1"></i>
+                                                Payment
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none"
+                                                href="@@webRoot/teacher-help.html">
+                                                <i class="fe fe-life-buoy mr-1"></i>
+                                                Help Center
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <!-- Heading -->
+                                <h4 class="main-heading mb-4">
+                                    Leave course
+                                </h4>
+
+                                <!-- List -->
+                                <ul class="card-list list text-gray-700 mb-6">
+                                    <li class="list-item mb-3">
+                                        <div class="d-flex align-items-baseline">
+                                            <a class="link text-reset text-decoration-none" href="@@webRoot/index.html">
+                                                <i class="fe fe-power mr-1"></i>
+                                                Log out
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-8 col-xl-9">
+                    <!-- Card -->
+                    <div class="card border border-danger-soft">
+                        <div class="card-header bg-danger py-3">
+                            <span class="text-light">Preferences</span>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="row justify-content-start">
+                                <div class="col-md-10 offset-md-1">
+                                    <!-- Heading -->
+                                    <h4 class="main-heading mb-6">Basic Settings</h4>
+                                    <!-- Form -->
+                                    <form>
+                                        <!-- Countries -->
+                                        <div class="form-group w-lg-80">
+                                            <div class="d-flex justify-content-between">
+                                                <label for="selectCountriesTeacher">Countries</label>
+                                                <label for="selectCountriesTeacher">Country</label>
+                                            </div>
+                                            <select id="selectCountriesTeacher" class="form-control">
+                                                <option selected>United States</option>
+                                                <option>France</option>
+                                                <option>Germany</option>
+                                                <option>Canada</option>
+                                                <option>Australia</option>
+                                                <option>United Kingdom</option>
+                                                <option>China</option>
+                                                <option>South Korea</option>
+                                                <option>Japan</option>
+                                                <option>Brazilia</option>
+                                                <option>India</option>
+                                            </select>
+                                        </div>
+                                        <!-- Language -->
+                                        <div class="form-group w-lg-80">
+                                            <div class="d-flex justify-content-between">
+                                                <label for="selectLanguageTeacher">Language</label>
+                                                <label for="selectLanguageTeacher">Country</label>
+                                            </div>
+                                            <select id="selectLanguageTeacher" class="form-control">
+                                                <option selected>United States</option>
+                                                <option>France</option>
+                                                <option>Germany</option>
+                                                <option>Canada</option>
+                                                <option>Australia</option>
+                                                <option>United Kingdom</option>
+                                                <option>China</option>
+                                                <option>South Korea</option>
+                                                <option>Japan</option>
+                                                <option>Brazilia</option>
+                                                <option>India</option>
+                                            </select>
+                                        </div>
+
+                                        <!-- Timezone -->
+                                        <div class="form-group w-lg-80">
+                                            <div class="d-flex justify-content-between">
+                                                <label for="formGroupExampleInput">Time zone</label>
+                                                <label for="formGroupExampleInput">Country</label>
+                                            </div>
+                                            <div class="input-group input-group-sm mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">
+                                                        <i class="fe fe-clock"></i>
+                                                    </span>
+                                                </div>
+                                                <input type="date" class="form-control"
+                                                    aria-label="Sizing example input"
+                                                    aria-describedby="inputGroup-sizing-sm">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group w-lg-80 mt-6">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <!-- Heading -->
+                                                    <p class="mb-0">
+                                                        See info about people who view my profile
+                                                    </p>
+
+                                                    <!-- Text -->
+                                                    <small class="text-gray-700">
+                                                        We only notify you for significant promotions
+                                                    </small>
+                                                </div>
+
+                                                <!-- Switch -->
+                                                <div class="custom-control custom-switch">
+                                                    <input type="checkbox" class="custom-control-input" id="switchSeven"
+                                                        checked>
+                                                    <label class="custom-control-label" for="switchSeven"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group w-lg-80 mt-6">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <!-- Heading -->
+                                                    <p class="text-primary-desat mb-0">
+                                                        See info about people who view my profile
+                                                    </p>
+
+                                                    <!-- Text -->
+                                                    <small class="text-gray-700">
+                                                        It is a long established fact that a reader will be distracted
+                                                        by the readable content of a page when looking at its layout.
+                                                    </small>
+                                                </div>
+
+                                                <!-- Switch -->
+                                                <div class="custom-control custom-switch">
+                                                    <input type="checkbox" class="custom-control-input" id="switchEight"
+                                                        checked>
+                                                    <label class="custom-control-label" for="switchEight"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group w-lg-80 row">
+                                            <div class="col-12 col-md-auto pb-5">
+
+                                                <!-- Button -->
+                                                <button class="btn btn-sm btn-primary-desat" type="submit">
+                                                    Save changes
+                                                </button>
+
+                                            </div>
+                                        </div>
+                                    </form><!-- / Form -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </main>
+
+
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html", {
+    "classList": "bg-light"
+    })
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+//
+// input-group.scss
+//
+
+// Sizing
+
+.input-group-xs .form-control {
+  height: calc(#{$input-btn-padding-y-xs * 2} + #{$input-btn-font-size-xs} * #{$line-height-base} + #{$input-border-width * 2});
+  padding: $input-btn-padding-y-xs $input-btn-padding-x-xs;
+  font-size: $input-btn-font-size-xs;
+}
+
+.input-group-xs .input-group-text {
+  padding: $input-btn-padding-y-xs $input-btn-padding-x-xs;
+  font-size: $input-btn-font-size-xs;
+}
+
+.input-group-overlay{
+  position: relative;
+  width: 100%;
+}
+
+.input-group-prepend-overlay{
+  display: flex;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  z-index: 5;
+}
+
+.input-group-append-overlay .input-group-text, .input-group-prepend-overlay .input-group-text {
+  border: 0;
+  background-color: transparent;
+}
+
+.input-group-overlay .prepended-form-control:not(.rounded-left-0) {
+  padding-left: 2.5rem;
+  border-top-left-radius: .75rem !important;
+  border-bottom-left-radius: .75rem !important;
+}
