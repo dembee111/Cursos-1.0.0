@@ -121,7 +121,7 @@
             <!-- Shape -->
             <div class="position-relative">
               <div class="wave wave-bottom wave-fluid-x svg-shim text-white">
-                <?xml version="1.0" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 440"><path fill="#fff" fill-opacity="1" d="M0,0L120,48C240,96,480,192,720,208C960,224,1200,160,1320,128L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 440"><path fill="#fff" fill-opacity="1" d="M0,0L120,48C240,96,480,192,720,208C960,224,1200,160,1320,128L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
               </div>
             </div>
 
@@ -275,7 +275,7 @@
             <!-- Shape -->
             <div class="position-relative">
               <div class="wave wave-bottom wave-fluid-x svg-shim text-white">
-                <?xml version="1.0" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 440"><path fill="#fff" fill-opacity="1" d="M0,0L120,48C240,96,480,192,720,208C960,224,1200,160,1320,128L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 440"><path fill="#fff" fill-opacity="1" d="M0,0L120,48C240,96,480,192,720,208C960,224,1200,160,1320,128L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
               </div>
             </div>
 
@@ -283,7 +283,7 @@
             <div class="card-body">
 
               <!-- Heading -->
-              <h2 class="mb-0 font-weight-bold text-center font-second" id="modalSigninVerticalTitle">
+              <h2 class="mb-0 font-weight-bold text-center font-second" id="modalLoginVerticalTitle">
                 Sign in
               </h2>
 
@@ -333,7 +333,7 @@
     </div>
 
     <!-- Video Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-body p-0">
@@ -342,7 +342,7 @@
             </button>
             <!-- 16:9 aspect ratio -->
             <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
+              <iframe class="embed-responsive-item" id="video" allow="autoplay"></iframe>
             </div>
           </div>
         </div>
@@ -853,16 +853,16 @@
           <!-- Language -->
           <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle d-none d-lg-block" id="navbarAccount" data-toggle="dropdown" href="#"
+              <a class="nav-link dropdown-toggle d-none d-lg-block" id="selectLanguageEn" data-toggle="dropdown" href="#"
                 aria-haspopup="true" aria-expanded="false">
                 <i class="fe fe-globe"></i>
                 EN <i class="fe fe-chevron-down"></i>
               </a>
-              <a class="nav-link dropdown-toggle d-block d-lg-none" id="navbarAccount" data-toggle="dropdown" href="#"
+              <a class="nav-link dropdown-toggle d-block d-lg-none" id="selectLanguage" data-toggle="dropdown" href="#"
                 aria-haspopup="true" aria-expanded="false">
                 Language
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-menu">
                 <a class="dropdown-item" href="#">English <img src="assets/img/flags/gb.svg"
                     class="float-right img-fluid w-20 h-auto" alt="eng"></a>
                 <div class="dropdown-divider"></div>
@@ -916,19 +916,21 @@
             <div class="row justify-content-start">
                 <div class="col-lg-6 offset-0 offset-lg-1">
                     <div class="section-heading">
-                        <h3>Frequently asked questions about our courses</h3>
-                        <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,
-                            making this the first true generator on the Internet<br></p>
                         <div role="tablist" id="accordion-2">
+                            <h3>Frequently asked questions about our courses</h3>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
+                                necessary,
+                                making this the first true generator on the Internet<br></p>
+
 
                             <div class="card bg-saaral shadow-small-soft border-0 mb-5">
                                 <div class="card-header border-0 pl-0" role="tab">
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false"
-                                            aria-controls="accordion-2 .item-11" href="div#accordion-2 .item-11"
-                                            class="collapsed">How old do I have to be to participate in a language
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" href="div.coll-1"
+                                            class="collapsed">How
+                                            old do I have to be to participate in a language
                                             course?</a></h5>
                                 </div>
-                                <div class="collapse item-11" role="tabpanel" data-parent="#accordion-2">
+                                <div class="collapse coll-1" role="tabpanel" data-parent="#accordion-2">
                                     <div class="card-body">
                                         <p class="card-text text-muted">Our normal language courses are recommended for
                                             participants aged 18 or older. For young people aged between 10 and 17 years
@@ -938,29 +940,30 @@
                                 </div>
                             </div>
 
+
                             <div class="card bg-saaral shadow-small-soft mb-5">
-                                <div class="card-header border-0 pl-0" role="tab">
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false"
-                                            aria-controls="accordion-2 .item-22" href="div#accordion-2 .item-22"
-                                            class="collapsed"> Is any English spoken at these courses?</a></h5>
+                                <div class="card-header pl-0 border-0" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" href="div.coll-2"
+                                            class="collapsed">Is
+                                            any English spoken at these courses?</a></h5>
                                 </div>
-                                <div class="collapse item-22" role="tabpanel" data-parent="#accordion-2">
+                                <div class="collapse coll-2" role="tabpanel" data-parent="#accordion-2">
                                     <div class="card-body">
                                         <p class="card-text">Apart from during the English courses, the answer is no -
                                             for two reasons. Firstly, by avoiding English, participants will learn to
                                             find their way around the new language as quickly as possible and, secondly,
                                             the other students on the language course may not have an English-speaking
-                                            background.<br></p>
+                                            background.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="card bg-saaral shadow-small-soft mb-5">
                                 <div class="card-header pl-0 border-0" role="tab">
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false"
-                                            aria-controls="accordion-2 .item-33" href="div#accordion-2 .item-33"
-                                            class="collapsed">What levels are offered?</a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" href="div.coll-3"
+                                            class="collapsed">What
+                                            levels are offered?</a></h5>
                                 </div>
-                                <div class="collapse item-33" role="tabpanel" data-parent="#accordion-2">
+                                <div class="collapse coll-3" role="tabpanel" data-parent="#accordion-2">
                                     <div class="card-body">
                                         <p class="card-text">Our courses are divided into: Basic, Intermediate, Advanced
                                             and Higher Advanced levels. Each of these levels is subdivided into three
@@ -970,39 +973,31 @@
                             </div>
                             <div class="card bg-saaral shadow-small-soft mb-5">
                                 <div class="card-header pl-0 border-0" role="tab">
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false"
-                                            aria-controls="accordion-2 .item-44" href="div#accordion-2 .item-44"
-                                            class="collapsed">Can I book a one-week language course?</a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" href="div.coll-4"
+                                            class="collapsed">Can
+                                            I book a one-week language course?</a></h5>
                                 </div>
-                                <div class="collapse item-44" role="tabpanel" data-parent="#accordion-2">
+                                <div class="collapse coll-4" role="tabpanel" data-parent="#accordion-2">
                                     <div class="card-body">
                                         <p class="card-text">Yes, but only an Intensive language course. The other
                                             language courses have a minimum duration of 2 weeks.</p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--row end-->
-
-            <div class="row justify-content-start mt-5">
-                <div class="col-lg-6 offset-0 offset-lg-1">
-                    <div class="section-heading">
-                        <h3>Frequently asked questions about our courses</h3>
-                        <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,
-                            making this the first true generator on the Internet<br></p>
-                        <div role="tablist" id="accordion-2">
+                            <br>
+                            <h3>Frequently asked questions about our system</h3>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
+                                necessary,
+                                making this the first true generator on the Internet<br></p>
 
                             <div class="card bg-saaral shadow-small-soft border-0 mb-5">
                                 <div class="card-header border-0 pl-0" role="tab">
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false"
-                                            aria-controls="accordion-2 .item-1" href="div#accordion-2 .item-1"
-                                            class="collapsed">How old do I have to be to participate in a language
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" href="div.coll-5"
+                                            class="collapsed">How
+                                            old do I have to be to participate in a language
                                             course?</a></h5>
                                 </div>
-                                <div class="collapse item-1" role="tabpanel" data-parent="#accordion-2">
+                                <div class="collapse coll-5" role="tabpanel" data-parent="#accordion-2">
                                     <div class="card-body">
                                         <p class="card-text text-muted">Our normal language courses are recommended for
                                             participants aged 18 or older. For young people aged between 10 and 17 years
@@ -1014,11 +1009,11 @@
 
                             <div class="card bg-saaral shadow-small-soft mb-5">
                                 <div class="card-header border-0 pl-0" role="tab">
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false"
-                                            aria-controls="accordion-2 .item-2" href="div#accordion-2 .item-2"
-                                            class="collapsed"> Is any English spoken at these courses?</a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" href="div.coll-6"
+                                            class="collapsed"> Is
+                                            any English spoken at these courses?</a></h5>
                                 </div>
-                                <div class="collapse item-2" role="tabpanel" data-parent="#accordion-2">
+                                <div class="collapse coll-6" role="tabpanel" data-parent="#accordion-2">
                                     <div class="card-body">
                                         <p class="card-text">Apart from during the English courses, the answer is no -
                                             for two reasons. Firstly, by avoiding English, participants will learn to
@@ -1030,11 +1025,11 @@
                             </div>
                             <div class="card bg-saaral shadow-small-soft mb-5">
                                 <div class="card-header pl-0 border-0" role="tab">
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false"
-                                            aria-controls="accordion-2 .item-3" href="div#accordion-2 .item-3"
-                                            class="collapsed"> Are the teachers native speakers?<br></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" href="div.coll-7"
+                                            class="collapsed"> Are
+                                            the teachers native speakers?<br></a></h5>
                                 </div>
-                                <div class="collapse item-3" role="tabpanel" data-parent="#accordion-2">
+                                <div class="collapse coll-7" role="tabpanel" data-parent="#accordion-2">
                                     <div class="card-body">
                                         <p class="card-text">We aim to recruit native speaking teachers to enhance the
                                             quality of our language courses.</p>
@@ -1043,11 +1038,11 @@
                             </div>
                             <div class="card bg-saaral shadow-small-soft mb-5">
                                 <div class="card-header pl-0 border-0" role="tab">
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false"
-                                            aria-controls="accordion-2 .item-4" href="div#accordion-2 .item-4"
-                                            class="collapsed">How early on should I book a language course?</a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" href="div.coll-8"
+                                            class="collapsed">How
+                                            early on should I book a language course?</a></h5>
                                 </div>
-                                <div class="collapse item-4" role="tabpanel" data-parent="#accordion-2">
+                                <div class="collapse coll-8" role="tabpanel" data-parent="#accordion-2">
                                     <div class="card-body">
                                         <p class="card-text">We recommend you begin booking a course approximately 3
                                             months in advance, so as to avoid disappointment. The complete payment will
@@ -1061,7 +1056,6 @@
                 </div>
             </div>
             <!--row end-->
-
         </div>
     </section>
 

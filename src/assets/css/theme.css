@@ -13258,12 +13258,20 @@ body {
   font-weight: 600;
   src: url("../fonts/Amerigo__BT/AmerigoBoldBT.ttf") format("ttf"), url("../fonts/Amerigo__BT/AmerigoBoldBT.woff2") format("woff2"); }
 
-h1, h2,
-.h1, .h2 {
+h1,
+h2,
+.h1,
+.h2 {
   margin-bottom: 1rem; }
 
-h1, h2, h3, h4,
-.h1, .h2, .h3, .h4 {
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
+.h4 {
   letter-spacing: -0.01em; }
 
 h1, .h1 {
@@ -13295,10 +13303,14 @@ h5, .h5 {
 
 h6, .h6 {
   line-height: 1.55; }
-  h6.text-uppercase, .h6.text-uppercase {
+  h6.text-uppercase,
+  .h6.text-uppercase {
     letter-spacing: .08em; }
 
-.display-1, .display-2, .display-3, .display-4 {
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
   letter-spacing: -0.02em; }
 
 .display-1 {
@@ -13361,17 +13373,6 @@ h6, .h6 {
 
 code {
   line-height: 1.35; }
-
-.a-link {
-  color: #707070;
-  background-color: transparent;
-  text-decoration: none; }
-
-.a-link:hover,
-.a-link:active,
-.a-link:visited,
-.a-link.active {
-  color: #8C98DB !important; }
 
 .bg-cover {
   background: no-repeat center center / cover; }
@@ -17284,3 +17285,17 @@ img {
 @media (min-width: 992px) {
   .sidenav-right {
     right: 0; } }
+
+.cursor {
+  cursor: pointer; }
+
+.a-link {
+  color: #707070;
+  background-color: transparent;
+  text-decoration: none; }
+
+.a-link:hover,
+.a-link:active,
+.a-link:visited,
+.a-link.active {
+  color: #8C98DB !important; }

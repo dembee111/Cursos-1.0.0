@@ -28,17 +28,26 @@
 
 // Headings
 
-h1, h2,
-.h1, .h2 {
+h1,
+h2,
+.h1,
+.h2 {
   margin-bottom: 1rem;
 }
 
-h1, h2, h3, h4,
-.h1, .h2, .h3, .h4 {
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
+.h4 {
   letter-spacing: $headings-letter-spacing;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   line-height: $h1-line-height;
 
   @include media-breakpoint-down(md) {
@@ -46,7 +55,8 @@ h1, .h1 {
   }
 }
 
-h2, .h2 {
+h2,
+.h2 {
   line-height: $h2-line-height;
 
   @include media-breakpoint-down(md) {
@@ -54,7 +64,8 @@ h2, .h2 {
   }
 }
 
-h3, .h3 {
+h3,
+.h3 {
   line-height: $h3-line-height;
 
   @include media-breakpoint-down(md) {
@@ -62,7 +73,8 @@ h3, .h3 {
   }
 }
 
-h4, .h4 {
+h4,
+.h4 {
   line-height: $h4-line-height;
 
   @include media-breakpoint-down(md) {
@@ -70,11 +82,13 @@ h4, .h4 {
   }
 }
 
-h5, .h5 {
+h5,
+.h5 {
   line-height: $h5-line-height;
 }
 
-h6, .h6 {
+h6,
+.h6 {
   line-height: $h6-line-height;
 
   &.text-uppercase {
@@ -85,7 +99,10 @@ h6, .h6 {
 
 // Display
 
-.display-1, .display-2, .display-3, .display-4 {
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
   letter-spacing: $display-letter-spacing;
 }
 
@@ -110,7 +127,7 @@ h6, .h6 {
 .display-3 {
   font-family: $font-family-second;
   line-height: $display3-line-height;
-  
+
   @include media-breakpoint-down(md) {
     font-size: $display3-size-md;
   }
@@ -136,6 +153,7 @@ h6, .h6 {
 .main-heading {
   color: $main-text-color;
 }
+
 // Lead
 
 .lead {
@@ -187,17 +205,4 @@ h6, .h6 {
 
 code {
   line-height: $code-line-height;
-}
-
-.a-link{
-  color: $black;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-.a-link:hover,
-.a-link:active,
-.a-link:visited,
-.a-link.active  {
-  color: $primary-desat !important;  
 }

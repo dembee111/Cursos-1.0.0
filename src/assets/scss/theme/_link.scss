@@ -1,0 +1,16 @@
+.cursor {
+    cursor: pointer;
+}
+
+.a-link {
+    color: $black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.a-link:hover,
+.a-link:active,
+.a-link:visited,
+.a-link.active {
+    color: $primary-desat !important;
+}
