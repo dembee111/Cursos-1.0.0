@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    @@include("../partials/head.html", {
+    "pageTitle": "Cursos"
+    })
+</head>
+
+<body class="pt-10">
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("../partials/modals.html")
+
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("../partials/navbar.html", {
+    "classList": "navbar-light fixed-top bg-white border-bottom",
+    "container": "container-fluid"
+    })
+
+    <!-- BREADCRUMB
+    ================================================== -->
+    <nav class="d-lg-none bg-gray-800">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col">
+
+                    <!-- Breadcrumb -->
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <span class="text-white">
+                                Docs
+                            </span>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <span class="text-white">
+                                Background
+                            </span>
+                        </li>
+                    </ol>
+
+                </div>
+                <div class="col-auto">
+
+                    <!-- Toggler -->
+                    <div class="navbar-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#sidenavCollapse" aria-controls="sidenavCollapse" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </nav>
+
+    <!-- CONTENT
+    ================================================== -->
+    <section class="py-6 py-md-10">
+        <div class="container-fluid">
+            <div class="row">
+                <div
+                    class="col-12 col-lg-3 col-xl-2 px-lg-0 border-bottom border-bottom-lg-0 border-right-lg border-gray-300 sidenav sidenav-left">
+
+                    @@include("../partials/sidenavbar.html")
+
+                </div>
+                <div class="col-12 col-lg-6 col-xl-8 offset-lg-3 offset-xl-2 py-7 py-lg-9 px-lg-7">
+
+                    <!-- Heading -->
+                    <h1 class="mb-1 font-weight-bold">Background</h1>
+
+                    <!-- Text -->
+                    <p class="font-size-lg text-gray-700">
+                        Background utilities to easily change background sizing, position, and color properties.
+                    </p>
+
+                    <div class="card">
+                        <div class="card-body d-flex flex-wrap">
+
+                            <div class="mr-3 mb-3 bg-black" style="width: 5rem; height: 5rem;"></div>
+                            <div class="mr-3 mb-3 bg-primary" style="width: 5rem; height: 5rem;"></div>
+                            <div class="mr-3 mb-3 bg-primary-desat" style="width: 5rem; height: 5rem;"></div>
+                            <div class="mr-3 mb-3 bg-danger" style="width: 5rem; height: 5rem;"></div>
+                            <div class="mr-3 mb-3 bg-success" style="width: 5rem; height: 5rem;"></div>
+                            <div class="mr-3 mb-3 bg-gray-300" style="width: 5rem; height: 5rem;"></div>
+                            <div class="mr-3 mb-3 bg-gray-200" style="width: 5rem; height: 5rem;"></div>
+                            <div class="mr-3 mb-3 bg-saaral" style="width: 5rem; height: 5rem;"></div>
+                            <div class="mr-3 mb-3 bg-black-secondary" style="width: 5rem; height: 5rem;"></div>
+
+                        </div>
+                        <div class="card-footer bg-black-secondary">
+                            <code class="highlight html text-success">
+                                &lt;div&nbsp;class=&quot;bg-black&quot;&gt;&lt;/div&gt;<br />
+                                &lt;div&nbsp;class=&quot;bg-gray-primary&quot;&gt;&lt;/div&gt;<br />
+                                &lt;div&nbsp;class=&quot;bg-primary-desat&quot;&gt;&lt;/div&gt;<br />
+                                &lt;div&nbsp;class=&quot;bg-danger&quot;&gt;&lt;/div&gt;<br />
+                                &lt;div&nbsp;class=&quot;bg-success&quot;&gt;&lt;/div&gt;<br />
+                                &lt;div&nbsp;class=&quot;bg-gray-300&quot;&gt;&lt;/div&gt;<br />
+                                &lt;div&nbsp;class=&quot;bg-gray-200&quot;&gt;&lt;/div&gt;<br />
+                                &lt;div&nbsp;class=&quot;bg-black-secondary&quot;&gt;&lt;/div&gt;
+                            </code>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div> <!-- / .row -->
+        </div>
+    </section>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("../partials/scripts.html")
+
+</body>
+
+</html>

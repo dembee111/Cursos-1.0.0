@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    @@include("../partials/head.html", {
+    "pageTitle": "Cursos"
+    })
+</head>
+
+<body class="pt-10">
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("../partials/modals.html")
+
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("../partials/navbar.html", {
+    "classList": "navbar-light fixed-top bg-white border-bottom",
+    "container": "container-fluid"
+    })
+
+    <!-- BREADCRUMB
+    ================================================== -->
+    <nav class="d-lg-none bg-gray-800">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col">
+
+                    <!-- Breadcrumb -->
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <span class="text-white">
+                                Docs
+                            </span>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <span class="text-white">
+                                Design
+                            </span>
+                        </li>
+                    </ol>
+
+                </div>
+                <div class="col-auto">
+
+                    <!-- Toggler -->
+                    <div class="navbar-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#sidenavCollapse" aria-controls="sidenavCollapse" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </nav>
+
+    <!-- CONTENT
+    ================================================== -->
+    <section class="py-6 py-md-10">
+        <div class="container-fluid">
+            <div class="row">
+                <div
+                    class="col-12 col-lg-3 col-xl-2 px-lg-0 border-bottom border-bottom-lg-0 border-right-lg border-gray-300 sidenav sidenav-left">
+
+                    @@include("../partials/sidenavbar.html")
+
+                </div>
+                <div class="col-12 col-lg-6 col-xl-8 offset-lg-3 offset-xl-2 py-7 py-lg-9 px-lg-7">
+
+                    <!-- Heading -->
+                    <h1 class="mb-1 font-weight-bold">Adobe XD Design</h1>
+
+                    <!-- Text -->
+                    <p class="font-size-lg text-gray-700">
+                        Cursos was designed in Adobe XD, the best design tool.
+                    </p>
+
+                    <!-- Screenshot -->
+                    <img class="img-fluid screenshot mb-6" src="../assets/img/background/screenshot/screenshot-1.jpg"
+                        alt="screenshot-1">
+                    <img class="img-fluid screenshot mb-6" src="../assets/img/background/screenshot/screenshot-2.jpg"
+                        alt="screenshot-2">
+                    <img class="img-fluid screenshot mb-6" src="../assets/img/background/screenshot/screenshot-3.jpg"
+                        alt="screenshot-3">
+                    <img class="img-fluid screenshot mb-6" src="../assets/img/background/screenshot/screenshot-4.jpg"
+                        alt="screenshot-4">
+                    <img class="img-fluid screenshot mb-6" src="../assets/img/background/screenshot/screenshot-5.jpg"
+                        alt="screenshot-5">
+
+
+                </div>
+
+            </div> <!-- / .row -->
+        </div>
+    </section>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("../partials/scripts.html")
+
+</body>
+
+</html>

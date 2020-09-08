@@ -1,0 +1,1997 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Libs CSS -->
+  <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
+  <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
+  <link rel="stylesheet" href="./node_modules/quill/dist/quill.core.css" />
+  <link rel="stylesheet" href="./node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./node_modules/highlight.js/styles/default.css" />
+  <!-- Map -->
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+
+  <!-- Theme CSS -->
+  <!-- build:css ./assets/css/theme.min.css -->
+
+  <link rel="stylesheet" href="./assets/css/theme.css">
+  <!-- endbuild -->
+
+  <title>Cursos</title>
+</head>
+
+<body>
+  <!-- MODALS
+  ================================================== -->
+  <!-- Signup: Horizontal  -->
+  <div class="modal fade" id="modalSignupHorizontal" tabindex="-1" role="dialog"
+    aria-labelledby="modalSignupHorizontalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="card card-row">
+          <div class="row no-gutters">
+            <div class="col-12 col-md-6 bg-cover card-img-left"
+              style="background-image: url(./assets/img/photos/photo-8.jpg);">
+
+              <!-- Image (placeholder) -->
+              <img src="./assets/img/photos/photo-8.jpg" alt="..." class="img-fluid d-md-none invisible">
+
+              <!-- Shape -->
+              <div class="wave wave-right wave-fluid-y svg-shim text-white d-none d-md-block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="116" height="690" viewBox="0 0 116 690"><path fill="#fff" d="M116,0H51V172L0,517V690H116Z"/></svg>
+              </div>
+
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="card-body">
+
+                <!-- Close -->
+                <button type="button" class="modal-close close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+
+                <!-- Heading -->
+                <h2 class="mb-0 font-weight-bold text-center font-second" id="modalSignupHorizontalTitle">
+                  Sign up
+                </h2>
+
+                <!-- Text -->
+                <p class="mb-6 text-center text-muted">
+                  Thank you for join us
+                </p>
+
+                <!-- Form -->
+                <form class="mb-6">
+
+                  <!-- Email -->
+                  <div class="form-group">
+                    <label class="sr-only" for="modalSignupHorizontalEmail">
+                      Your email
+                    </label>
+                    <input type="email" class="form-control" id="modalSignupHorizontalEmail" placeholder="Your email"
+                      autocomplete="off">
+                  </div>
+
+                  <!-- Password -->
+                  <div class="form-group mb-5">
+                    <label class="sr-only" for="modalSignupHorizontalPassword">
+                      Create a password
+                    </label>
+                    <input type="password" class="form-control" id="modalSignupHorizontalPassword"
+                      placeholder="Create a password" autocomplete="off">
+                  </div>
+
+                  <!-- Submit -->
+                  <button class="btn btn-block btn-primary-desat shadow-small-soft" type="submit">
+                    Sign up
+                  </button>
+
+                </form>
+
+                <!-- Text -->
+                <p class="mb-0 font-size-sm text-center text-muted">
+                  Already have an account? <a href="#!">Log in</a>.
+                </p>
+
+              </div>
+            </div>
+
+          </div> <!-- / .row -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Signup: Vertical 11 -->
+  <div class="modal fade" id="modalSignupVertical" tabindex="-1" role="dialog" aria-labelledby="modalSignupVerticalTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="card">
+
+          <!-- Close -->
+          <button type="button" class="modal-close close text-white" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+
+          <!-- Image -->
+          <img src="./assets/img/photos/photo-7.jpg" alt="..." class="card-img-top">
+
+          <!-- Shape -->
+          <div class="position-relative">
+            <div class="wave wave-bottom wave-fluid-x svg-shim text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 440"><path fill="#fff" fill-opacity="1" d="M0,0L120,48C240,96,480,192,720,208C960,224,1200,160,1320,128L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+            </div>
+          </div>
+
+          <!-- Body -->
+          <div class="card-body">
+
+            <!-- Heading -->
+            <h2 class="mb-0 font-weight-bold text-center font-second" id="modalSignupVerticalTitle">
+              Sign Up
+            </h2>
+
+            <!-- Text -->
+            <p class="mb-6 text-center text-muted">
+              Thank you for join us
+            </p>
+
+            <!-- Form -->
+            <form class="mb-6">
+
+              <!-- Email -->
+              <div class="form-group">
+                <label class="sr-only" for="modalSignupVerticalEmail">
+                  Email Address
+                </label>
+                <input type="email" class="form-control" id="modalSignupVerticalEmail" placeholder="Create a username"
+                  autocomplete="off">
+              </div>
+
+              <!-- Password -->
+              <div class="form-group mb-5">
+                <label class="sr-only" for="modalSignupVerticalPassword">
+                  Password
+                </label>
+                <input type="password" class="form-control" id="modalSignupVerticalPassword"
+                  placeholder="Create a password" autocomplete="off">
+              </div>
+
+              <!-- Submit -->
+              <button class="btn btn-block btn-primary-desat shadow-small-soft" type="submit">
+                Sign up
+              </button>
+
+            </form>
+
+            <!-- Text -->
+            <p class="mb-0 font-size-sm text-center text-muted">
+              Already have an account? <a href="#!">Log in</a>.
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Signin: Horizontal  -->
+  <div class="modal fade" id="modalLoginHorizontal" tabindex="-1" role="dialog"
+    aria-labelledby="modalLoginHorizontalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="card card-row">
+          <div class="row no-gutters">
+            <div class="col-12 col-md-6 bg-cover card-img-left"
+              style="background-image: url(./assets/img/photos/photo-1.jpg);">
+
+              <!-- Image (placeholder) -->
+              <img src="./assets/img/photos/photo-1.jpg" alt="..." class="img-fluid d-md-none invisible">
+
+              <!-- Shape -->
+              <div class="wave wave-right wave-fluid-y svg-shim text-white d-none d-md-block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="116" height="690" viewBox="0 0 116 690"><path fill="#fff" d="M116,0H51V172L0,517V690H116Z"/></svg>
+              </div>
+
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="card-body">
+
+                <!-- Close -->
+                <button type="button" class="modal-close close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+
+                <!-- Heading -->
+                <h2 class="mb-0 font-weight-bold text-center font-second" id="modalLoginHorizontalTitle">
+                  Sign in
+                </h2>
+
+                <!-- Text -->
+                <p class="mb-6 text-center text-muted">
+                  Welcome to our platform
+                </p>
+
+                <!-- Form -->
+                <form class="mb-6">
+
+                  <!-- Email -->
+                  <div class="form-group">
+                    <label class="sr-only" for="modalLoginHorizontalEmail">
+                      Your email
+                    </label>
+                    <input type="email" class="form-control" id="modalLoginHorizontalEmail" placeholder="Your email"
+                      autocomplete="off">
+                  </div>
+
+                  <!-- Password -->
+                  <div class="form-group mb-5">
+                    <label class="sr-only" for="modalLoginHorizontalPassword">
+                      Enter your password
+                    </label>
+                    <input type="password" class="form-control" id="modalLoginHorizontalPassword"
+                      placeholder="Enter your password" autocomplete="off">
+                  </div>
+
+                  <!-- Submit -->
+                  <button class="btn btn-block btn-primary-desat shadow-small-soft" type="submit">
+                    Sign in
+                  </button>
+
+                </form>
+
+                <!-- Text -->
+                <p class="mb-0 font-size-sm text-center text-muted">
+                  Don't have an account yet? <a href="#!">Sign up</a>.
+                </p>
+
+              </div>
+            </div>
+
+          </div> <!-- / .row -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Signin: Vertical 22 -->
+  <div class="modal fade" id="modalLoginVertical" tabindex="-1" role="dialog" aria-labelledby="modalLoginVerticalTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="card">
+
+          <!-- Close -->
+          <button type="button" class="modal-close close text-white" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+
+          <!-- Image -->
+          <img src="./assets/img/photos/photo-21.jpg" alt="..." class="card-img-top">
+
+          <!-- Shape -->
+          <div class="position-relative">
+            <div class="wave wave-bottom wave-fluid-x svg-shim text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 440"><path fill="#fff" fill-opacity="1" d="M0,0L120,48C240,96,480,192,720,208C960,224,1200,160,1320,128L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+            </div>
+          </div>
+
+          <!-- Body -->
+          <div class="card-body">
+
+            <!-- Heading -->
+            <h2 class="mb-0 font-weight-bold text-center font-second" id="modalLoginVerticalTitle">
+              Sign in
+            </h2>
+
+            <!-- Text -->
+            <p class="mb-6 text-center text-muted">
+              Welcome to our platform
+            </p>
+
+            <!-- Form -->
+            <form class="mb-6">
+
+              <!-- Email -->
+              <div class="form-group">
+                <label class="sr-only" for="modalSigninVerticalEmail">
+                  Your email
+                </label>
+                <input type="email" class="form-control" id="modalSigninVerticalEmail" placeholder="Your email"
+                  autocomplete="off">
+              </div>
+
+              <!-- Password -->
+              <div class="form-group mb-5">
+                <label class="sr-only" for="modalSigninVerticalPassword">
+                  Enter your password
+                </label>
+                <input type="password" class="form-control" id="modalSigninVerticalPassword"
+                  placeholder="Enter your password" autocomplete="off">
+              </div>
+
+              <!-- Submit -->
+              <button class="btn btn-block btn-primary-desat shadow-small-soft" type="submit">
+                Sign in
+              </button>
+
+            </form>
+
+            <!-- Text -->
+            <p class="mb-0 font-size-sm text-center text-muted">
+              Don't have an account yet? <a href="#!" class="text-danger">Sign up</a>.
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+          <button type="button" class="close-video" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <!-- 16:9 aspect ratio -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" id="video" allow="autoplay"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Example -->
+  <div class="modal fade" id="modalPayment" tabindex="-1" role="dialog" aria-labelledby="modalPaymentTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+
+          <!-- Close -->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+
+          <!-- Heading -->
+          <h2 class="font-weight-bold text-center mb-1 font-second" id="modalPaymentTitle">
+            Add Payment
+          </h2>
+
+          <!-- Text -->
+          <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
+            Simplify your workflow in minutes.
+          </p>
+
+          <!-- Form -->
+          <form>
+
+            <!-- Name -->
+            <div class="form-group">
+              <label for="modalCardName">Name on card</label>
+              <input class="form-control" id="modalCardName" type="text" placeholder="Card Name">
+            </div>
+
+            <!-- Name -->
+            <div class="form-group">
+              <label for="modalCardNumbber">Card number</label>
+              <input class="form-control" id="modalCardNumbber" type="number" placeholder="4242 4242 4242 4242">
+            </div>
+
+            <!-- Name -->
+            <div class="form-group">
+              <label for="modalCardtDate">Exp. Date</label>
+              <input class="form-control" id="modalCardtDate" type="text" placeholder="09/2024">
+            </div>
+
+            <!-- Submit -->
+            <button class="btn btn-block btn-primary-desat shadow-small-soft mt-3 move">
+              Add Payment
+            </button>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOP NAVBAR ============================ -->
+  <nav class="navbar navbar-light bg-transparent navbar-padding-y-sm">
+    <div class="container-fluid mx-xl-9 mx-xxl-13">
+
+      <ul class="nav mr-auto d-none d-lg-block">
+        <li class="nav-item ml-0">
+          <a class="nav-link text-body" href="#">
+            <i class="fe fe-phone"></i>&nbsp;010-3695-8969</a>
+        </li>
+      </ul>
+      <ul class="nav mx-auto mx-lg-0 ml-sm-0 ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-body" href="./faq.html">
+            <i class="fe fe-alert-circle"></i>&nbsp;Help</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-body" data-toggle="modal" href="#modalLoginVertical">
+            <i class="fe fe-user"></i>&nbsp;Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-body" data-toggle="modal" href="#modalSignupHorizontal">
+            <i class="fe fe-file-text"></i>&nbsp;Register</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <main class="bg-cover position-relative bg-middle">
+    <!-- MAIN NAVBAR ============================ -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <div class="container-fluid mx-xl-9 mx-xxl-13">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="./index.html">
+          <img src="./assets/img/Cursos.svg" class="navbar-brand-img mb-1" alt="nav-icon">
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button>
+
+          <!-- Navigation -->
+          <ul class="navbar-nav ml-auto">
+
+            <!-- Landing pages-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarLandings" data-toggle="dropdown" href="#" aria-haspopup="true"
+                aria-expanded="false">
+                Landing
+              </a>
+              <div class="dropdown-menu dropdown-menu-xl p-0" aria-labelledby="navbarLandings">
+                <div class="row no-gutters align-items-center">
+                  <div class="col-12 col-lg-6">
+                    <div class="dropdown-body">
+                      <div class="row no-gutters ">
+
+                        <div class="col-6">
+
+                          <!-- Heading -->
+                          <h6 class="dropdown-header">
+                            Main
+                          </h6>
+
+                          <!-- List -->
+                          <a class="dropdown-item" href="./index.html">
+                            Basic
+                          </a>
+                          <a class="dropdown-item" href="./success-landing.html">
+                            Success
+                          </a>
+                          <a class="dropdown-item mb-5" href="./little-course.html">
+                            Little
+                          </a>
+
+                          <!-- Heading -->
+                          <h6 class="dropdown-header">
+                            Company
+                          </h6>
+
+                          <!-- List -->
+                          <a class="dropdown-item" href="./about.html">
+                            About
+                          </a>
+                          <a class="dropdown-item" href="./contact.html">
+                            Contact
+                          </a>
+
+                        </div>
+
+                        <div class="col-6">
+
+                          <!-- Heading -->
+                          <h6 class="dropdown-header">
+                            Additional Landing
+                          </h6>
+
+                          <!-- List -->
+                          <a class="dropdown-item" href="#!">
+                            Coming soon <small class="text-primary">(New)</small>
+                          </a>
+                          <a class="dropdown-item mb-5" href="./mobile-app.html">
+                            Coming soon <small class="text-primary">(New)</small>
+                          </a>
+
+                          <!-- Heading -->
+                          <h6 class="dropdown-header">
+                            Courses
+                          </h6>
+
+                          <a class="dropdown-item" href="./course-horizontal.html">
+                            Course Horizontal
+                          </a>
+                          <a class="dropdown-item" href="./course-middle.html">
+                            Course Middle
+                          </a>
+                          <a class="dropdown-item" href="course-veritical.html">
+                            Course Veritical
+                          </a>
+                          <a class="dropdown-item" href="course-detail.html">
+                            Course View
+                          </a>
+
+                        </div>
+
+                      </div> <!-- / .row -->
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-lg-6">
+                    <img src="./assets/img/background/3327590.jpg" class="img-fluid" alt="cover-illustration">
+                  </div>
+
+                </div> <!-- / .row -->
+              </div>
+            </li>
+
+            <!-- pages-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarPages" data-toggle="dropdown" href="#" aria-haspopup="true"
+                aria-expanded="false">
+                Pages
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarPages">
+                <div class="row no-gutters">
+                  <div class="col-8">
+                    <div class="row no-gutters">
+                      <div class="col-12 col-lg-6">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          Teacher
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item" href="./teacher-dashboard.html">
+                          Dashboard
+                        </a>
+                        <a class="dropdown-item" href="./teacher-notification.html">
+                          Notification
+                        </a>
+                        <a class="dropdown-item" href="./teacher-settings.html">
+                          Settings
+                        </a>
+                        <a class="dropdown-item" href="./teacher-security.html">
+                          Security
+                        </a>
+                        <a class="dropdown-item" href="./teacher-structure.html">
+                          Structure
+                        </a>
+                        <a class="dropdown-item" href="./teacher-add-course.html">
+                          Add course
+                        </a>
+                        <a class="dropdown-item" href="./teacher-courses.html">
+                          Courses
+                        </a>
+                        <a class="dropdown-item" href="./teacher-add-exam.html">
+                          Add exam
+                        </a>
+                        <a class="dropdown-item mb-5 mb-lg-0" href="./teacher-payment.html">
+                          Payment
+                        </a>
+                        <a class="dropdown-item mb-5 mb-lg-0" href="./teacher-help.html">
+                          Help center
+                        </a>
+
+                      </div>
+                      <div class="col-12 col-lg-6">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          Student
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item" href="./student-dashboard.html">
+                          Dashboard
+                        </a>
+                        <a class="dropdown-item" href="./student-notification.html">
+                          Notification
+                        </a>
+                        <a class="dropdown-item" href="./student-settings.html">
+                          Settings
+                        </a>
+                        <a class="dropdown-item" href="./student-security.html">
+                          Security
+                        </a>
+                        <a class="dropdown-item" href="./student-course.html">
+                          Courses
+                        </a>
+                        <a class="dropdown-item" href="./student-course-detail.html">
+                          Course: Detail
+                        </a>
+                        <a class="dropdown-item" href="./student-test.html">
+                          Online test
+                        </a>
+                        <a class="dropdown-item" href="./student-exam.html" target="_blank">
+                          Exam
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="row no-gutters">
+                      <div class="col-12 col-lg-12">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          Help
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item" href="./faq.html">
+                          Faq
+                        </a>
+                        <a class="dropdown-item mb-5" href="./thankyou.html">
+                          Thank you
+                        </a>
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          Payment
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item" href="./checkout.html">
+                          Checkout
+                        </a>
+                        <a class="dropdown-item mb-5" href="./invoice.html" target="_blank">
+                          Invoice
+                        </a>
+
+                        <!-- Teachers -->
+                        <h6 class="dropdown-header">
+                          Instructor
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item" href="./teachers.html">
+                          Teachers
+                        </a>
+                        <a class="dropdown-item" href="./teacher-detail.html">
+                          Teacher: Detail
+                        </a>
+
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div> <!-- / .row -->
+            </li>
+
+            <!-- blog pages-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarBlog" data-toggle="dropdown" href="#" aria-haspopup="true"
+                aria-expanded="false">
+                Blog
+              </a>
+              <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarBlog">
+                <div class="list-group list-group-flush">
+                  <a class="list-group-item" href="./blog.html">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="63.484" height="65.127" viewBox="0 0 63.484 65.127"><g transform="translate(-485.726 -737.937)"><path d="M0,0,39.667.667c2.417,2.583,5.589,5.4,7.667,7.583L47.486,65H0Z" transform="translate(486 738)" fill="#d5d1e8"/><path d="M55.875,7.938h3.25l1.188,4.9L61.5,18.784,60.313,49.5H54.125L53.75,16.858l.375-3.358Z" transform="translate(487 739)" fill="#7e7eb0"/><rect width="10" height="5" transform="translate(517 785)" fill="#fff"/><g transform="translate(483 738)"><path d="M2.79,0V54.6h1.9V1.9H41.585V9.566h7.662V63.1H4.694V56.509H2.79V65H51.151V8.219L42.931,0Zm40.7,3.251L47.9,7.662H43.489Z" fill="#4a154f" stroke="#707070" stroke-width="0.127"/><path d="M62.21,13.418,60.318,11.3v-4.4H54.605v4.4l-1.892,2.115.987,37.03h.905v3.081l2.856,5.713,2.856-5.713V50.448h.905ZM55.555,48.544l-.363-13.616h4.54l-.363,13.616Zm-.414-15.52-.5-18.9,1.346-1.5H58.94l1.346,1.5-.5,18.9ZM56.51,8.811h1.9v1.9h-1.9Zm1.9,44.269-.952,1.9-.952-1.9V50.448h1.9Z" transform="translate(4)" fill="#4a154f"/><path d="M9.179,41.264h1.9v1.9h-1.9Z" fill="#4a154f"/><path d="M12.988,41.264h13.58v1.9H12.988Z" fill="#4a154f"/><path d="M33.251,31.548h11.51v1.9H33.251Z" fill="#4a154f"/><path d="M9.179,31.548H31.346v1.9H9.179Z" fill="#4a154f"/><path d="M9.179,36.406h7.03v1.9H9.179Z" fill="#4a154f"/><path d="M18.114,36.406H44.761v1.9H18.114Z" fill="#4a154f"/><path d="M9.179,26.69h7.03v1.9H9.179Z" fill="#4a154f"/><path d="M18.114,26.69H44.761v1.9H18.114Z" fill="#4a154f"/><path d="M33.251,16.974h11.51v1.9H33.251Z" fill="#4a154f"/><path d="M9.179,16.974H31.346v1.9H9.179Z" fill="#4a154f"/><path d="M31.346,21.832H9.179v1.9H44.761v-1.9H31.346Z" fill="#4a154f"/><path d="M12.988,46.122h13.58v1.9H12.988Z" fill="#4a154f"/><path d="M9.179,46.122h1.9v1.9h-1.9Z" fill="#4a154f"/><path d="M34.99,12.116h9.771v1.9H34.99Z" fill="#4a154f"/><path d="M27.373,12.116h1.9v1.9h-1.9Z" fill="#4a154f"/><path d="M31.181,12.116h1.9v1.9h-1.9Z" fill="#4a154f"/><path d="M56.51,15.475h1.9v8.281h-1.9Z" transform="translate(4)" fill="#fff"/><path d="M56.51,25.661h1.9v1.9h-1.9Z" transform="translate(4)" fill="#fff"/><path d="M12.311,3.809h1.9v1.9h-1.9Z" fill="#fff"/><path d="M6.6,10.474H8.5V5.713h1.9v-1.9H6.6Z" fill="#fff"/><path d="M16.12,3.809h1.9v1.9h-1.9Z" fill="#fff"/><path d="M36.869,59.287h1.9v1.9h-1.9Z" fill="#fff"/><path d="M47.342,57.383h-1.9v1.9H40.677v1.9h6.665Z" fill="#fff"/><path d="M44.761,46.122H33.335v6.665H44.761Zm-1.9,4.761H35.24V48.026h7.617Z" fill="#4a154f"/></g></g></svg>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ml-4">
+
+                      <!-- Heading -->
+                      <h6 class="font-weight-bold text-uppercase text-primary-desat mb-0">
+                        Blog
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-gray-700 mb-0">
+                        Full list of blog
+                      </p>
+
+                    </div>
+
+                  </a>
+                  <a class="list-group-item" href="./blog-detail.html">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65" height="60" viewBox="0 0 65 60"><defs><clipPath><rect width="31" height="39" transform="translate(441 714)" fill="#fff" stroke="#707070" stroke-width="1"/></clipPath></defs><g transform="translate(-462 -743)"><g transform="translate(462 750)" fill="#e0ddee" stroke="#4a154f" stroke-width="2"><rect width="65" height="42" rx="3" stroke="none"/><rect x="1" y="1" width="63" height="40" rx="2" fill="none"/></g><g transform="translate(478 797)" fill="#a2a4cd" stroke="#4a154f" stroke-width="2"><path d="M6,0H27a6,6,0,0,1,6,6V6a0,0,0,0,1,0,0H0A0,0,0,0,1,0,6V6A6,6,0,0,1,6,0Z" stroke="none"/><path d="M4.429,1H28.571A3.429,3.429,0,0,1,32,4.429v0A.571.571,0,0,1,31.429,5H1.571A.571.571,0,0,1,1,4.429v0A3.429,3.429,0,0,1,4.429,1Z" fill="none"/></g><g transform="translate(490 790)" fill="#a2a4cd" stroke="#4a154f" stroke-width="2"><rect width="10" height="9" stroke="none"/><rect x="1" y="1" width="8" height="7" fill="none"/></g><g transform="translate(462 784)" fill="#a2a4cd" stroke="#4a154f" stroke-width="2"><path d="M0,0H65a0,0,0,0,1,0,0V5a3,3,0,0,1-3,3H2A2,2,0,0,1,0,6V0A0,0,0,0,1,0,0Z" stroke="none"/><path d="M2,1H63a1,1,0,0,1,1,1V5a2,2,0,0,1-2,2H2A1,1,0,0,1,1,6V2A1,1,0,0,1,2,1Z" fill="none"/></g><line y2="22" transform="translate(469.5 756.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/><line y2="7" transform="translate(466.5 758.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/><g transform="translate(494 787)" fill="#fff"><path d="M 1 1.5 C 0.7243000268936157 1.5 0.5 1.275699973106384 0.5 1 C 0.5 0.7243000268936157 0.7243000268936157 0.5 1 0.5 C 1.275699973106384 0.5 1.5 0.7243000268936157 1.5 1 C 1.5 1.275699973106384 1.275699973106384 1.5 1 1.5 Z" stroke="none"/><path d="M 1 0 C 1.552279949188232 0 2 0.4477200508117676 2 1 C 2 1.552279949188232 1.552279949188232 2 1 2 C 0.4477200508117676 2 0 1.552279949188232 0 1 C 0 0.4477200508117676 0.4477200508117676 0 1 0 Z" stroke="none" fill="#e0ddee"/></g><g transform="translate(38 29)" clip-path="url(#a)"><g transform="translate(151.114 272.102)"><path d="M0,0,23.754.4C25.2,1.946,27.1,3.633,28.345,4.94l.091,33.984H0Z" transform="translate(291.031 441.937)" fill="#fff"/><rect width="5.988" height="2.994" transform="translate(309.595 470.082)" fill="#fff"/><g transform="translate(289.235 441.937)"><path d="M1.671,0V32.7H2.809V1.138H24.9V5.728h4.588V37.786H2.811V33.839H1.671v5.085h28.96v-34L25.708,0ZM26.043,1.947l2.641,2.641H26.043Z" fill="#4a154f" stroke="#707070" stroke-width="0.076"/><path d="M5.5,24.71H6.634v1.138H5.5Z" fill="#4a154f"/><path d="M7.778,24.71H15.91v1.138H7.778Z" fill="#4a154f"/><path d="M19.912,18.892H26.8V20.03H19.912Z" fill="#4a154f"/><path d="M5.5,18.892H18.771V20.03H5.5Z" fill="#4a154f"/><path d="M5.5,21.8h4.21v1.138H5.5Z" fill="#4a154f"/><path d="M10.847,21.8H26.8v1.138H10.847Z" fill="#4a154f"/><path d="M5.5,15.983h4.21v1.138H5.5Z" fill="#4a154f"/><path d="M10.847,15.983H26.8v1.138H10.847Z" fill="#4a154f"/><path d="M19.912,10.165H26.8V11.3H19.912Z" fill="#4a154f"/><path d="M5.5,10.165H18.771V11.3H5.5Z" fill="#4a154f"/><path d="M18.771,13.074H5.5v1.138H26.8V13.074Z" fill="#4a154f"/><path d="M7.778,27.619H15.91v1.138H7.778Z" fill="#4a154f"/><path d="M5.5,27.619H6.634v1.138H5.5Z" fill="#4a154f"/><path d="M20.953,7.255H26.8V8.393H20.953Z" fill="#4a154f"/><path d="M16.392,7.255H17.53V8.393H16.392Z" fill="#4a154f"/><path d="M18.672,7.255H19.81V8.393H18.672Z" fill="#4a154f"/><path d="M7.372,2.281H8.51V3.419H7.372Z" fill="#fff"/><path d="M3.952,6.272H5.09V3.421H6.228V2.283H3.952Z" fill="#fff"/><path d="M9.653,2.281h1.138V3.419H9.653Z" fill="#fff"/><path d="M22.078,35.5h1.138v1.138H22.078Z" fill="#fff"/><path d="M28.35,34.363H27.212V35.5H24.359v1.138H28.35Z" fill="#fff"/><path d="M26.8,27.619H19.962V31.61H26.8ZM25.666,30.47H21.1V28.759h4.561Z" fill="#4a154f"/></g></g></g></g></svg>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ml-4">
+
+                      <!-- Heading -->
+                      <h6 class="font-weight-bold text-uppercase text-primary-desat mb-0">
+                        Blog View
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-gray-700 mb-0">
+                        Blog detail page
+                      </p>
+
+                    </div>
+
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Account-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarAccount" data-toggle="dropdown" href="#" aria-haspopup="true"
+                aria-expanded="false">
+                Account
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarAccount">
+                <li class="dropdown-item dropright">
+                  <a class="dropdown-link dropdown-toggle" data-toggle="dropdown" href="#">
+                    Sign In
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="./login-colored.html" target="_blank">
+                      Colored
+                    </a>
+                    <a class="dropdown-item" href="./login-illustration.html" target="_blank">
+                      Illustration
+                    </a>
+                    <a class="dropdown-item" href="./login.html" target="_blank">
+                      Basic
+                    </a>
+                    <a class="dropdown-item" href="./login-horizontal.html" target="_blank">
+                      Horizontal
+                    </a>
+                    <a class="dropdown-item" data-toggle="modal" href="#modalLoginHorizontal">
+                      Modal Horizontal
+                    </a>
+                    <a class="dropdown-item" data-toggle="modal" href="#modalLoginVertical">
+                      Modal Vertical
+                    </a>
+                  </div>
+                </li>
+                <li class="dropdown-item dropright">
+                  <a class="dropdown-link dropdown-toggle" data-toggle="dropdown" href="#">
+                    Sign Up
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="./register-colored.html" target="_blank">
+                      Colored
+                    </a>
+                    <a class="dropdown-item" href="./register-illustration.html" target="_blank">
+                      Illustration
+                    </a>
+                    <a class="dropdown-item" href="./register.html" target="_blank">
+                      Basic
+                    </a>
+                    <a class="dropdown-item" href="./register-horizontal.html" target="_blank">
+                      Horizontal
+                    </a>
+                    <a class="dropdown-item" data-toggle="modal" href="#modalSignupHorizontal">
+                      Modal Horizontal
+                    </a>
+                    <a class="dropdown-item" data-toggle="modal" href="#modalSignupVertical">
+                      Modal Vertical
+                    </a>
+                  </div>
+                </li>
+                <li class="dropdown-item dropright">
+                  <a class="dropdown-link dropdown-toggle" data-toggle="dropdown" href="#">
+                    Password Reset
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="./reset-colored.html" target="_blank">
+                      Colored
+                    </a>
+                    <a class="dropdown-item" href="./reset-password-illustration.html" target="_blank">
+                      Illustration
+                    </a>
+                    <a class="dropdown-item" href="./reset-password.html" target="_blank">
+                      Basic
+                    </a>
+                  </div>
+                </li>
+                <li class="dropdown-item dropright">
+                  <a class="dropdown-link dropdown-toggle" data-toggle="dropdown" href="#">
+                    Error
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="./error-colored.html" target="_blank">
+                      Colored
+                    </a>
+                    <a class="dropdown-item" href="./error-illustration.html" target="_blank">
+                      Illustration
+                    </a>
+                    <a class="dropdown-item" href="./error.html" target="_blank">
+                      Basic
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Documentation-->
+            <li class="nav-item">
+              <a class="nav-link" href="./docs/index.html">
+                Documentation
+              </a>
+            </li>
+
+          </ul>
+
+          <!-- Language -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle d-none d-lg-block" id="selectLanguageEn" data-toggle="dropdown" href="#"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fe fe-globe"></i>
+                EN <i class="fe fe-chevron-down"></i>
+              </a>
+              <a class="nav-link dropdown-toggle d-block d-lg-none" id="selectLanguage" data-toggle="dropdown" href="#"
+                aria-haspopup="true" aria-expanded="false">
+                Language
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">English <img src="./assets/img/flags/GB.png"
+                    class="float-right img-fluid" alt="eng"></a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">United States <img src="./assets/img/flags/US.png"
+                    class="float-right img-fluid" alt="us"></a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Germany <img src="./assets/img/flags/DE.png"
+                    class="float-right img-fluid" alt="de"></a>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </nav>
+    <!-- Overlay -->
+    <div class="bg-overlay"></div>
+    <!-- Line shape -->
+    <div class="position-absolute left-3 top-35 d-none d-lg-block">
+      <img src="assets/img/svg-shapes/big-lines.svg" class="img-fluid" alt="circle-and-circle">
+    </div>
+    <!-- Square shape -->
+    <div class="position-absolute right-3 top-35 d-none d-lg-block">
+      <img src="assets/img/svg-shapes/square-three.svg" class="img-fluid" alt="square-three">
+    </div>
+
+    <!-- WELCOME HEADING ============================ -->
+    <section class="py-6 py-md-12 py-xxl-16">
+      <div class="container-fluid">
+        <div class="row align-items-center justify-content-center mx-xl-9 mx-xxl-13">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+
+            <!-- Heading -->
+            <h1 class="display-3 text-center text-light" data-aos="fade-up" data-aos-delay="100">
+              Best Courses and Good Instructors
+            </h1>
+            <!-- Text -->
+
+            <p class="lead text-center text-light mb-7 mw-lg-75 mx-auto" data-aos="fade-up" data-aos-delay="100">
+              Anywhere, Anytime, Lifetime access, Enjoy risk-free with our 30-day money-back guarentee.
+            </p>
+            <!-- Buttons -->
+            <div class="text-center" data-aos="fade-down" data-aos-delay="100">
+              <a href="./blog-detail.html" class="btn btn-outline-light btn-pill shadow move text-uppercase">
+                Learn More
+              </a>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+  </main>
+
+  <!-- shape ======================== -->
+  <div class="position-relative">
+    <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+      <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
+    </div>
+  </div>
+
+  <!-- BRANDS
+    ================================================== -->
+  <figure class="pt-6 pt-md-8">
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-center mx-xl-9 mx-xxl-13 text-center">
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/Lenovo-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/verizon-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/dribbble-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/behance-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/laravel-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-5 mb-md-0">
+
+          <!-- Brand -->
+          <img src="assets/img/brands/svg/jquery-ok.svg" class="img-fluid mb-2 mb-md-0" alt="paypal">
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </figure>
+
+  <!-- SUBSCRIBE NOW ======================== -->
+  <section class="py-6 py-md-10 bg-danger mt-6 mt-md-11 shadow-small-soft position-relative">
+    <div class="position-absolute right-0 bottom-0">
+      <img src="assets/img/svg-shapes/line-shape-3.svg" alt="left-top-line-wave">
+    </div>
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12 position-relative">
+          <div class="position-absolute left-15 center">
+            <img src="assets/img/svg-shapes/circle-and-cricle.svg" alt="left-top-line-wave">
+          </div>
+
+          <div class="row justify-content-center align-items-center">
+            <div class="col-xs-12 col-md-5 col-lg-6 text-center">
+              <h1 class="display-3 text-light mr-7">
+                Our course room
+              </h1>
+            </div>
+            <div class="col-xs-12 col-md-7 col-lg-6">
+              <form>
+                <div class="input-group input-group-overlay flex-nowrap">
+                  <div class="input-group-prepend-overlay">
+                    <span class="input-group-text">
+                      <i class="fe fe-search"></i>
+                    </span>
+                  </div>
+                  <input class="form-control prepended-form-control" type="text" name="search"
+                    placeholder="Search for courses" />
+                  <div class="input-group-append">
+                    <button class="btn btn-primary-desat btn-sm" type="submit" name="subscribe">Subscribe</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div><!-- / .col -->
+      </div><!-- / .row -->
+    </div><!-- / .container -->
+  </section>
+
+  <!-- Course Cards ========================== -->
+  <section class="py-6 py-md-12 bg-saaral">
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-10 col-xl-3">
+          <h3 class="font-second mt-4 text-capitalize pb-1 border-bottom-md border-danger">Best seller courses</h3>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-5 mt-md-8">
+
+        <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+          <!-- / .card -->
+          <div class="card mb-3 shadow-small-soft move" style="max-width: 56.5rem;">
+            <div class="row no-gutters">
+              <div class="col-md-5">
+                <!-- card image -->
+                <picture>
+                  <img src="assets/img/card-photos/pretty-women@2x.png" class="card-img" alt="pretty-women">
+                </picture>
+              </div>
+              <div class="col-md-7">
+                <a class="card-body p-5" href="./course-detail.html">
+                  <!-- Title -->
+                  <h4 class="card-title main-heading mb-2">The Complete CSS3 Bootcamp 2020: Go from Zero to Hero</h4>
+                  <!-- Author -->
+                  <div class="d-flex mb-2">
+                    <span class="card-text">Josa Portilla</span>
+                  </div>
+                  <!-- Lesson tag -->
+                  <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start mb-2">
+                    <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                    <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                  </div>
+                  <!-- Star -->
+                  <div class="d-flex align-items-end justify-content-start mb-2">
+                    <span class="text-muted mr-3">4.6</span>
+                    <div class="mb-1 mr-3">
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                    </div>
+                    <span class="text-muted mr-3">(9876)</span>
+                  </div>
+                  <!-- Pricing -->
+                  <div class="mb-2">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-gray-700 mr-3">$19.99</span>
+                      <span class="text-gray-500"><del>$112.99</del></span>
+                    </div>
+                  </div>
+                  <p class="card-text"><small class="text-muted">Last updated 12 june 2020</small></p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div><!-- / .col -->
+
+        <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+          <div class="card mb-3 shadow-small-soft move" style="max-width: 56.5rem;">
+            <div class="row no-gutters">
+              <div class="col-md-5">
+                <!-- Star -->
+                <picture>
+                  <img src="assets/img/card-photos/brain-lesson@2x.png" class="card-img" alt="brain-lesson">
+                </picture>
+              </div>
+              <div class="col-md-7">
+                <a class="card-body p-5" href="./course-detail.html">
+                  <!-- Title -->
+                  <h4 class="card-title main-heading mb-2">The Complete JS Bootcamp 2020: Go from Zero to Hero</h4>
+                  <!-- Teacher -->
+                  <div class="d-flex mb-2">
+                    <span class="card-text">Josa Portilla</span>
+                  </div>
+                  <!-- Lesson tag -->
+                  <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start mb-2">
+                    <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                    <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                  </div>
+                  <!-- Star -->
+                  <div class="d-flex align-items-end justify-content-start mb-2">
+                    <span class="text-muted mr-3">4.6</span>
+                    <div class="mb-1 mr-3">
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                    </div>
+                    <span class="text-muted mr-3">(9876)</span>
+                  </div>
+                  <!-- Pricing -->
+                  <div class="mb-2">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-gray-700 mr-3">$19.99</span>
+                      <span class="text-gray-500"><del>$112.99</del></span>
+                    </div>
+                  </div>
+                  <p class="card-text"><small class="text-muted">Last updated 12 june 2020</small></p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div><!-- / .col -->
+
+        <div class="col-12 col-md-10 col-lg-8 col-xl-6 mt-0 mt-xxl-6">
+          <div class="card mb-3 shadow-small-soft move" style="max-width: 56.5rem;">
+            <div class="row no-gutters">
+              <div class="col-md-5">
+                <!-- card image -->
+                <img src="assets/img/card-photos/business-tower@2x.png" class="card-img" alt="business-tower">
+              </div>
+              <div class="col-md-7">
+                <a class="card-body p-5" href="./course-detail.html">
+                  <!-- title -->
+                  <h4 class="card-title main-heading mb-2">The Complete PHP Bootcamp 2020: Go from Zero to Hero</h4>
+                  <div class="d-flex mb-2">
+                    <!-- Teacher -->
+                    <span class="card-text">Josa Portilla</span>
+                  </div>
+                  <!-- Lesson tag -->
+                  <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start mb-2">
+                    <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                    <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                  </div>
+                  <!-- Star -->
+                  <div class="d-flex align-items-end justify-content-start mb-2">
+                    <span class="text-muted mr-3">4.6</span>
+                    <div class="mb-1 mr-3">
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                    </div>
+                    <span class="text-muted mr-3">(9876)</span>
+                  </div>
+                  <!-- Pricing -->
+                  <div class="mb-2">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-gray-700 mr-3">$19.99</span>
+                      <span class="text-gray-500"><del>$112.99</del></span>
+                    </div>
+                  </div>
+                  <p class="card-text"><small class="text-muted">Last updated 12 june 2020</small></p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-10 col-lg-8 col-xl-6 mt-0 mt-xxl-6">
+          <div class="card mb-3 shadow-small-soft move" style="max-width: 56.5rem;">
+            <div class="row no-gutters">
+              <div class="col-md-5">
+                <!-- Card image -->
+                <picture>
+                  <img src="assets/img/card-photos/cool-guys@2x.png" class="card-img" alt="cool-guys">
+                </picture>
+              </div>
+              <div class="col-md-7">
+                <a class="card-body p-5" href="./course-detail.html">
+                  <!-- Title -->
+                  <h4 class="card-title main-heading mb-2">The Complete Java Bootcamp 2020: Go from Zero to Hero</h4>
+                  <div class="d-flex mb-2">
+                    <!-- Author -->
+                    <span class="card-text">Josa Portilla</span>
+                  </div>
+                  <!-- Lesson tag -->
+                  <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start mb-2">
+                    <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                    <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                  </div>
+                  <!-- Star  -->
+                  <div class="d-flex align-items-end justify-content-start mb-2">
+                    <span class="text-muted mr-3">4.6</span>
+                    <div class="mb-1 mr-3">
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                    </div>
+                    <span class="text-muted mr-3">(9876)</span>
+                  </div>
+                  <!-- Pricing -->
+                  <div class="mb-2">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-gray-700 mr-3">$19.99</span>
+                      <span class="text-gray-500"><del>$112.99</del></span>
+                    </div>
+                  </div>
+                  <p class="card-text"><small class="text-muted">Last updated 12 june 2020</small></p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--row-->
+      <!-- Top star courses -->
+      <div class="row justify-content-start mt-8">
+        <div class="col-10 col-xl-3">
+          <h3 class="font-second mt-4 text-capitalize pb-1 border-bottom-md border-success">Top star courses</h3>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-5 mt-md-8">
+        <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+          <div class="card mb-3 shadow-small-soft move" style="max-width: 56.5rem;">
+            <div class="row no-gutters">
+              <div class="col-md-5">
+                <!-- Card image -->
+                <picture>
+                  <img src="assets/img/card-photos/coffee-notebook@2x.png" class="card-img" alt="coffee-notebook">
+                </picture>
+              </div>
+              <div class="col-md-7">
+                <a class="card-body p-5" href="./course-detail.html">
+                  <!-- Title -->
+                  <h4 class="card-title main-heading mb-2">The Complete CSS3 Bootcamp 2020: Go from Zero to Hero</h4>
+                  <div class="d-flex mb-2">
+                    <!-- Author -->
+                    <span class="card-text">Josa Portilla</span>
+                  </div>
+                  <!-- Lesson tag -->
+                  <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start mb-2">
+                    <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                    <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                  </div>
+                  <!-- Star -->
+                  <div class="d-flex align-items-end justify-content-start mb-2">
+                    <span class="text-muted mr-3">4.6</span>
+                    <div class="mb-1 mr-3">
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                    </div>
+                    <span class="text-muted mr-3">(9876)</span>
+                  </div>
+                  <!-- Pricing -->
+                  <div class="mb-2">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-gray-700 mr-3">$19.99</span>
+                      <span class="text-gray-500"><del>$112.99</del></span>
+                    </div>
+                  </div>
+                  <p class="card-text"><small class="text-muted">Last updated 12 june 2020</small></p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+          <div class="card mb-3 shadow-small-soft move" style="max-width: 56.5rem;">
+            <div class="row no-gutters">
+              <div class="col-md-5">
+                <!-- Card image -->
+                <picture>
+                  <img src="assets/img/card-photos/robot-hand@2x.png" alt="robot-hand" class="card-img">
+                </picture>
+              </div>
+              <div class="col-md-7">
+                <a class="card-body p-5" href="./course-detail.html">
+                  <!-- Title -->
+                  <h4 class="card-title main-heading mb-2">The Complete Golang Bootcamp 2020: Go from Zero to Hero</h4>
+                  <!-- Author -->
+                  <div class="d-flex mb-2">
+                    <span class="card-text">Josa Portilla</span>
+                  </div>
+                  <!-- Lesson tag -->
+                  <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start mb-2">
+                    <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                    <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                  </div>
+                  <!-- Star -->
+                  <div class="d-flex align-items-end justify-content-start mb-2">
+                    <span class="text-muted mr-3">4.6</span>
+                    <div class="mb-1 mr-3">
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                    </div>
+                    <span class="text-muted mr-3">(9876)</span>
+                  </div>
+                  <!-- Pricing -->
+                  <div class="mb-2">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-gray-700 mr-3">$19.99</span>
+                      <span class="text-gray-500"><del>$112.99</del></span>
+                    </div>
+                  </div>
+                  <p class="card-text"><small class="text-muted">Last updated 12 june 2020</small></p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-10 col-lg-8 col-xl-6 mt-0 mt-xxl-6">
+          <div class="card mb-3 shadow-small-soft move" style="max-width: 56.5rem;">
+            <div class="row no-gutters">
+              <div class="col-md-5">
+                <!-- Card image -->
+                <picture>
+                  <img src="assets/img/card-photos/good-men@2x.png" alt="good-men" class="card-img">
+                </picture>
+              </div>
+              <div class="col-md-7">
+                <a class="card-body p-5" href="./course-detail.html">
+                  <!-- Title -->
+                  <h4 class="card-title main-heading mb-2">The Complete HTML Bootcamp 2020: Go from Zero to Hero</h4>
+                  <!-- Author -->
+                  <div class="d-flex mb-2">
+                    <span class="card-text">Josa Portilla</span>
+                  </div>
+                  <!-- Lesson tag -->
+                  <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start mb-2">
+                    <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                    <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                  </div>
+                  <!-- Star -->
+                  <div class="d-flex align-items-end justify-content-start mb-2">
+                    <span class="text-muted mr-3">4.6</span>
+                    <div class="mb-1 mr-3">
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                    </div>
+                    <span class="text-muted mr-3">(9876)</span>
+                  </div>
+                  <!-- Pricing -->
+                  <div class="mb-2">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-gray-700 mr-3">$19.99</span>
+                      <span class="text-gray-500"><del>$112.99</del></span>
+                    </div>
+                  </div>
+                  <p class="card-text"><small class="text-muted">Last updated 12 june 2020</small></p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-10 col-lg-8 col-xl-6 mt-0 mt-xxl-6">
+          <div class="card mb-3 shadow-small-soft move" style="max-width: 56.5rem;">
+            <div class="row no-gutters">
+              <div class="col-md-5">
+                <!-- Card image -->
+                <picture>
+                  <img src="assets/img/card-photos/workplace@2x.png" alt="good-men" class="card-img">
+                </picture>
+              </div>
+              <div class="col-md-7">
+                <a class="card-body p-5" href="./course-detail.html">
+                  <!-- Title -->
+                  <h4 class="card-title main-heading mb-2">The Complete SQL Bootcamp 2020: Go from Zero to Hero</h4>
+                  <!-- Author -->
+                  <div class="d-flex mb-2">
+                    <span class="card-text">Josa Portilla</span>
+                  </div>
+                  <!-- Lesson tag -->
+                  <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start mb-2">
+                    <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                    <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                  </div>
+                  <!-- Star -->
+                  <div class="d-flex align-items-end justify-content-start mb-2">
+                    <span class="text-muted mr-3">4.6</span>
+                    <div class="mb-1 mr-3">
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                    </div>
+                    <span class="text-muted mr-3">(9876)</span>
+                  </div>
+                  <!-- Pricing -->
+                  <div class="mb-2">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-gray-700 mr-3">$19.99</span>
+                      <span class="text-gray-500"><del>$112.99</del></span>
+                    </div>
+                  </div>
+                  <p class="card-text"><small class="text-muted">Last updated 12 june 2020</small></p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--row-->
+      <!-- New release courses -->
+      <div class="row justify-content-start mt-8">
+        <div class="col-10 col-xl-3">
+          <h3 class="font-second mt-4 text-capitalize pb-1 border-bottom-md border-primary-desat">New release courses
+          </h3>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-5 mt-md-8">
+
+        <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+          <div class="card mb-3 shadow-small-soft move" style="max-width: 56.5rem;">
+            <div class="row no-gutters">
+              <div class="col-md-5">
+                <!--Card image-->
+                <picture>
+                  <img src="assets/img/card-photos/lesson-things@2x.png" alt="good-men" class="card-img">
+                </picture>
+              </div>
+              <div class="col-md-7">
+                <a class="card-body p-5" href="./course-detail.html">
+                  <!-- Title -->
+                  <h4 class="card-title main-heading mb-2">The Complete Gulpjs Bootcamp 2020: Go from Zero to Hero</h4>
+                  <!-- Author -->
+                  <div class="d-flex mb-2">
+                    <span class="card-text">Josa Portilla</span>
+                  </div>
+                  <!-- Lesson tag -->
+                  <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start mb-2">
+                    <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                    <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                  </div>
+                  <!-- Star -->
+                  <div class="d-flex align-items-end justify-content-start mb-2">
+                    <span class="text-muted mr-3">4.6</span>
+                    <div class="mb-1 mr-3">
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                    </div>
+                    <span class="text-muted mr-3">(9876)</span>
+                  </div>
+                  <!-- Pricing -->
+                  <div class="mb-2">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-gray-700 mr-3">$19.99</span>
+                      <span class="text-gray-500"><del>$112.99</del></span>
+                    </div>
+                  </div>
+                  <p class="card-text"><small class="text-muted">Last updated 12 june 2020</small></p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+          <div class="card mb-3 shadow-small-soft move" style="max-width: 56.5rem;">
+            <div class="row no-gutters">
+              <div class="col-md-5">
+                <!--Card image-->
+                <picture>
+                  <img src="assets/img/card-photos/officer-chief@2x.png" alt="good-men" class="card-img">
+                </picture>
+              </div>
+              <div class="col-md-7">
+                <a class="card-body p-5" href="./course-detail.html">
+                  <!-- Title -->
+                  <h4 class="card-title main-heading mb-2">The Complete Python Bootcamp 2020: Go from Zero to Hero</h4>
+                  <!-- Author -->
+                  <div class="d-flex mb-2">
+                    <span class="card-text">Josa Anderson</span>
+                  </div>
+                  <!-- Lesson tag -->
+                  <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start mb-2">
+                    <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                    <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                  </div>
+                  <!-- Star -->
+                  <div class="d-flex align-items-end justify-content-start mb-2">
+                    <span class="text-muted mr-3">4.6</span>
+                    <div class="mb-1 mr-3">
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                    </div>
+                    <span class="text-muted mr-3">(9876)</span>
+                  </div>
+                  <!-- Pricing -->
+                  <div class="mb-2">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-gray-700 mr-3">$19.99</span>
+                      <span class="text-gray-500"><del>$112.99</del></span>
+                    </div>
+                  </div>
+                  <p class="card-text"><small class="text-muted">Last updated 12 june 2020</small></p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-10 col-lg-8 col-xl-6 mt-0 mt-xxl-6">
+          <div class="card mb-3 shadow-small-soft move" style="max-width: 56.5rem;">
+            <div class="row no-gutters">
+              <div class="col-md-5">
+                <!--Card image-->
+                <picture>
+                  <img src="assets/img/card-photos/gameplay@2x.png" alt="good-men" class="card-img">
+                </picture>
+              </div>
+              <div class="col-md-7">
+                <a class="card-body p-5" href="./course-detail.html">
+                  <!-- Title -->
+                  <h4 class="card-title main-heading mb-2">The Complete Nodejs Bootcamp 2020: Go from Zero to Hero</h4>
+                  <!-- Author -->
+                  <div class="d-flex mb-2">
+                    <span class="card-text">Josa Portilla</span>
+                  </div>
+                  <!-- Lesson tag -->
+                  <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start mb-2">
+                    <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                    <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                  </div>
+                  <!-- Star -->
+                  <div class="d-flex align-items-end justify-content-start mb-2">
+                    <span class="text-muted mr-3">4.6</span>
+                    <div class="mb-1 mr-3">
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                    </div>
+                    <span class="text-muted mr-3">(9876)</span>
+                  </div>
+                  <!-- Pricing -->
+                  <div class="mb-2">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-gray-700 mr-3">$19.99</span>
+                      <span class="text-gray-500"><del>$112.99</del></span>
+                    </div>
+                  </div>
+                  <p class="card-text"><small class="text-muted">Last updated 12 june 2020</small></p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-10 col-lg-8 col-xl-6 mt-0 mt-xxl-6">
+          <div class="card mb-3 shadow-small-soft move" style="max-width: 56.5rem;">
+            <div class="row no-gutters">
+              <div class="col-md-5">
+                <!-- Card image -->
+                <picture>
+                  <source media="(min-width:992px)" srcset="assets/img/card-photos/iphone-rain@2x.png">
+                  <img src="assets/img/card-photos/iphone-rain@2x.png" alt="good-men" class="card-img">
+                </picture>
+              </div>
+              <div class="col-md-7">
+                <a class="card-body p-5" href="./course-detail.html">
+                  <!-- Title -->
+                  <h4 class="card-title main-heading mb-2">The Complete NoSQL Bootcamp 2020: Go from Zero to Hero</h4>
+                  <!-- Author -->
+                  <div class="d-flex mb-2">
+                    <span class="card-text">Josa Portilla</span>
+                  </div>
+                  <!-- Lesson tag -->
+                  <div class="d-flex flex-nowrap align-items-baseline justify-content-md-start mb-2">
+                    <span class="badge badge-danger-soft font-weight-lighter mr-2">Development</span>
+                    <span class="badge badge-danger-soft font-weight-lighter">Database</span>
+                  </div>
+                  <!-- Star -->
+                  <div class="d-flex align-items-end justify-content-start mb-2">
+                    <span class="text-muted mr-3">4.6</span>
+                    <div class="mb-1 mr-3">
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                      <i class="icon-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-345 -3599)"><path d="M13.8,20.577l6.18,3.923-1.635-7.4L23.8,12.125l-7.191-.65L13.8,4.5l-2.809,6.976-7.191.65L9.252,17.1,7.617,24.5Z" transform="translate(341.203 3594.5)" fill="#eb8a2f"/></g></svg>
+                      </i>
+                    </div>
+                    <span class="text-muted mr-3">(9876)</span>
+                  </div>
+                  <!-- Pricing -->
+                  <div class="mb-2">
+                    <div class="d-flex align-items-end justify-content-start">
+                      <span class="text-gray-700 mr-3">$19.99</span>
+                      <span class="text-gray-500"><del>$112.99</del></span>
+                    </div>
+                  </div>
+                  <p class="card-text"><small class="text-muted">Last updated 12 june 2020</small></p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--row-->
+
+    </div>
+    <!--container-->
+  </section>
+
+
+  <!-- shape
+    ================================================== -->
+  <div class="position-relative">
+    <div class="wave wave-bottom wave-fluid-x svg-shim text-white">
+      <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
+    </div>
+  </div>
+
+  <!-- FOOTER
+    ================================================== -->
+  <footer class="pt-8 pt-md-11 bg-gray-100">
+    <div class="container">
+      <div class="row pb-8 border-bottom border-secondary-desat-d">
+        <div class="col-12 col-md-4 col-lg-3">
+
+          <!-- Brand -->
+          <img src="./assets/img/Cursos.svg" alt="..." class="footer-brand img-fluid mb-2">
+
+          <!-- Text -->
+          <p class="text-gray-700 mb-2">
+            Sass variables and responsive grid system
+          </p>
+
+          <!-- Social -->
+          <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+            <li class="list-inline-item list-social-item mr-3">
+              <a href="#!" class="text-decoration-none">
+                <img src="./assets/img/icons/social/instagram-ok.svg" class="list-social-icon" alt="...">
+              </a>
+            </li>
+            <li class="list-inline-item list-social-item mr-3">
+              <a href="#!" class="text-decoration-none">
+                <img src="./assets/img/icons/social/facebook-ok.svg" class="list-social-icon" alt="...">
+              </a>
+            </li>
+            <li class="list-inline-item list-social-item mr-3">
+              <a href="#!" class="text-decoration-none">
+                <img src="./assets/img/icons/social/twitter-ok.svg" class="list-social-icon" alt="...">
+              </a>
+            </li>
+            <li class="list-inline-item list-social-item">
+              <a href="#!" class="text-decoration-none">
+                <img src="./assets/img/icons/social/linkedin-ok.svg" class="list-social-icon" alt="...">
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+
+          <!-- Heading -->
+          <h6 class="font-weight-bold text-uppercase text-gray-1001">
+            Main
+          </h6>
+
+          <!-- List -->
+          <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+            <li class="mb-3">
+              <a href="./index.html" class="text-reset">
+                Base Landing
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="./success-landing.html" class="text-reset">
+                Success Landing
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="./little-course.html" class="text-reset">
+                Little Landing
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="./about.html" class="text-reset">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="./contact.html" class="text-reset">
+                Contact
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+
+          <!-- Heading -->
+          <h6 class="font-weight-bold text-uppercase text-gray-1001">
+            Courses
+          </h6>
+
+          <!-- List -->
+          <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+            <li class="mb-3">
+              <a href="./course-horizontal.html" class="text-reset">
+                Course Horizontal
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="./course-middle.html" class="text-reset">
+                Course Middle
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="./course-veritical.html" class="text-reset">
+                Course Veritical
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="./course-detail.html" class="text-reset">
+                Course Detail
+              </a>
+            </li>
+            <li>
+              <a href="./student-course-detail.html" class="text-reset">
+                Course View
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+
+          <!-- Heading -->
+          <h6 class="font-weight-bold text-uppercase text-gray-1001">
+            Features
+          </h6>
+
+          <!-- List -->
+          <ul class="list-unstyled text-muted mb-0">
+            <li class="mb-3">
+              <a href="./student-dashboard.html" class="text-reset">
+                Student Dashboard
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="./teacher-dashboard.html" class="text-reset">
+                Teacher Dashboard
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="./student-exam.html" class="text-reset">
+                Online Test
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="./teacher-add-course.html" class="text-reset">
+                Add Course
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="./checkout.html" class="text-reset">
+                Checkout
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="./term.html" class="text-reset">
+                Term Condition
+              </a>
+            </li>
+            <li>
+              <a href="./thankyou.html" class="text-reset">
+                Thank you
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+
+          <!-- Heading -->
+          <h6 class="font-weight-bold text-uppercase text-gray-1001">
+            Help
+          </h6>
+
+          <!-- List -->
+          <ul class="list-unstyled text-muted mb-0">
+            <li class="mb-3">
+              <a href="./teacher-help.html" class="text-reset">
+                Documentation
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="./teacher-help.html" class="text-reset">
+                Help Center
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="./teacher-structure.html" class="text-reset">
+                Course Structure
+              </a>
+            </li>
+            <li>
+              <a href="./faq.html" class="text-reset">
+                Faq
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div> <!-- / .row -->
+      <div class="row align-items-center py-5">
+        <div class="col-12 text-center">
+          <span class="text-muted">Copyright @2020 All rights reserved | This template is made with by Gegeesoft</span>
+        </div>
+      </div>
+    </div> <!-- / .container -->
+  </footer>
+
+
+  <!-- JAVASCRIPT
+    ================================================== -->
+  <!-- Libs JS -->
+
+  <!---Libs-->
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./node_modules/aos/dist/aos.js"></script>
+  <script src="./node_modules/quill/dist/quill.min.js"></script>
+  <script src="./node_modules/dropzone/dist/min/dropzone.min.js"></script>
+  <script src="./node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="./node_modules/smooth-scroll/dist/smooth-scroll.min.js"></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+  <script src="./node_modules/highlightjs/highlight.pack.min.js"></script>
+
+  <!-- Theme JS -->
+  <!-- build:js ./assets/js/theme.min.js -->
+  <script src="./assets/js/aos.js"></script>
+  <script src="./assets/js/dropdown.js"></script>
+  <script src="./assets/js/theme.js"></script>
+  <script src="./assets/js/navbar.js"></script>
+  <script src="./assets/js/quill.js"></script>
+  <script src="./assets/js/dropzone.js"></script>
+  <script src="./assets/js/modal.js"></script>
+  <script src="./assets/js/smooth-scroll.js"></script>
+  <script src="./assets/js/map.js"></script>
+  <script src="./assets/js/highlight.js"></script>
+
+
+  <!-- endbuild -->
+</body>
+
+</html>

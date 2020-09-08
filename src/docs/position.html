@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    @@include("../partials/head.html", {
+    "pageTitle": "Cursos"
+    })
+</head>
+
+<body class="pt-10">
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("../partials/modals.html")
+
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("../partials/navbar.html", {
+    "classList": "navbar-light fixed-top bg-white border-bottom",
+    "container": "container-fluid"
+    })
+
+    <!-- BREADCRUMB
+    ================================================== -->
+    <nav class="d-lg-none bg-gray-800">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col">
+
+                    <!-- Breadcrumb -->
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <span class="text-white">
+                                Docs
+                            </span>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <span class="text-white">
+                                Position
+                            </span>
+                        </li>
+                    </ol>
+
+                </div>
+                <div class="col-auto">
+
+                    <!-- Toggler -->
+                    <div class="navbar-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#sidenavCollapse" aria-controls="sidenavCollapse" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </nav>
+
+    <!-- CONTENT
+    ================================================== -->
+    <section class="py-6 py-md-10">
+        <div class="container-fluid">
+            <div class="row">
+                <div
+                    class="col-12 col-lg-3 col-xl-2 px-lg-0 border-bottom border-bottom-lg-0 border-right-lg border-gray-300 sidenav sidenav-left">
+
+                    @@include("../partials/sidenavbar.html")
+
+                </div>
+                <div class="col-12 col-lg-6 col-xl-8 offset-lg-3 offset-xl-2 py-7 py-lg-9 px-lg-7">
+
+                    <!-- Heading -->
+                    <h1 class="mb-1 font-weight-bold">Position</h1>
+
+                    <!-- Text -->
+                    <p class="font-size-lg text-gray-700">
+                        Additional positioning utilities.
+                    </p>
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12 col-xl-4 mb-3 mb-md-0">
+
+                                    <div class="p-5 rounded bg-primary-desat mb-xl-0 position-relative">
+                                        <div class="d-flex align-items-center justify-content-center position-relative">
+                                            <h3 class="text-white py-9">Position</h3>
+                                        </div>
+                                        <div class="position-absolute bg-danger p-4 left-0 top-0"></div>
+                                        <div class="position-absolute bg-success p-4 right-0 top-0"></div>
+                                        <div class="position-absolute bg-primary p-4 right-0 bottom-0"></div>
+                                        <div class="position-absolute bg-primary p-4 left-0 bottom-0"></div>
+                                    </div>
+
+                                </div>
+                                <div class="col-12 col-xl-4">
+
+                                    <div class="p-5 rounded bg-primary-desat mb-xl-0 position-relative">
+                                        <div class="d-flex align-items-center justify-content-center position-relative">
+                                            <h3 class="text-white py-9">Position</h3>
+                                        </div>
+                                        <div class="position-absolute bg-danger p-4 left-15 top-n5"></div>
+                                        <div class="position-absolute bg-success p-4 right-n5 top-25"></div>
+                                        <div class="position-absolute bg-primary p-4 right-50 bottom-25"></div>
+                                        <div class="position-absolute bg-warning p-4 left-n3 bottom-0"></div>
+                                    </div>
+
+                                </div>
+
+                            </div> <!-- / .row -->
+                        </div>
+                        <div class="card-footer bg-black-secondary">
+                            <code class="highlight html text-success">
+
+                                &lt;div class=&quot;p-5 rounded bg-primary-desat mb-xl-0
+                                position-relative&quot;&gt;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;d-flex align-items-center
+                                justify-content-center
+                                position-relative&quot;&gt;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 class=&quot;text-white
+                                py-9&quot;&gt;Position&lt;/h3&gt;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;position-absolute bg-danger p-4 left-0
+                                top-0&quot;&gt;&lt;/div&gt;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;position-absolute bg-success p-4 right-0
+                                top-0&quot;&gt;&lt;/div&gt;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;position-absolute bg-primary p-4 right-0
+                                bottom-0&quot;&gt;&lt;/div&gt;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;position-absolute bg-primary p-4 left-0
+                                bottom-0&quot;&gt;&lt;/div&gt;<br />
+                                &lt;/div&gt;<br /><br />
+                                &lt;div class=&quot;p-5 rounded bg-primary-desat mb-xl-0
+                                position-relative&quot;&gt;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;d-flex align-items-center
+                                justify-content-center
+                                position-relative&quot;&gt;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 class=&quot;text-white
+                                py-9&quot;&gt;Position&lt;/h3&gt;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;position-absolute bg-danger p-4 left-15
+                                top-n5&quot;&gt;&lt;/div&gt;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;position-absolute bg-success p-4 right-n5
+                                top-25&quot;&gt;&lt;/div&gt;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;position-absolute bg-primary p-4 right-50
+                                bottom-25&quot;&gt;&lt;/div&gt;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;position-absolute bg-warning p-4 left-n3
+                                bottom-0&quot;&gt;&lt;/div&gt;<br />
+                                &lt;/div&gt;
+                            </code>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div> <!-- / .row -->
+        </div>
+    </section>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("../partials/scripts.html")
+
+</body>
+
+</html>

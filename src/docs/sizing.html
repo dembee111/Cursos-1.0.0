@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    @@include("../partials/head.html", {
+    "pageTitle": "Cursos"
+    })
+</head>
+
+<body class="pt-10">
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("../partials/modals.html")
+
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("../partials/navbar.html", {
+    "classList": "navbar-light fixed-top bg-white border-bottom",
+    "container": "container-fluid"
+    })
+
+    <!-- BREADCRUMB
+    ================================================== -->
+    <nav class="d-lg-none bg-gray-800">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col">
+
+                    <!-- Breadcrumb -->
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <span class="text-white">
+                                Docs
+                            </span>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <span class="text-white">
+                                Sizing
+                            </span>
+                        </li>
+                    </ol>
+
+                </div>
+                <div class="col-auto">
+
+                    <!-- Toggler -->
+                    <div class="navbar-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#sidenavCollapse" aria-controls="sidenavCollapse" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </nav>
+
+    <!-- CONTENT
+    ================================================== -->
+    <section class="py-6 py-md-10">
+        <div class="container-fluid">
+            <div class="row">
+                <div
+                    class="col-12 col-lg-3 col-xl-2 px-lg-0 border-bottom border-bottom-lg-0 border-right-lg border-gray-300 sidenav sidenav-left">
+
+                    @@include("../partials/sidenavbar.html")
+
+                </div>
+                <div class="col-12 col-lg-6 col-xl-8 offset-lg-3 offset-xl-2 py-7 py-lg-9 px-lg-7">
+
+                    <!-- Heading -->
+                    <h1 class="mb-1 font-weight-bold">Sizing</h1>
+
+                    <!-- Text -->
+                    <p class="font-size-lg text-gray-700">
+                        Sizing utlities to control the size of an element.
+                    </p>
+
+                    <!-- List -->
+                    <ul class="mb-5">
+                        <li>
+                            <code class="text-success">.mw-25(50, 75, 100, 110, 120, 130, 140, 150)</code> - controls
+                            the
+                            <code class="text-success">max-width</code> of an element in <code
+                                class="text-success">%</code>.
+                        </li>
+                        <li>
+                            <code class="text-success">.vw-25(50, 75, 100, 110, 120, 130, 140, 150)</code> - controls
+                            the width of an element
+                            in <code class="text-success">vw</code>.
+                        </li>
+                        <li>
+                            <code class="text-success">.w-25(50, 75, 100, 110, 120, 130, 140, 150)</code> - controls
+                            the
+                            <code class="text-success">width</code> of an element in <code
+                                class="text-success">%</code>.
+                        </li>
+                        <li>
+                            <code class="text-success">.h-25(50, 75, 100, 110, 120, 130, 140, 150)</code> - controls
+                            the
+                            <code class="text-success">height</code> of an element in <code
+                                class="text-success">%</code>.
+                        </li>
+                    </ul>
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-footer rounded bg-black-secondary">
+                            <code class="highlight html text-success">
+                                &lt;div&nbsp;class=&quot;mw-50&quot;&gt;&lt;/div&gt;<br />
+                                &lt;div&nbsp;class=&quot;vw-50&quot;&gt;&lt;/div&gt;<br />
+                                &lt;div&nbsp;class=&quot;w-50&quot;&gt;&lt;/div&gt;<br />
+                                &lt;div&nbsp;class=&quot;h-50&quot;&gt;&lt;/div&gt;
+                            </code>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div> <!-- / .row -->
+        </div>
+    </section>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("../partials/scripts.html")
+
+</body>
+
+</html>

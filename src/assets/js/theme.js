@@ -106,3 +106,18 @@ $(document).ready(function () {
     $("html,body").animate({ scrollTop: 0 }, 1000);
   });
 });
+
+// Course Detail Page add Comment
+var windowHeight = window.innerHeight - 80;
+
+document.getElementById("innerHeight").style.cssText =
+  "height: " + windowHeight + "px; overflow-y: scroll;";
+
+function toggleText(showMore) {
+  var x = document.getElementById(showMore);
+  if (x.innerHTML === "Show more") {
+    x.innerHTML = "Show less";
+  } else {
+    x.innerHTML = "Show more";
+  }
+}

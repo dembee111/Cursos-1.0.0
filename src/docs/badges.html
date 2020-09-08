@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    @@include("../partials/head.html", {
+    "pageTitle": "Cursos"
+    })
+</head>
+
+<body class="pt-10">
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("../partials/modals.html")
+
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("../partials/navbar.html", {
+    "classList": "navbar-light fixed-top bg-white border-bottom",
+    "container": "container-fluid"
+    })
+
+    <!-- BREADCRUMB
+    ================================================== -->
+    <nav class="d-lg-none bg-gray-800">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col">
+
+                    <!-- Breadcrumb -->
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <span class="text-white">
+                                Docs
+                            </span>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <span class="text-white">
+                                Badges
+                            </span>
+                        </li>
+                    </ol>
+
+                </div>
+                <div class="col-auto">
+
+                    <!-- Toggler -->
+                    <div class="navbar-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#sidenavCollapse" aria-controls="sidenavCollapse" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </nav>
+
+    <!-- CONTENT
+    ================================================== -->
+    <section class="py-6 py-md-10">
+        <div class="container-fluid">
+            <div class="row">
+                <div
+                    class="col-12 col-lg-3 col-xl-2 px-lg-0 border-bottom border-bottom-lg-0 border-right-lg border-gray-300 sidenav sidenav-left">
+
+                    @@include("../partials/sidenavbar.html")
+
+                </div>
+                <div class="col-12 col-lg-6 col-xl-8 offset-lg-3 offset-xl-2 py-7 py-lg-9 px-lg-7">
+
+                    <!-- Heading -->
+                    <h1 class="mb-1 font-weight-bold">Badges</h1>
+
+                    <!-- Text -->
+                    <p class="font-size-lg text-gray-700">
+                        Documentation and examples for badges, our small count and labeling component.
+                    </p>
+
+                    <!-- Bootstrap link -->
+                    <p class="mb-6">
+                        <a class="text-decoration-none" href="https://getbootstrap.com/docs/4.0/components/badge/"
+                            target="_blank">
+                            <i class="fe fe-external-link pr-1"></i>
+                            Bootstrap documentation
+                        </a>
+                    </p>
+
+                    <!-- Divider -->
+                    <hr class="border-gray-700 my-6">
+
+                    <!-- Heading -->
+                    <h3 class="mb-6 font-weight-bold">Theme Badges</h3>
+
+                    <!-- Theme badges -->
+                    <span class="badge badge-pill badge-primary-soft">
+                        <span class="h6 text-uppercase">
+                            Primary
+                        </span>
+                    </span>
+
+                    <!-- Theme badges -->
+                    <span class="badge badge-pill badge-primary-desat-soft">
+                        <span class="h6 text-uppercase">
+                            Primary Desat
+                        </span>
+                    </span>
+
+                    <!-- Theme badges -->
+                    <span class="badge badge-pill badge-danger-soft">
+                        <span class="h6 text-uppercase">
+                            Danger
+                        </span>
+                    </span>
+
+                    <!-- Theme badges -->
+                    <span class="badge badge-pill badge-success-soft">
+                        <span class="h6 text-uppercase">
+                            Success
+                        </span>
+                    </span>
+
+                    <!-- Theme badges -->
+                    <span class="badge badge-pill badge-info-soft">
+                        <span class="h6 text-uppercase">
+                            Info
+                        </span>
+                    </span>
+
+                    <span class="badge badge-pill badge-warning-soft">
+                        <span class="h6 text-uppercase">
+                            Warning
+                        </span>
+                    </span>
+
+                    <!-- Divider -->
+                    <hr class="border-gray-700 my-6">
+
+                    <div class="bg-black-secondary text-left py-3 pl-5 mb-4">
+                        <code class="text-success">
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&nbsp;<span
+                                    class="hljs-attr">class</span>=<span
+                                    class="hljs-string">"badge&nbsp;badge-primary-soft"</span>&gt;</span>Primary<span
+                                class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br><span
+                                class="hljs-tag">&lt;<span class="hljs-name">span</span>&nbsp;<span
+                                    class="hljs-attr">class</span>=<span
+                                    class="hljs-string">"badge&nbsp;badge-primary-desat-soft"</span>&gt;</span>Primary-desat<span
+                                class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br><span
+                                class="hljs-tag">&lt;<span class="hljs-name">span</span>&nbsp;<span
+                                    class="hljs-attr">class</span>=<span
+                                    class="hljs-string">"badge&nbsp;badge-danger-soft"</span>&gt;</span>Danger<span
+                                class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br><span
+                                class="hljs-tag">&lt;<span class="hljs-name">span</span>&nbsp;<span
+                                    class="hljs-attr">class</span>=<span
+                                    class="hljs-string">"badge&nbsp;badge-success-soft"</span>&gt;</span>Success<span
+                                class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br><span
+                                class="hljs-tag">&lt;<span class="hljs-name">span</span>&nbsp;<span
+                                    class="hljs-attr">class</span>=<span
+                                    class="hljs-string">"badge&nbsp;badge-info-soft"</span>&gt;</span>Info<span
+                                class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br><span
+                                class="hljs-tag">&lt;<span class="hljs-name">span</span>&nbsp;<span
+                                    class="hljs-attr">class</span>=<span
+                                    class="hljs-string">"badge&nbsp;badge-warning-soft"</span>&gt;</span>Warning<span
+                                class="hljs-tag">&lt;/
+                                <span class="hljs-name">span</span>&gt;</span><br>
+
+
+                        </code>
+                    </div>
+
+
+                </div>
+
+            </div> <!-- / .row -->
+        </div>
+    </section>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("../partials/scripts.html")
+
+</body>
+
+</html>

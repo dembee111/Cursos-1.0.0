@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    @@include("../partials/head.html", {
+    "pageTitle": "Cursos"
+    })
+</head>
+
+<body class="pt-10">
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("../partials/modals.html")
+
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("../partials/navbar.html", {
+    "classList": "navbar-light fixed-top bg-white border-bottom",
+    "container": "container-fluid"
+    })
+
+    <!-- BREADCRUMB
+    ================================================== -->
+    <nav class="d-lg-none bg-gray-800">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col">
+
+                    <!-- Breadcrumb -->
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <span class="text-white">
+                                Docs
+                            </span>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <span class="text-white">
+                                Typography
+                            </span>
+                        </li>
+                    </ol>
+
+                </div>
+                <div class="col-auto">
+
+                    <!-- Toggler -->
+                    <div class="navbar-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#sidenavCollapse" aria-controls="sidenavCollapse" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </nav>
+
+    <!-- CONTENT
+    ================================================== -->
+    <section class="py-6 py-md-10">
+        <div class="container-fluid">
+            <div class="row">
+                <div
+                    class="col-12 col-lg-3 col-xl-2 px-lg-0 border-bottom border-bottom-lg-0 border-right-lg border-gray-300 sidenav sidenav-left">
+
+                    @@include("../partials/sidenavbar.html")
+
+                </div>
+                <div class="col-12 col-lg-6 col-xl-8 offset-lg-3 offset-xl-2 py-7 py-lg-9 px-lg-7">
+
+                    <!-- Heading -->
+                    <h1 class="mb-1 font-weight-bold">Typography</h1>
+
+                    <!-- Text -->
+                    <p class="font-size-lg text-gray-700">
+                        Documentation and examples for Bootstrap typography, including global settings, headings, body
+                        text, lists, and more.
+                    </p>
+
+                    <!-- Bootstrap link -->
+                    <p class="mb-6">
+                        <a class="text-decoration-none" href="https://getbootstrap.com/docs/4.5/utilities/colors/"
+                            target="_blank">
+                            <i class="fe fe-external-link pr-1"></i>
+                            Bootstrap documentation
+                        </a>
+                    </p>
+
+                    <!-- Heading -->
+                    <h3 class="font-weight-bold mb-5" id="mainHeading">
+                        Typography
+                    </h3>
+
+                    <div class="d-flex flex-column">
+                        <h1 class="display-1 main-heading">Display-1</h1>
+                        <h1 class="display-2 main-heading">Display-2</h1>
+                        <h1 class="display-3 main-heading">Display-3</h1>
+                        <h1 class="display-4 main-heading">Display-4</h1>
+                        <div class="bg-black-secondary text-left py-3 pl-5 mb-4">
+                            <code class="text-success">
+                                &lt;h1&nbsp;class=&quot;display-1&nbsp;main-heading&quot;&gt;<br />&nbsp;&nbsp;&nbsp;Display-1<br />&lt;/h1&gt;
+                                <br />
+                                &lt;h1&nbsp;class=&quot;display-2&nbsp;main-heading&quot;&gt;<br />&nbsp;&nbsp;&nbsp;Display-2<br />&lt;/h1&gt;
+                                <br />
+                                &lt;h1&nbsp;class=&quot;display-3&nbsp;main-heading&quot;&gt;<br />&nbsp;&nbsp;&nbsp;Display-3<br />&lt;/h1&gt;
+                                <br />
+                                &lt;h1&nbsp;class=&quot;display-4&nbsp;main-heading&quot;&gt;<br />&nbsp;&nbsp;&nbsp;Display-4<br />&lt;/h1&gt;
+                            </code>
+                        </div>
+                    </div>
+
+                    <!-- Divider -->
+                    <hr class="border-gray-700 my-6">
+
+                    <div class="d-flex flex-column mb-6">
+                        <h1 class="h1 main-heading">h1. Bootstrap heading</h1>
+                        <h2 class="h2 main-heading">h2. Bootstrap heading</h2>
+                        <h3 class="h3 main-heading">h3. Bootstrap heading</h3>
+                        <h4 class="h4 main-heading mb-4">h4. Bootstrap heading</h4>
+                        <div class="bg-black-secondary text-left py-3 pl-5 mb-4">
+                            <code class="text-success">
+                                &lt;h1&nbsp;class=&quot;h1&nbsp;main-heading&quot;&gt;<br />&nbsp;&nbsp;&nbsp;h1.&nbsp;Bootstrap&nbsp;heading<br />&lt;/h1&gt;
+                                <br />
+                                &lt;h2&nbsp;class=&quot;h2&nbsp;main-heading&quot;&gt;<br />&nbsp;&nbsp;&nbsp;h2.&nbsp;Bootstrap&nbsp;heading<br />&lt;/h2&gt;
+                                <br />
+                                &lt;h3&nbsp;class=&quot;h3&nbsp;main-heading&quot;&gt;<br />&nbsp;&nbsp;&nbsp;h3.&nbsp;Bootstrap&nbsp;heading<br />&lt;/h3&gt;
+                                <br />
+                                &lt;h4&nbsp;class=&quot;h4&nbsp;main-heading&quot;&gt;<br />&nbsp;&nbsp;&nbsp;h4.&nbsp;Bootstrap&nbsp;heading<br />&lt;/h4&gt;
+                            </code>
+                        </div>
+                    </div>
+
+                    <!-- Divider -->
+                    <hr class="border-gray-700 my-6">
+
+                    <!-- Heading -->
+                    <h3 class="font-weight-bold mb-5">
+                        Lead
+                    </h3>
+
+                    <p class="lead">
+                        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non
+                        commodo luctus.
+                    </p>
+
+                    <div class="bg-black-secondary text-left py-3 pl-5 mb-4">
+                        <code class="text-success">
+                            &lt;p&nbsp;class=&quot;lead&quot;&gt;<br />&nbsp;&nbsp;&nbsp;Vivamus sagittis lacus vel
+                            augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non
+                            commodo luctus.<br />&lt;/p&gt;
+                        </code>
+                    </div>
+
+                    <!-- Divider -->
+                    <hr class="border-gray-700 my-6">
+
+                    <!-- Heading -->
+                    <h3 class="font-weight-bold mb-5">
+                        main-heading
+                    </h3>
+
+                    <p class="main-heading">
+                        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non
+                        commodo luctus.
+                    </p>
+
+                    <div class="bg-black-secondary text-left py-3 pl-5 mb-4">
+                        <code class="text-success">
+                            &lt;p&nbsp;class=&quot;main-heading&quot;&gt;<br />&nbsp;&nbsp;&nbsp;Vivamus sagittis lacus
+                            vel
+                            augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non
+                            commodo luctus.<br />&lt;/p&gt;
+                        </code>
+                    </div>
+
+                    <!-- Divider -->
+                    <hr class="border-gray-700 my-6">
+
+                    <!-- Heading -->
+                    <h3 class="font-weight-bold mb-5">
+                        font-second
+                    </h3>
+
+                    <h4 class="font-second">
+                        Lorem, ipsum dolor.
+                    </h4>
+
+                    <div class="bg-black-secondary text-left py-3 pl-5 mb-4">
+                        <code class="text-success">
+                            &lt;h4&nbsp;class=&quot;font-second&quot;&gt;<br />&nbsp;&nbsp;&nbsp;Lorem, ipsum dolor.
+                            commodo luctus.<br />&lt;/h4&gt;
+                        </code>
+                    </div>
+
+
+                </div>
+
+            </div> <!-- / .row -->
+        </div>
+    </section>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("../partials/scripts.html")
+
+</body>
+
+</html>

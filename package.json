@@ -28,6 +28,7 @@
     "bootstrap": "^4.5.0",
     "dropzone": "^5.7.0",
     "jquery": "^3.5.1",
+    "highlightjs": "^9.16.2",
     "owl.carousel": "^2.3.4",
     "quill": "^1.3.7",
     "smooth-scroll": "^16.1.3"
