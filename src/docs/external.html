@@ -1,0 +1,125 @@
+<!-- Divider -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    @@include("../partials/head.html", {
+    "pageTitle": "Cursos"
+    })
+</head>
+
+<body class="bg-light" style="padding-top: 84px;">
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("../partials/modals.html")
+
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("../partials/navbar.html", {
+    "classList": "navbar-light fixed-top bg-white border-bottom",
+    "container": "container-fluid"
+    })
+
+    <!-- BREADCRUMB
+    ================================================== -->
+    <nav class="d-lg-none bg-gray-800">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col">
+
+                    <!-- Breadcrumb -->
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <span class="text-white">
+                                Docs
+                            </span>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <span class="text-white">
+                                JS Files
+                            </span>
+                        </li>
+                    </ol>
+
+                </div>
+                <div class="col-auto">
+
+                    <!-- Toggler -->
+                    <div class="navbar-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#sidenavCollapse" aria-controls="sidenavCollapse" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </nav>
+
+    <!-- CONTENT
+    ================================================== -->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div
+                    class="col-12 col-lg-3 col-xl-2 px-lg-0 border-bottom border-bottom-lg-0 border-right-lg border-gray-300 sidenav sidenav-left">
+
+                    @@include("../partials/sidenavbar.html")
+
+                </div>
+                <div class="col-12 col-lg-6 col-xl-8 offset-lg-3 offset-xl-2 py-7 py-lg-9 px-lg-7">
+
+                    <!-- Heading -->
+                    <h2 class="mb-1 font-weight-bold">External Resources</h2>
+
+                    <!-- Text -->
+                    <p class="font-size-lg text-gray-700">
+                        The following external resources have been hand selected due to their quality and compatibility
+                        with Bootstrap and the Cursos theme:
+                    </p>
+
+                    <!-- List -->
+                    <p class="mb-3"><a href="https://getbootstrap.com/" target="_blank">Bootstrap 4.5.0</a></p>
+                    <p class="mb-3"><a href="https://sass-lang.com/" target="_blank">Sass</a></p>
+                    <p class="mb-3"><a href="https://feathericons.com/" target="_blank">Feather Icons</a></p>
+                    <p class="mb-3"><a href="https://gulpjs.com/" target="_blank">Gulp js</a></p>
+                    <p class="mb-3"><a href="https://jquery.com/" target="_blank">Jquery 3.5</a></p>
+                    <p class="mb-3"><a href="https://michalsnik.github.io/aos/" target="_blank">Aos Animation</a></p>
+                    <p class="mb-3"><a href="https://www.dropzonejs.com/" target="_blank">Dropzone js</a></p>
+                    <p class="mb-3"><a href="https://quilljs.com/" target="_blank">Quill Text Editor</a></p>
+                    <p class="mb-3"><a href="https://github.com/cferdinandi/smooth-scroll" target="_blank">Smooth
+                            Scroll</a></p>
+                    <p class="mb-3"><a href="https://docs.mapbox.com/api/" target="_blank">Mapbox</a></p>
+
+                    <p class="font-size-lg text-gray-700">
+                        The following resources have been used for fonts within the Cursos theme pages:
+                    </p>
+                    <p class="mb-3"><a
+                            href="https://www.fonts.com/font/bitstream/amerigo-bt?QueryFontType=Web&src=GoogleWebFonts"
+                            target="_blank">Amerigo BT font</a></p>
+                    <p class="mb-3"><a
+                            href="https://www.fonts.com/font/mark-simonson-studio/proxima-nova?QueryFontType=Web&src=GoogleWebFonts"
+                            target="_blank">Proxima Nova font</a></p>
+                    <p class="font-size-lg text-gray-700">
+                        The following resources have been used for images and graphics within the Cursos theme
+                        demo pages:
+                    </p>
+                    <p class="mb-3"><a href="https://www.freepik.com/" target="_blank">Freepik</a></p>
+                    <p class="mb-3"><a href="https://www.pexels.com/" target="_blank">Pexel</a></p>
+
+                </div>
+                <div class="col-12 col-lg-3 col-xl-2 d-none d-lg-block px-lg-0 sidenav sidenav-right"></div>
+            </div> <!-- / .row -->
+        </div>
+    </section>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("../partials/scripts.html")
+
+</body>
+
+</html>
