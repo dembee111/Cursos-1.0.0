@@ -233,23 +233,33 @@ $font-size-xs: 0.75rem !default; // NEW
 $font-weight-normal: 400 !default;
 $font-weight-bold: 600 !default;
 
-$line-height-base: 1.7 !default;
+$line-height-base: 1.65 !default;
 
-$h1-font-size: 2.3125rem !default;
-$h2-font-size: 1.9375rem !default;
-$h3-font-size: 1.6125rem !default;
-$h4-font-size: 1.1875rem !default;
-$h5-font-size: 1.0625rem !default;
-$h6-font-size: 0.75rem !default;
+$h1-font-size: 2.3125rem !default; // 37px
+$h2-font-size: 1.9375rem !default; //31 px
+$h3-font-size: 1.6125rem !default; //25px
+$h4-font-size: 1.1875rem !default; //19px
+$h5-font-size: 1.0625rem !default; //17px
+$h6-font-size: 0.75rem !default; //12px
 
 $headings-margin-bottom: .5rem !default;
 $headings-font-weight: $font-weight-normal !default;
 $headings-line-height: 1 !default;
 
-$display1-size: 4.375rem !default;
-$display2-size: 3.8125rem !default;
-$display3-size: 3rem !default;
-$display4-size: 2.6875rem !default;
+$display1-size: 3.052rem !default; //48.83px
+$display2-size: 2.441rem !default; //39.06px
+$display3-size: 1.953rem !default; //31.25px
+$display4-size: 1.563rem !default; //25px
+
+$h1-font-size-md: 1.875rem !default; // 30px
+$h2-font-size-md: 1.5rem !default; // 24px
+$h3-font-size-md: 1.125rem !default; // 18px
+$h4-font-size-md: 1.0625rem !default; // 17px
+
+$display1-size-md: 2.488rem !default; // 48px
+$display2-size-md: 2.074rem !default; // 38px
+$display3-size-md: 1.728rem !default; // 36px
+$display4-size-md: 1.44rem !default; // 32px
 
 $display1-weight: $font-weight-normal !default;
 $display2-weight: $font-weight-normal !default;
@@ -545,16 +555,6 @@ $display3-line-height: 1.2 !default;
 $display4-line-height: 1.2 !default;
 
 $display-letter-spacing: -.02em !default;
-
-$h1-font-size-md: 1.875rem !default; // 30px
-$h2-font-size-md: 1.5rem !default; // 24px
-$h3-font-size-md: 1.125rem !default; // 18px
-$h4-font-size-md: 1.0625rem !default; // 17px
-
-$display1-size-md: 3.125rem !default; // 48px
-$display2-size-md: 2.5rem !default; // 38px
-$display3-size-md: 2.25rem !default; // 36px
-$display4-size-md: 2rem !default; // 32px
 
 $font-size-lg-md: 1.0625rem !default; // 17px
 $lead-font-size-md: 1.1875rem !default; // 19px
