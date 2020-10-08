@@ -22,7 +22,7 @@ function printDiv(divName) {
 }
 
 //Owl carousel
-$(document).ready(function () {
+$(function () {
   $(".owl-carousel").owlCarousel({
     loop: true,
     margin: 10,
@@ -64,7 +64,7 @@ function showPage() {
 
 // Modal video js
 
-$(document).ready(function () {
+$(function () {
   // Gets the video src from the data-src on each button
 
   var $videoSrc;
@@ -91,9 +91,9 @@ $(document).ready(function () {
 });
 
 // Scroll button go to top
-$(document).ready(function () {
+$(function () {
   // show hide button on scroll
-  $(window).scroll(function () {
+  $(window).on("scroll", function () {
     if ($(this).scrollTop() > 1200) {
       $(".scrollToTop").fadeIn();
     } else {
@@ -102,16 +102,21 @@ $(document).ready(function () {
   });
 
   // Smooth scrolling to top
-  $(".scrollToTop").click(function () {
+  $(".scrollToTop").on("click", function () {
     $("html,body").animate({ scrollTop: 0 }, 1000);
   });
 });
 
-// Course Detail Page add Comment
-var windowHeight = window.innerHeight - 80;
+$(function () {
+  // Course Detail Page add Comment
+  var windowHeight = window.innerHeight - 80;
+  var innerHeight = document.getElementById("innerHeight");
 
-document.getElementById("innerHeight").style.cssText =
-  "height: " + windowHeight + "px; overflow-y: scroll;";
+  if (innerHeight) {
+    innerHeight.style.cssText =
+      "height: " + windowHeight + "px; overflow-y: scroll;";
+  }
+});
 
 function toggleText(showMore) {
   var x = document.getElementById(showMore);
