@@ -2,7 +2,7 @@
 
 ### Amina Theme License
 
-Amina is designed, developed and supported by Good Themes.
+Amina is designed, developed and supported by Gegeesoft.
 
 Use of this theme is governed by the license terms of the Bootstrap Themes platform (https://themeforest.net/licenses)
 
